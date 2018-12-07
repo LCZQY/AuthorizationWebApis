@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZQY_AuthorityManagement", "ZQY_AuthorityManagement\ZQY_AuthorityManagement.csproj", "{F47D34D1-3D7A-4C4C-9787-59311E1895F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F47D34D1-3D7A-4C4C-9787-59311E1895F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F47D34D1-3D7A-4C4C-9787-59311E1895F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F47D34D1-3D7A-4C4C-9787-59311E1895F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F47D34D1-3D7A-4C4C-9787-59311E1895F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7FB510FF-2547-4FA3-BFDE-591EFA351D21}
+	EndGlobalSection
+EndGlobal

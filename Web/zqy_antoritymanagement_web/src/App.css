@@ -1,0 +1,9 @@
+@import '~antd/dist/antd.css'; /*引入Antd样式*/
+
+.App {
+  text-align: center;
+}
+
+div{
+  border:red solid thin;
+}

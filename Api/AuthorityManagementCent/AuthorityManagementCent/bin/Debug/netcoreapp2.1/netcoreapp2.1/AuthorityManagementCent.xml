@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AuthorityManagementCent</name>
+    </assembly>
+    <members>
+        <member name="T:AuthorityManagementCent.Controllers.UserInfoController">
+            <summary>
+            发放Token
+            </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.UserInfoController.Tokens(AuthorityManagementCent.Dto.Request.UsersRequest)">
+            <summary>
+            测试方法一
+            </summary>
+            <param name="users"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AuthorityManagementCent.Dto.Common.ResponseCodeDefines">
+            <summary>
+            返回状态码
+            </summary>
+        </member>
+        <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.SuccessCode">
+            <summary>
+            0 :成功
+            </summary>
+        </member>
+        <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.ModelStateInvalid">
+            <summary>
+            100：
+            </summary>
+        </member>
+        <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.ArgumentNullError">
+            <summary>
+            101
+            </summary>
+        </member>
+        <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.ObjectAlreadyExists">
+            <summary>
+            102
+            </summary>
+        </member>
+        <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.PartialFailure">
+            <summary>
+            103
+            </summary>
+        </member>
+        <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.NotFound">
+            <summary>
+            404-不存在
+            </summary>
+        </member>
+        <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.NotAllow">
+            <summary>
+            403
+            </summary>
+        </member>
+        <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.ServiceError">
+            <summary>
+            500-服务器错误 
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Dto.Common.ResponseMessage">
+            <summary>
+            返回实体
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.UsersRequest.userName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.UsersRequest.passWord">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.UserInfoManager.Exiexistence(AuthorityManagementCent.Dto.Request.UsersRequest)">
+            <summary>
+            用户名是否存在
+            </summary>
+            <param name="users"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AuthorityManagementCent.Model.OrganizationExpansions">
+            <summary>
+              组织权限扩展表
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.OrganizationExpansions.Id">
+            <summary>
+            组织Id
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.OrganizationExpansions.SonId">
+            <summary>
+            子组织ID
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.OrganizationExpansions.OrganizationName">
+            <summary>
+            组织名称
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.OrganizationExpansions.SonName">
+            <summary>
+            子级组织名称
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.OrganizationExpansions.IsImmediate">
+            <summary>
+            是否直属下级
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.OrganizationExpansions.FullName">
+            <summary>
+            组织全名称
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Model.Organizations">
+            <summary>
+            组织表
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Organizations.OrganizationName">
+            <summary>
+            组织名称
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Organizations.ParentId">
+            <summary>
+            父ID
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Organizations.IsDeleted">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Model.Permissionitems">
+            <summary>
+            权限
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Permissionitems.Id">
+            <summary>
+            Key
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Permissionitems.Groups">
+            <summary>
+            权限分明名
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Permissionitems.IsDeleted">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Permissionitems.Name">
+            <summary>
+            权限名称
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Model.Roles">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Roles.Id">
+            <summary>
+            Key
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Roles.OrganizationId">
+            <summary>
+            组织 ID
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Roles.IsDeleted">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Roles.Name">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Model.Users">
+            <summary>
+            用户表
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Users.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Users.OrganizationId">
+            <summary>
+            组织Id
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Users.TrueName">
+            <summary>
+            真实用户名
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Users.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Users.PasswordHash">
+             <summary>
+            密码
+             </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Users.IsDeleted">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Users.PhoneNumber">
+            <summary>
+            号码
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Users.ParentId">
+            <summary>
+            父ID
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Users.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Stores.UserInfo">
+            <summary>
+            用户信息
+            </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.UserInfo.IExiexistence(AuthorityManagementCent.Dto.Request.UsersRequest)">
+            <summary>
+            判断该用户是否存在
+            </summary>
+            <param name="users"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

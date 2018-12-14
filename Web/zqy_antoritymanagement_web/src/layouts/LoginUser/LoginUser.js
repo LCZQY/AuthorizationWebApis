@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'antd';
+//一个变量不用括号标识
+import LoginFrom from './LoginForm';
 
 export default class LoginUser extends Component {
-
     render() {
         return (
             <div id="login">
@@ -14,16 +15,11 @@ export default class LoginUser extends Component {
                         </Col>
                     </Row>
                 </header>
-                <body>
-                    <Row>
-                        <Col span={24}>
-                            <Col span={12}><img src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=de08a1f093510fb367197197e932c893/b999a9014c086e062550d0020f087bf40bd1cbfb.jpg" /></Col>
+                    <Row >                                           
                             <Col span={12}>
-                                    
-                            </Col>
-                        </Col>           
-                    </Row>
-                </body>
+                                <LoginFrom />
+                            </Col>                        
+                    </Row>                      
                 <footer>
                     <Row>
                         <Col span={24}>&copy;郑强勇-2018-12-10</Col>

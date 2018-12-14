@@ -1,0 +1,10 @@
+﻿日志的配置
+https://www.cnblogs.com/FlyLolo/p/ASPNETCore2_12.html
+
+https://zhuanlan.zhihu.com/p/35469359
+
+EF Core
+https://blog.csdn.net/hyunbar/article/details/80154894
+
+依赖注入
+https://msdn.microsoft.com/zh-cn/magazine/mt707534.aspx

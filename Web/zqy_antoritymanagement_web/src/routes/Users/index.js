@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Table, Input, Button, Select, message } from 'antd';
-import { $Url } from '../../utils/public';
+import {  httpPost } from '../../utils/public';
 import "./index.css";
 
 
@@ -104,38 +104,27 @@ class Users extends Component {
             "pageIndex": 0,
             "pageSize": 10
         }
-
         // 获取用户信息
-        let url = $Url + "/api/User/GetUsersMessages";
-        fetch(url, {
-            method: 'POST',
-            headers: { "Content-Type": "application/json", "Accept": "application/json" },
-            body: JSON.stringify(pages)
-        })
-            .then(response => response.json())
-            .then(
-                data => {
-                    if (data.code != 0) {
-                        message.error(data.message);
-                        return;
-                    }
-                    console.log(data.extension, "用户信息列表");
-                    var dataSources = data.extension;
-                    this.setState({
-                        data: dataSources
-                    })
-                }
-            ).catch((error) => {
-                console.error(error, "获取用户信息报错。");
-            });
-        }
+        let url = "/api/User/getUsersMessages";
+        httpPost(url, pages).then(data => {
+            if (data.code != 0) {
+                message.error(data.message);
+                return;
+            }
+            console.log(data.extension, "用户信息列表");
+            var dataSources = data.extension;
+            this.setState({
+                data: dataSources
+            })
+        })       
+    }
 
     //render 中尽量是Dom节点
     render() {
         const { selectedItems } = this.state;
         const filteredOptions = OPTIONS.filter(o => !selectedItems.includes(o));
         return (
-            <div id="uses">                
+            <div id="uses">
                 <div style={{ float: "left", width: "100%", marginBottom: "0.5%", border: "none", background: "rgb(236, 236, 236)" }}>
                     <h2 style={{ textAlign: "left" }}>员工查询</h2>
                     {/* <div style={{ textAlign: "left" }}>
@@ -146,11 +135,11 @@ class Users extends Component {
                             <Icon type="delete" />
                         </Button>
                     </div> */}
-                    <talbe style={{ float: "left", width: "80%"}}>
+                    <talbe style={{ float: "left", width: "80%" }}>
                         <tr>
-                            <td style={{textAlign:"right"}}>用户名：</td>
-                            <td><Input style={{zIndex: "1"}}/></td>
-                            <td style={{textAlign:"right"}}>所属角色：</td>
+                            <td style={{ textAlign: "right" }}>用户名：</td>
+                            <td><Input style={{ zIndex: "1" }} /></td>
+                            <td style={{ textAlign: "right" }}>所属角色：</td>
                             <td> <Select
                                 showSearch
                                 style={{ width: 200, zIndex: "1" }}
@@ -166,7 +155,7 @@ class Users extends Component {
                                 <Option value="tom">Tom</Option>
                             </Select>
                             </td>
-                            <td style={{textAlign:"right"}}>所属部门：</td>
+                            <td style={{ textAlign: "right" }}>所属部门：</td>
                             <td>
                                 <Select
                                     mode="multiple"
@@ -191,7 +180,6 @@ class Users extends Component {
                     columns={this.state.columns}
                     dataSource={this.state.data}
                 />
-
             </div>
         )
     }

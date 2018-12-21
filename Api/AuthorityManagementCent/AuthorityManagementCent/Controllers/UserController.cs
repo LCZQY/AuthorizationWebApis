@@ -25,23 +25,13 @@ namespace AuthorityManagementCent.Controllers
             this._UserManager = UserController;
             this._Logger = Logger;
         }
-
-        /// <summary>
-        /// get
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet("get")]
-        public string get()
-        {
-            return "get";
-        }
-
+        
         /// <summary>
         /// 获取所有用户信息
         /// </summary>
         /// <param name="conditionSearch"></param>
         /// <returns></returns>
-        [HttpPost("GetUsersMessages")]
+        [HttpPost("getUsersMessages")]
         public async Task<ResponseMessage> GetUsersMessageAsync(PageConditionSearch conditionSearch)
         {
             var response = new ResponseMessage();

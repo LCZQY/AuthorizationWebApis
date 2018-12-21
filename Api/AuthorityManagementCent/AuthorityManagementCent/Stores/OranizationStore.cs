@@ -24,7 +24,7 @@ namespace AuthorityManagementCent.Stores
         /// </summary>
         /// <param name="organizations"></param>
         /// <returns></returns>
-        public async Task<Organizations> CreateOraniztions(Organizations organizations)
+        public async Task<Organizations> AddOraniztions(Organizations organizations)
         {
             if (organizations == null)
             {
@@ -33,6 +33,24 @@ namespace AuthorityManagementCent.Stores
             dbContext.Organizations.Add(organizations);
             await dbContext.SaveChangesAsync();
             return organizations;
+        }
+
+        /// <summary>
+        /// 组织
+        /// </summary>
+        /// <returns></returns>
+        public IQueryable<Organizations> GettingOraniztions()
+        {
+            return dbContext.Organizations.AsNoTracking().Where(u => !u.IsDeleted);
+        }
+
+        /// <summary>
+        /// 组织信息
+        /// </summary>
+        /// <returns></returns>
+        public IQueryable<OrganizationExpansions> GettingOrganizationExpansions()
+        {
+            return dbContext.OrganizationExpansions.AsNoTracking();
         }
     }
 }

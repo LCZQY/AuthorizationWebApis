@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AuthorityManagementCent.Dto.Common;
 using AuthorityManagementCent.Managers;
-
+using AuthorityManagementCent.Dto.Response;
+using System.Collections.Generic;
 
 namespace AuthorityManagementCent.Controllers
 {
@@ -25,9 +26,10 @@ namespace AuthorityManagementCent.Controllers
             this._OranizationManager = oranizationManager;
             this._Logger = Logger;
         }
+        
 
         /// <summary>
-        /// 添加组织
+        /// 添加组织 【存储到扩展表中？？】
         /// </summary>
         /// <param name="oranization"></param>
         /// <returns></returns>
@@ -52,6 +54,34 @@ namespace AuthorityManagementCent.Controllers
             }
             return response;
         }
+
+        /// <summary>
+        /// 创建组织树状结构
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpPost("createTreeStructure/{id}")]
+        public async Task<ResponseMessage<List<OranizationTreeResponse>>> OranizationsTreeStructure([FromRoute]string id) {
+
+            var response = new ResponseMessage<List<OranizationTreeResponse>>();
+            if (id == null)
+            {
+                response.Code = ResponseCodeDefines.NotAllow;
+                response.Message = "创建左侧菜单时，请求参数为空";
+            }
+            try
+            {
+                response = await _OranizationManager.CreatOranizationTree(id);
+            }
+            catch (Exception el)
+            {
+                response.Code = ResponseCodeDefines.ArgumentNullError;
+                response.Message = $"添加组织报错:{el.Message}";
+            }
+            return response;
+
+        }
     }
+
 
 }

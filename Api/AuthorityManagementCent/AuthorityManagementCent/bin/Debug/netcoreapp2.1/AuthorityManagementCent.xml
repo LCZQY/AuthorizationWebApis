@@ -11,9 +11,16 @@
         </member>
         <member name="M:AuthorityManagementCent.Controllers.OranizationsController.PlusOranizatin(AuthorityManagementCent.Dto.Request.OranizationRequest)">
             <summary>
-            添加组织
+            添加组织 【存储到扩展表中？？】
             </summary>
             <param name="oranization"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.OranizationsController.OranizationsTreeStructure(System.String)">
+            <summary>
+            创建组织树状结构
+            </summary>
+            <param name="id"></param>
             <returns></returns>
         </member>
         <member name="T:AuthorityManagementCent.Controllers.TokenController">
@@ -32,12 +39,6 @@
             <summary>
             用户管理
             </summary>
-        </member>
-        <member name="M:AuthorityManagementCent.Controllers.UserController.get">
-            <summary>
-            get
-            </summary>
-            <returns></returns>
         </member>
         <member name="M:AuthorityManagementCent.Controllers.UserController.GetUsersMessageAsync(AuthorityManagementCent.Dto.Common.PageConditionSearch)">
             <summary>
@@ -136,6 +137,21 @@
             密码
             </summary>
         </member>
+        <member name="T:AuthorityManagementCent.Dto.Response.OranizationTreeResponse">
+            <summary>
+            组合组织树状结构
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.OranizationTreeResponse.title">
+            <summary>
+            组织名称
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.OranizationTreeResponse.key">
+            <summary>
+            组织Id
+            </summary>
+        </member>
         <member name="P:AuthorityManagementCent.Dto.Response.UsersResponse.Id">
             <summary>
             Id
@@ -185,6 +201,20 @@
             <summary>
             组织管理
             </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.OranizationManager.PlusOranization(AuthorityManagementCent.Dto.Request.OranizationRequest)">
+            <summary>
+            添加组织信息
+            </summary>
+            <param name="oranizationRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.OranizationManager.CreatOranizationTree(System.String)">
+            <summary>
+            创建组织树状结构
+            </summary>
+            <param name="OranizationId">OranizationId</param>
+            <returns></returns>
         </member>
         <member name="T:AuthorityManagementCent.Managers.TokenManager">
             <summary>
@@ -374,6 +404,25 @@
             性别
             </summary>
         </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IOranizationStore.AddOraniztions(AuthorityManagementCent.Model.Organizations)">
+            <summary>
+            添加组织        
+            </summary>
+            <param name="organizations"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IOranizationStore.GettingOraniztions">
+            <summary>
+            获取组织数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IOranizationStore.GettingOrganizationExpansions">
+            <summary>
+            获取组织扩展表数据
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:AuthorityManagementCent.Stores.Interface.ITokenStore.IExiexistence(AuthorityManagementCent.Dto.Request.UsersRequest)">
             <summary>
             判断该用户名是否存在
@@ -387,11 +436,23 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:AuthorityManagementCent.Stores.OranizationStore.CreateOraniztions(AuthorityManagementCent.Model.Organizations)">
+        <member name="M:AuthorityManagementCent.Stores.OranizationStore.AddOraniztions(AuthorityManagementCent.Model.Organizations)">
             <summary>
             添加组织信息
             </summary>
             <param name="organizations"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.OranizationStore.GettingOraniztions">
+            <summary>
+            组织
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.OranizationStore.GettingOrganizationExpansions">
+            <summary>
+            组织信息
+            </summary>
             <returns></returns>
         </member>
         <member name="T:AuthorityManagementCent.Stores.TokenStore">

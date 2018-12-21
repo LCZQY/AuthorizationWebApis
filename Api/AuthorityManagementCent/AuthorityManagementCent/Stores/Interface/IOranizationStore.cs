@@ -10,7 +10,24 @@ namespace AuthorityManagementCent.Stores.Interface
     public interface IOranizationStore
     {
 
-        //添加组织        
-         Task<Organizations> CreateOraniztions(Organizations organizations);
+        /// <summary>
+        /// 添加组织        
+        /// </summary>
+        /// <param name="organizations"></param>
+        /// <returns></returns>
+        Task<Organizations> AddOraniztions(Organizations organizations);
+
+        /// <summary>
+        /// 获取组织数据
+        /// </summary>
+        /// <returns></returns>
+        IQueryable<Organizations> GettingOraniztions();
+
+        /// <summary>
+        /// 获取组织扩展表数据
+        /// </summary>
+        /// <returns></returns>
+        IQueryable<OrganizationExpansions> GettingOrganizationExpansions();
+
     }
 }

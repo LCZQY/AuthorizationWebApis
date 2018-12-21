@@ -7,3 +7,117 @@
 2018-12-21 09:29:27.6517|0|INFO|AuthorityManagementCent.Controllers.TokenController|1获取Token中。 |url: http://localhost/api/Token/token|action: Tokens|AuthorityManagementCent.Controllers.TokenController+<Tokens>d__3.MoveNext
 2018-12-21 09:30:48.4623|0|INFO|AuthorityManagementCent.Controllers.TokenController|1获取Token中。 |url: http://localhost/api/Token/token|action: Tokens|AuthorityManagementCent.Controllers.TokenController+<Tokens>d__3.MoveNext
 2018-12-21 09:32:12.2260|0|INFO|AuthorityManagementCent.Controllers.TokenController|1获取Token中。 |url: http://localhost/api/Token/token|action: Tokens|AuthorityManagementCent.Controllers.TokenController+<Tokens>d__3.MoveNext
+2018-12-21 09:38:41.9402|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Token/token|action: |Microsoft.AspNetCore.HttpsPolicy.Internal.HttpsLoggingExtensions.FailedToDeterminePort
+2018-12-21 09:38:42.4771|0|INFO|AuthorityManagementCent.Controllers.TokenController|1获取Token中。 |url: http://localhost/api/Token/token|action: Tokens|AuthorityManagementCent.Controllers.TokenController+<Tokens>d__3.MoveNext
+2018-12-21 10:06:15.9213|13|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLJ6T3BJ338K", Request id "0HLJ6T3BJ338K:00000001": An unhandled exception was thrown by the application. System.IO.FileNotFoundException: Could not find file 'D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\bin\Debug\netcoreapp2.1\publish\AuthorityManagementCent.xml'.
+File name: 'D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\bin\Debug\netcoreapp2.1\publish\AuthorityManagementCent.xml'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass23_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSchemaRegistryOptions..ctor(IServiceProvider serviceProvider, IOptions`1 swaggerGenOptionsAccessor)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitTransient(TransientCallSite transientCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitTransient(TransientCallSite transientCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitTransient(TransientCallSite transientCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitTransient(TransientCallSite transientCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)|url: http://localhost/swagger/index.html|action: |Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol+<ProcessRequests>d__188`1.MoveNext
+2018-12-21 11:10:59.6335|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Oranizations/add|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-21 14:08:01.1361|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NotSupportedException: Ambiguous HTTP method for action - AuthorityManagementCent.Controllers.OranizationsController.CreateTrees (AuthorityManagementCent). Actions require an explicit HttpMethod binding for Swagger 2.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItems(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/swagger/v1/swagger.json|action: |Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware+<Invoke>d__7.MoveNext
+2018-12-21 14:09:58.4463|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Oranizations/createTreeStructure|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-21 14:11:11.6179|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Oranizations/createTreeStructure|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-21 14:11:25.6258|20004|ERROR|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'zqy' on server 'localhost'. MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Threading.ThreadAbortException: System error.
+   at System.Diagnostics.Debugger.CustomNotification(ICustomDebuggerNotification data)
+   at System.Diagnostics.Debugger.NotifyOfCrossThreadDependencySlow()
+   at System.Threading.Tasks.Task.InternalWaitCore(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)|url: http://localhost/api/Oranizations/createTreeStructure|action: OranizationsTreeStructure|Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.ConnectionError
+2018-12-21 14:11:25.7297|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'AuthorityManagementCent.Model.ModelContext'.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Threading.ThreadAbortException: System error.
+   at System.Diagnostics.Debugger.CustomNotification(ICustomDebuggerNotification data)
+   at System.Diagnostics.Debugger.NotifyOfCrossThreadDependencySlow()
+   at System.Threading.Tasks.Task.InternalWaitCore(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext() MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Threading.ThreadAbortException: System error.
+   at System.Diagnostics.Debugger.CustomNotification(ICustomDebuggerNotification data)
+   at System.Diagnostics.Debugger.NotifyOfCrossThreadDependencySlow()
+   at System.Threading.Tasks.Task.InternalWaitCore(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()|url: http://localhost/api/Oranizations/createTreeStructure|action: OranizationsTreeStructure|Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.QueryIterationFailed
+2018-12-21 14:13:57.2646|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Oranizations/createTreeStructure|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-21 14:14:48.1794|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Oranizations/createTreeStructure|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-21 14:15:59.6518|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Oranizations/createTreeStructure|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-21 14:29:01.3283|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Oranizations/createTreeStructure/1|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-21 14:31:34.0857|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Oranizations/createTreeStructure/0|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-21 14:35:55.0108|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Oranizations/createTreeStructure/0|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-21 16:47:06.2928|0|INFO|AuthorityManagementCent.Controllers.TokenController|1获取Token中。 |url: http://localhost/api/Token/token|action: Tokens|AuthorityManagementCent.Controllers.TokenController+<Tokens>d__3.MoveNext
+2018-12-21 17:19:07.2944|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Oranizations/createTreeStructure/0|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-21 17:21:17.0179|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Oranizations/createTreeStructure/0|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-21 17:26:21.3704|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Oranizations/createTreeStructure/0|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort

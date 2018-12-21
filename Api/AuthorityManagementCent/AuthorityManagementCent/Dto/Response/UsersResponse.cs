@@ -1,13 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace AuthorityManagementCent.Model
+namespace AuthorityManagementCent.Dto.Response
 {
-    /// <summary>
-    /// 用户表
-    /// </summary>
-    public class Users : TraceUpdateBase
+
+    public class UsersResponse
     {
         /// <summary>
         /// Id
@@ -54,7 +54,6 @@ namespace AuthorityManagementCent.Model
         /// <summary>
         /// 性别
         /// </summary>
-
         public bool Sex { get; set; }
     }
 }

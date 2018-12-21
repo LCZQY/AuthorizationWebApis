@@ -1,68 +1,31 @@
 import Config from './config.js';
-
+import { $Url } from '../utils/public.js';
+import {  message } from 'antd/lib/';
 class Fetch extends Config {
 
-    constructor(url, params, successFunc, errorFunc) {
-        super();
-        this.url = super()._URL + url;
-        this.params = params;
-        this.successFunc = successFunc;
-        this.errorFunc = errorFunc;
+    constructor(url, params) {
+        super();        
+        this.url = $Url + url;
+        this.params = params;       
     }
 
-    //发送GET请求
-    getFetch() {
-        var that = this;
-        var str = '';
-        if (typeof that.params === 'object' && that.params) {
-            str += '?';
-            Object.keys(that.params).forEach(function (val) {
-                str += val + '=' + encodeURIComponent(that.params[val]) + '&';
-            })
-        }
-        fetch(this.url + str, {
-            method: 'GET'
-        }).then(function (res) {
-            if (res.ok) {
-                res.json().then(function (data) {
-                    that.successFunc(data);
-                })
-            } else if (res.status === 401) {
-                console.log('请求失败');
-                that.errorFunc();
-            }
-        }, function (e) {
-            console.log('请求失败');
-            that.errorFunc();
-        })
-    }
-
+   
     //发送POST请求
-    postFetch() {
-        var that = this;
-        var formData = new FormData();
-        for (let k in that.params) {
-            formData.append(k, that.params[k]);
-        }
-        formData.append('oper_id', '11');
-        formData.append('oper_name', 'kong');
+    postFetch = () => {
         fetch(this.url, {
-            method: 'POST',
-            mode: 'cors',
-            body: formData
-        }).then(function (res) {
-            if (res.ok) {
-                res.json().then(function (data) {
-                    that.successFunc(data);
-                })
-            } else {
-                console.log('请求失败');
-                that.errorFunc();
-            }
-        }, function (e) {
-            console.log('请求失败');
-            that.errorFunc();
-        })
+                method: 'POST',
+                headers: { "Content-Type": "application/json", "Accept": "application/json" },
+                body: JSON.stringify(this.params),
+            })
+            .then(response => response.json())
+            .then(
+                data => {
+                    return data;                    
+                }
+            ).catch((error) => {
+                message.error("获取后台数据报错！");
+                console.log(error,this.url+"请求时，获取后台数据报错");
+        });
     }
 }
 

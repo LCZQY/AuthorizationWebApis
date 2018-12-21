@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AuthorityManagementCent.Dto.Request;
+using AuthorityManagementCent.Model;
+
 namespace AuthorityManagementCent.Stores.Interface
 {
-    public interface IuserInfo
+    public interface IOranizationStore
     {
-        Task<bool> IExiexistence(UsersRequest users); 
+
+        //添加组织        
+         Task<Organizations> CreateOraniztions(Organizations organizations);
     }
 }

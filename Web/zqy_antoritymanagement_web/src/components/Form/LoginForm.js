@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import { Form, Icon, Input, Button } from 'antd/lib/';
+import { Form, Icon, Input, Button, message } from 'antd/lib/';
+import { $Url } from '../../utils/public';
 const FormItem = Form.Item;
-
 
 function hasErrors(fieldsError) {
     return Object.keys(fieldsError).some(field => fieldsError[field]);
 }
+
+//还需判断详细判断？
+const warning = (Content) => {
+    message.warning(Content);
+};
 
 class LoginForm extends Component {
 
@@ -17,27 +22,33 @@ class LoginForm extends Component {
         // }
         this.props.form.validateFields();
     }
-
     handleSubmit = e => {
+
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
             if (!err) {
-                
-                //判断密码是否正确/该用户名是否存在/如何实现跳转问题 ？
-                console.log("传递的参数是： ", JSON.stringify(values.userName));                                          
-                let url = 'http://localhost:5002/api/Values/token';
+                console.log("传递的参数是： ", JSON.stringify(values));
+                let url = $Url+'/api/Token/token';             
                 fetch(url, {
-                    method: 'POST',                                      
-                    headers: { "Content-Type": "application/json", "Accept":  "application/json"},               
-                    body: JSON.stringify(values)
+                    method: 'POST',
+                    headers: { "Content-Type": "application/json", "Accept": "application/json" },
+                    body: JSON.stringify(values),
                 })
                 .then(response => response.json())
                 .then(
-                    data => {
-                        console.log(data, "登陆日志")
-                    }
-                ).catch((error) => {
-                    console.error(error,"获取用户信息报错。");
+                        data => {
+                            console.log(data, "登陆日志");
+                            switch (data["code"]) {
+                                case "0":
+                                    window.location.href = "#/home?returnurl=" + data["extension"] + "";
+                                    break;
+                                default:
+                                    warning(data["message"] || data["userName"]);
+                                    break;
+                            }
+                        }
+                    ).catch((error) => {
+                        console.error(error, "获取用户信息报错。");
                 });
             }
         });
@@ -48,11 +59,11 @@ class LoginForm extends Component {
             getFieldDecorator, getFieldsError, getFieldError, isFieldTouched,
         } = this.props.form;
 
-        // Only show error after a field is touched.
         const userNameError = isFieldTouched('userName') && getFieldError('userName');
         const passwordError = isFieldTouched('password') && getFieldError('password');
         return (
-            <Form  onSubmit={this.handleSubmit} className="login-form">
+            <Form onSubmit={this.handleSubmit} className="login-form">
+
                 <FormItem validateStatus={userNameError ? 'error' : ''} help={userNameError || ''}>
                     {
                         getFieldDecorator('userName', {

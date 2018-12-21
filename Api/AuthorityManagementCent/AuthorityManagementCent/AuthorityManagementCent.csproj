@@ -5,12 +5,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\AuthorityManagementCent.xml</DocumentationFile>
+    <DocumentationFile>D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\bin\Debug\netcoreapp2.1\AuthorityManagementCent.xml</DocumentationFile>
     <OutputPath>bin\Debug\netcoreapp2.1\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Dto\Response\" />
     <Folder Include="Log\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>

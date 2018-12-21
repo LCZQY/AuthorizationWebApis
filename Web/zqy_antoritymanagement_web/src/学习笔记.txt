@@ -1,0 +1,70 @@
+
+//redux ： 统一管理数据 ??
+//react-redux : ？？ 让页面更加清晰化
+
+
+
+//子组件
+export class Son extends Component {
+    constructor(){
+        super();
+        this.state = {
+            list:[
+                '数据一','数据一','数据一','数据一'
+            ]
+        }
+    }
+
+    //删除方法
+    del = (key) =>{
+        let {list} = this.state;
+        let newList = list.splice(key,1);
+        this.setState({
+            list:newList
+        })
+    }
+    add =() =>{
+        let {list} = this.state;
+        //获取输入框的值
+        let newValue =  this.refs.inp.value;
+        console.log(newValue,"newValue");        
+
+        this.setState({
+            list: [...list,newValue] //表示在最后一个元素，添加一个元素
+        })
+
+    }
+    render() {
+        let {num, changeNum} = this.props; //获取父级传递的参数
+        return (
+            <div className="son">
+                这个是一个子组件!<br/>
+                <Button onClick={changeNum}>{"当前数值:"+ num}</Button>
+                <ul>
+                    <li>数据的遍历</li>
+                    {
+                        this.state.list.map((value, key) => {
+                            return (
+                                <li key={key}>{value}
+                                    <Button onClick={() => { this.del(key) }}>删除数据</Button>
+                                </li>                                
+                            )
+                        })
+                    }
+                </ul>  <br/>
+                <input ref={'inp'} /><Button onClick ={() => { this.add() }}>添加</Button>                                  
+            </div>
+        );                
+    }    
+}
+
+ <Son 
+    num={this.state.num}
+    changeNum = { this.changeNum}
+/>
+
+
+
+
+
+>>页面生命周期： https://www.jianshu.com/p/c9bc994933d5

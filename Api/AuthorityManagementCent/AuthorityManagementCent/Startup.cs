@@ -16,6 +16,15 @@ using Swashbuckle.AspNetCore.Swagger;
 
 using AuthorityManagementCent.Model;
 using Microsoft.EntityFrameworkCore;
+using AuthorityManagementCent.Managers;
+using AuthorityManagementCent.Stores;
+using AuthorityManagementCent.Stores.Interface;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using AutoMapper;
+
+
 
 namespace AuthorityManagementCent
 {
@@ -24,46 +33,62 @@ namespace AuthorityManagementCent
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            _mapperConfiguration = new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile(new AutoMapperProfileConfiguration());
+            });
         }
 
         public IConfiguration Configuration { get; }
+        public MapperConfiguration _mapperConfiguration { get; set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //配置Token
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+               .AddJwtBearer(options =>
+               {
+                   options.TokenValidationParameters = new TokenValidationParameters
+                   {
+                       ValidateIssuer = true,
+                       ValidateAudience = true,
+                       ValidateLifetime = true,
+                       ValidateIssuerSigningKey = true,
+                       ValidIssuer = "zqy.com", //发放者
+                        ValidAudience = "pc.com", // 来源
+                        IssuerSigningKey = new SymmetricSecurityKey(
+                           Encoding.UTF8.GetBytes(Configuration["JWT:SecurityKey"]))
+                   };
+               });
+            
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //AutoMapper
+            services.AddSingleton<IMapper>(mp=> _mapperConfiguration.CreateMapper());
 
-            //注意：一定要加 sslmode=none 
+            //数据库连接,注意：一定要加 sslmode=none 
             var connection = Configuration.GetConnectionString("MysqlConnection");
             services.AddDbContext<ModelContext>(options => options.UseMySQL(connection));
-        
+
+            //依赖注入类
+            Plugin.AddScopeds(services);
+
             //注册Swagger文件
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info
                 {
                     Version = "v1",
-                    Title = "用户认证中心",
-                    Description = "用户登陆请求Token",
-                    TermsOfService = "None",
-                    Contact = new Contact
-                    {
-                        Name = "Shayne Boyer",
-                        Email = string.Empty,
-                        Url = "https://twitter.com/spboyer"
-                    },
-                    License = new License
-                    {
-                        Name = "Use under LICX",
-                        Url = "https://example.com/license"
-                    }
+                    Title = "权限管理系统",
+                    Description = "用户登陆请求Token/用户管理/组织管理/权限管理/角色管理",
+                    TermsOfService = "None",                    
                 });
-                // Set the comments path for the Swagger JSON and UI.
+                c.IgnoreObsoleteActions();      
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                c.IncludeXmlComments(xmlPath);
+                c.IncludeXmlComments(xmlPath);                
             });
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -78,6 +103,8 @@ namespace AuthorityManagementCent
                 app.UseHsts();
             }
 
+            //启动权限验证
+            app.UseAuthentication();
             //启动Swagger
             app.UseSwagger();
             app.UseSwaggerUI(c =>

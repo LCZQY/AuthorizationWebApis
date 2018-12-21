@@ -6,13 +6,24 @@ using System.Threading.Tasks;
 
 namespace AuthorityManagementCent.Model
 {
+
     /// <summary>
     /// 组织表
     /// </summary>
     public class Organizations : TraceUpdateBase
     {
+
+        /// <summary>
+        /// 组织Id
+        /// </summary>
         [Key]
-        public Guid Id { get; set; }
+        public string Id { get; set; }
+
+        /// <summary>
+        /// 部门号码
+        /// </summary>
+        [Phone]
+        public string Phone { get; set; }
 
         /// <summary>
         /// 组织名称

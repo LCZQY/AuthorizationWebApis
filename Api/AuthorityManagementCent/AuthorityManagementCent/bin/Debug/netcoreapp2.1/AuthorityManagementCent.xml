@@ -4,17 +4,62 @@
         <name>AuthorityManagementCent</name>
     </assembly>
     <members>
-        <member name="T:AuthorityManagementCent.Controllers.UserInfoController">
+        <member name="T:AuthorityManagementCent.Controllers.OranizationsController">
+            <summary>
+             组织管理
+            </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.OranizationsController.PlusOranizatin(AuthorityManagementCent.Dto.Request.OranizationRequest)">
+            <summary>
+            添加组织
+            </summary>
+            <param name="oranization"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AuthorityManagementCent.Controllers.TokenController">
             <summary>
             发放Token
             </summary>
         </member>
-        <member name="M:AuthorityManagementCent.Controllers.UserInfoController.Tokens(AuthorityManagementCent.Dto.Request.UsersRequest)">
+        <member name="M:AuthorityManagementCent.Controllers.TokenController.Tokens(AuthorityManagementCent.Dto.Request.UsersRequest)">
             <summary>
-            测试方法一
+            获取Token
             </summary>
             <param name="users"></param>
             <returns></returns>
+        </member>
+        <member name="T:AuthorityManagementCent.Controllers.UserController">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.UserController.get">
+            <summary>
+            get
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.UserController.GetUsersMessageAsync(AuthorityManagementCent.Dto.Common.PageConditionSearch)">
+            <summary>
+            获取所有用户信息
+            </summary>
+            <param name="conditionSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AuthorityManagementCent.Dto.Common.PageConditionSearch">
+            <summary>
+            分页基础类
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Common.PageConditionSearch.PageIndex">
+            <summary>
+            开始页
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Common.PageConditionSearch.PageSize">
+            <summary>
+            行数
+            </summary>
         </member>
         <member name="T:AuthorityManagementCent.Dto.Common.ResponseCodeDefines">
             <summary>
@@ -28,7 +73,7 @@
         </member>
         <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.ModelStateInvalid">
             <summary>
-            100：
+            100：模型验证
             </summary>
         </member>
         <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.ArgumentNullError">
@@ -38,7 +83,7 @@
         </member>
         <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.ObjectAlreadyExists">
             <summary>
-            102
+            102: 对象已经存在
             </summary>
         </member>
         <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.PartialFailure">
@@ -66,6 +111,21 @@
             返回实体
             </summary>
         </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.OranizationRequest.OrganizationName">
+            <summary>
+            组织名称
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.OranizationRequest.Phone">
+            <summary>
+            号码
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.OranizationRequest.ParentId">
+            <summary>
+            父级Id
+            </summary>
+        </member>
         <member name="P:AuthorityManagementCent.Dto.Request.UsersRequest.userName">
             <summary>
             用户名
@@ -76,12 +136,78 @@
             密码
             </summary>
         </member>
-        <member name="M:AuthorityManagementCent.Managers.UserInfoManager.Exiexistence(AuthorityManagementCent.Dto.Request.UsersRequest)">
+        <member name="P:AuthorityManagementCent.Dto.Response.UsersResponse.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.UsersResponse.OrganizationId">
+            <summary>
+            组织Id
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.UsersResponse.TrueName">
+            <summary>
+            真实用户名
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.UsersResponse.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.UsersResponse.PasswordHash">
+             <summary>
+            密码
+             </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.UsersResponse.IsDeleted">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.UsersResponse.PhoneNumber">
+            <summary>
+            号码
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.UsersResponse.ParentId">
+            <summary>
+            父ID
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.UsersResponse.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Managers.OranizationManager">
+            <summary>
+            组织管理
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Managers.TokenManager">
+            <summary>
+            登陆信息
+            </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.TokenManager.Exiexistence(AuthorityManagementCent.Dto.Request.UsersRequest)">
             <summary>
             用户名是否存在
             </summary>
             <param name="users"></param>
             <returns></returns>
+        </member>
+        <member name="T:AuthorityManagementCent.Managers.UserManager">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.UserManager.GettingUsers(AuthorityManagementCent.Dto.Common.PageConditionSearch)">
+            <summary>
+            获取所有用户信息
+            </summary>
+            <returns></returns>               
         </member>
         <member name="T:AuthorityManagementCent.Model.OrganizationExpansions">
             <summary>
@@ -121,6 +247,16 @@
         <member name="T:AuthorityManagementCent.Model.Organizations">
             <summary>
             组织表
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Organizations.Id">
+            <summary>
+            组织Id
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.Organizations.Phone">
+            <summary>
+            部门号码
             </summary>
         </member>
         <member name="P:AuthorityManagementCent.Model.Organizations.OrganizationName">
@@ -238,16 +374,47 @@
             性别
             </summary>
         </member>
-        <member name="T:AuthorityManagementCent.Stores.UserInfo">
+        <member name="M:AuthorityManagementCent.Stores.Interface.ITokenStore.IExiexistence(AuthorityManagementCent.Dto.Request.UsersRequest)">
+            <summary>
+            判断该用户名是否存在
+            </summary>
+            <param name="users"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IUserStore.GetUserInformation">
+            <summary>
+            获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.OranizationStore.CreateOraniztions(AuthorityManagementCent.Model.Organizations)">
+            <summary>
+            添加组织信息
+            </summary>
+            <param name="organizations"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AuthorityManagementCent.Stores.TokenStore">
             <summary>
             用户信息
             </summary>
         </member>
-        <member name="M:AuthorityManagementCent.Stores.UserInfo.IExiexistence(AuthorityManagementCent.Dto.Request.UsersRequest)">
+        <member name="M:AuthorityManagementCent.Stores.TokenStore.IExiexistence(AuthorityManagementCent.Dto.Request.UsersRequest)">
             <summary>
-            判断该用户是否存在
+            判断该用户名是否存在
             </summary>
             <param name="users"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AuthorityManagementCent.Stores.UserStore">
+            <summary>
+            用户信息
+            </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.UserStore.GetUserInformation">
+            <summary>
+            获取所有用户信息
+            </summary>
             <returns></returns>
         </member>
     </members>

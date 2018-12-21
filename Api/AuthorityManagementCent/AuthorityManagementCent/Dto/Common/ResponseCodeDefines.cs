@@ -16,7 +16,7 @@ namespace AuthorityManagementCent.Dto.Common
         public static readonly string SuccessCode = "0";
 
         /// <summary>
-        /// 100：
+        /// 100：模型验证
         /// </summary>
         public static readonly string ModelStateInvalid = "100";
 
@@ -24,8 +24,9 @@ namespace AuthorityManagementCent.Dto.Common
         /// 101
         /// </summary>
         public static readonly string ArgumentNullError = "101";
+
         /// <summary>
-        /// 102
+        /// 102: 对象已经存在
         /// </summary>
         public static readonly string ObjectAlreadyExists = "102";
 

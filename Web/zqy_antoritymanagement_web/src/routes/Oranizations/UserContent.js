@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import { Table, Input, Button, Select, message, Icon } from 'antd';
-import { $Url } from '../../utils/public';
-import "./index.css";
+import { Table, Button, Icon} from 'antd';
+import {CollectionCreateForm} from './ModelFrom';
+import { httpPost, messageWarn } from '../../utils/public';
 
 
-class Users extends Component {
+
+/**组织下的用户列表 */
+class UserContent extends Component {
+
     constructor() {
         super();
-        this.state = {                       
+        this.state = {
             columns: [
                 {
                     title: 'key',
@@ -21,12 +24,7 @@ class Users extends Component {
                     title: '组织',
                     dataIndex: 'organizationId',
                     key: 'organizationId'
-                },
-                {
-                    title: '父级ID',
-                    dataIndex: 'parentId',
-                    key: 'parentId'
-                },
+                },            
                 {
                     title: '真实姓名',
                     dataIndex: 'trueName',
@@ -41,12 +39,7 @@ class Users extends Component {
                     title: '联系方式',
                     dataIndex: 'phoneNumber',
                     key: 'phoneNumber'
-                },
-                {
-                    title: '性别',
-                    dataIndex: 'sex',
-                    key: 'sex'
-                },
+                },              
                 {
                     title: '操作',
                     dataIndex: '',
@@ -65,69 +58,73 @@ class Users extends Component {
                         </span>;
                     }
                 }],
-            data: []
+            visible: false,
+            ButtonDisplay:false
+
         }
     }
 
-    //组件第一次渲染完成，此时dom节点已经生成，可以调用Ajax请求
-    componentDidMount() {
-        this.Initialization();
+    showModel = () => {
+        this.setState({
+            visible: true
+        })
     }
-
-    //初始化用户列表
-    Initialization = () => {
-        var pages = {
-            "pageIndex": 0,
-            "pageSize": 10
-        }
-
-        // 获取用户信息
-            let url = $Url + "/api/User/GetUsersMessages";
-            fetch(url, {
-                method: 'POST',
-                headers: { "Content-Type": "application/json", "Accept": "application/json" },
-                body: JSON.stringify(pages)
-            })
-            .then(response => response.json())
-            .then(
-                data => {
-                    if (data.code != 0) {
-                        message.error(data.message);
-                        return;
-                    }
-                    console.log(data.extension, "用户信息列表");
-                    var dataSources = data.extension;
-                    this.setState({
-                        data: dataSources
-                    })
-                }
-            ).catch((error) => {
-                console.error(error, "获取用户信息报错。");
-           });
+    handleCancel = () => {
+        this.setState({ visible: false });
+    } 
+   
+    /**创建员工 */
+    handleCreate = () => {
+        const form = this.formRef.props.form;
+        form.validateFields((err, values) => {
+            if (err) {
+                 return;               
+            }           
+            values.organizationId = this.props.GuidAndName.Id;
+            console.log(values,"传递的参数是");    
+            let url="/api/User/addUser";            
+            httpPost(url,values).then(data => {
+                if(data.code != "0")
+                {
+                    messageWarn(data["message"]);
+                }     
+                form.resetFields();
+                alert("添加成功！")                
+                this.setState({ visible: false });            
+            });          
+        });
     }
-
-    //render 中尽量是Dom节点
-    render() {           
-        return (
-            <div id="uses">                
+    saveFormRef = (formRef) => {
+        this.formRef = formRef;
+    }
+    render() {       
+        return (          
+            <div id="uses" >              
                 <div style={{ float: "left", width: "100%", marginBottom: "0.5%", border: "none", background: "rgb(236, 236, 236)" }}>
                     <h2 style={{ textAlign: "left" }}>员工查询</h2>
                     <div style={{ textAlign: "left" }}>
-                        <Button style={{ marginLeft: "0.5%" }} type="primary" shape="circle" size="default">
+                        <Button style={{ marginLeft: "0.5%",zIndex:"1" }} disabled={this.props.ButtonDisplay} onClick={()=>{this.showModel()}} type="primary" shape="circle" size="default">
                             <Icon type="plus" />
-                        </Button>
-                        <Button style={{ marginLeft: "0.5%" }} type="primary" shape="circle" size="default">
+                        </Button>                   
+                        <CollectionCreateForm
+                            wrappedComponentRef={this.saveFormRef}
+                            visible={this.state.visible}
+                            onCancel={this.handleCancel}
+                            onCreate={this.handleCreate}
+                            info={this.props.GuidAndName}
+                        />
+                        <Button style={{ marginLeft: "0.5%",zIndex:"1" }} type="primary" shape="circle" size="default">
                             <Icon type="delete" />
                         </Button>
-                    </div>                   
+                    </div>
                 </div>
                 <Table
                     columns={this.state.columns}
-                    dataSource={this.state.data}
+                    dataSource={this.props.data}
                 />
             </div>
         )
     }
 }
+export default UserContent;
 
-export default Users;

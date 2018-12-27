@@ -15,5 +15,13 @@ namespace AuthorityManagementCent.Stores.Interface
         /// </summary>
         /// <returns></returns>
         IQueryable<Users> GetUserInformation();
+
+
+        /// <summary>
+        /// 添加用户       
+        /// </summary>
+        /// <param name="organizations"></param>
+        /// <returns></returns>
+        Task<Users> InsertUser(Users organizations);
     }
 }

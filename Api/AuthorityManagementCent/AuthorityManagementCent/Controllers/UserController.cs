@@ -7,6 +7,7 @@ using AuthorityManagementCent.Dto.Common;
 using AuthorityManagementCent.Managers;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using AuthorityManagementCent.Dto.Request;
 
 namespace AuthorityManagementCent.Controllers
 {
@@ -26,13 +27,14 @@ namespace AuthorityManagementCent.Controllers
             this._Logger = Logger;
         }
         
+
         /// <summary>
         /// 获取所有用户信息
         /// </summary>
         /// <param name="conditionSearch"></param>
         /// <returns></returns>
         [HttpPost("getUsersMessages")]
-        public async Task<ResponseMessage> GetUsersMessageAsync(PageConditionSearch conditionSearch)
+        public async Task<ResponseMessage> GetUsersMessageAsync(OranizationUserRequest conditionSearch)
         {
             var response = new ResponseMessage();
             if (conditionSearch == null)
@@ -51,6 +53,35 @@ namespace AuthorityManagementCent.Controllers
                 response.Message = $"获取所有用户信息报错：{ el.Message}";
             }
             return response;
+        }
+
+
+        /// <summary>
+        /// 添加用户
+        /// </summary>
+        /// <param name="userRequest">基本信息</param>
+        /// <returns></returns>
+        [HttpPost("addUser")]
+        public async Task<ResponseMessage> InsertUsers(UserRequest userRequest)
+        {
+            var response = new ResponseMessage();
+            if (userRequest == null)
+            {
+                //_Logger.LogInformation($"{users.userName}获取Token中,请求的参数为空。");
+                response.Code = ResponseCodeDefines.NotAllow;
+                response.Message = "请求参数为空";
+            }
+            try
+            {
+                return await _UserManager.InsertUserInfo(userRequest);
+            }
+            catch (Exception el)
+            {
+                response.Code = ResponseCodeDefines.NotAllow;
+                response.Message = $"添加用户信息失败，请联系管理员.";
+            }
+            return response;
+
         }
     }
 }

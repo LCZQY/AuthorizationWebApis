@@ -9,18 +9,15 @@ import  Roles  from '../../routes/Roles';
 class DefaultLayout extends Component {
 
     render() {
-
         return (
-            <div id="DefaultLayout">
-              
+            <div id="DefaultLayout">              
                 <div className="content-wrap">
                     <Route path={this.props.match.url + '/'} component={Homes} exact />
                     <Route path={this.props.match.url + '/Oranizations'} component={Oranizations} />
                     <Route path={this.props.match.url + '/Permissionitems'} component={Permissionitems} />
                     <Route path={this.props.match.url + '/Roles'} component={Roles} />
                     <Route path={this.props.match.url + '/Users'} component={Users} />
-                </div>
-           
+                </div>           
             </div>
         );
     }

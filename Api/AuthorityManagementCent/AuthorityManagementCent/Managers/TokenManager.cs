@@ -32,7 +32,7 @@ namespace AuthorityManagementCent.Managers
         /// </summary>
         /// <param name="users"></param>
         /// <returns></returns>
-        public async Task<ResponseMessage<string>> Exiexistence(UsersRequest users)
+        public async Task<ResponseMessage<string>> Exiexistence(LoginRequest users)
         {
             var response = new ResponseMessage<string>();
             var returnUsers = await _IUserInfo.IExiexistence(users);
@@ -50,17 +50,18 @@ namespace AuthorityManagementCent.Managers
             }
             else
             {
+                string UserId = "1";
+                string Role = "admin";
                 response.Code = ResponseCodeDefines.SuccessCode;
                 //赋予Token的值
                 ClaimsIdentity identity = new ClaimsIdentity(
-                    new GenericIdentity(users.userName, "TokenAuth")
-                    
-                    //给Token加上权限和角色 ？
-                    //new[] {
-                    //new Claim("ID", user.ID.ToString()),
-                    //new Claim("username",request.Username),
-                    //new Claim(ClaimTypes.Name,request.Username),
-                    //}
+                    new GenericIdentity(users.userName, "TokenAuth") //用户名  
+                   //给Token加上权限和角色 ？
+                   , new[] {
+                        new Claim(JwtRegisteredClaimNames.Jti,UserId),
+                        new Claim("Role",Role),
+                        new Claim(JwtRegisteredClaimNames.Iat,DateTime.Now.ToString(),ClaimValueTypes.Integer64)
+                    }
                 );
                 var authTime = DateTime.UtcNow;
                 var expiresAt = authTime.AddDays(1);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AuthorityManagementCent.Dto.Request
 {
-    public class UsersRequest
+    public class LoginRequest
     {
         /// <summary>
         /// 用户名

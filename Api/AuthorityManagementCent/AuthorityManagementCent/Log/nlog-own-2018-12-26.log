@@ -1,0 +1,196 @@
+2018-12-26 15:06:12.9771|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Oranizations/createTreeStructure/0|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 15:24:26.0913|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Jurisdiction/add|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 15:25:50.8720|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Jurisdiction/add|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 15:26:57.8049|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Jurisdiction/add|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 15:28:00.6997|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Jurisdiction/add|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 15:28:52.3692|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Jurisdiction/add|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 15:29:12.6793|20102|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (33ms) [Parameters=[@p0='?' (Size = -1), @p1='?' (DbType = DateTime), @p2='?' (Size = -1), @p3='?' (DbType = DateTime), @p4='?' (Size = -1), @p5='?' (Size = -1), @p6='?' (DbType = Int16), @p7='?' (Size = -1)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `permissionitems` (`Id`, `CreateTime`, `CreateUser`, `DeleteTime`, `DeleteUser`, `Groups`, `IsDeleted`, `Name`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7); MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'CreateTime' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)|url: http://localhost/api/Jurisdiction/add|action: AddJurisdiction|Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.CommandError
+2018-12-26 15:29:12.8076|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'AuthorityManagementCent.Model.ModelContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Unknown column 'CreateTime' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Unknown column 'CreateTime' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://localhost/api/Jurisdiction/add|action: AddJurisdiction|Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.SaveChangesFailed
+2018-12-26 15:32:15.6000|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Jurisdiction/add|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 15:32:24.7671|20102|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (14ms) [Parameters=[@p0='?' (Size = -1), @p1='?' (DbType = DateTime), @p2='?' (Size = -1), @p3='?' (DbType = DateTime), @p4='?' (Size = -1), @p5='?' (Size = -1), @p6='?' (DbType = Int16), @p7='?' (Size = -1)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `permissionitems` (`Id`, `CreateTime`, `CreateUser`, `DeleteTime`, `DeleteUser`, `Groups`, `IsDeleted`, `Name`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7); MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'CreateTime' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)|url: http://localhost/api/Jurisdiction/add|action: AddJurisdiction|Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.CommandError
+2018-12-26 15:32:24.8216|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'AuthorityManagementCent.Model.ModelContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Unknown column 'CreateTime' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Unknown column 'CreateTime' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://localhost/api/Jurisdiction/add|action: AddJurisdiction|Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.SaveChangesFailed
+2018-12-26 15:32:26.7932|0|INFO|AuthorityManagementCent.Controllers.UserController|添加权限报错el	
+ |url: http://localhost/api/Jurisdiction/add|action: AddJurisdiction|AuthorityManagementCent.Controllers.JurisdictionController+<AddJurisdiction>d__3.MoveNext
+2018-12-26 15:35:02.8851|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Jurisdiction/add|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 15:35:14.4331|20102|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (15ms) [Parameters=[@p0='?' (Size = -1), @p1='?' (DbType = DateTime), @p2='?' (Size = -1), @p3='?' (DbType = DateTime), @p4='?' (Size = -1), @p5='?' (Size = -1), @p6='?' (DbType = Int16), @p7='?' (Size = -1)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `permissionitems` (`Id`, `CreateTime`, `CreateUser`, `DeleteTime`, `DeleteUser`, `Groups`, `IsDeleted`, `Name`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7); MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'CreateTime' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)|url: http://localhost/api/Jurisdiction/add|action: AddJurisdiction|Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.CommandError
+2018-12-26 15:35:14.4886|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'AuthorityManagementCent.Model.ModelContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Unknown column 'CreateTime' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Unknown column 'CreateTime' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://localhost/api/Jurisdiction/add|action: AddJurisdiction|Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.SaveChangesFailed
+2018-12-26 15:35:48.1158|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Jurisdiction/add|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 15:35:54.7200|20102|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (13ms) [Parameters=[@p0='?' (Size = -1), @p1='?' (DbType = DateTime), @p2='?' (Size = -1), @p3='?' (DbType = DateTime), @p4='?' (Size = -1), @p5='?' (Size = -1), @p6='?' (DbType = Int16), @p7='?' (Size = -1)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `permissionitems` (`Id`, `CreateTime`, `CreateUser`, `DeleteTime`, `DeleteUser`, `Groups`, `IsDeleted`, `Name`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7); MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'CreateTime' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)|url: http://localhost/api/Jurisdiction/add|action: AddJurisdiction|Microsoft.EntityFrameworkCore.Internal.RelationalLoggerExtensions.CommandError
+2018-12-26 15:35:54.7713|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'AuthorityManagementCent.Model.ModelContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Unknown column 'CreateTime' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Unknown column 'CreateTime' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: http://localhost/api/Jurisdiction/add|action: AddJurisdiction|Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.SaveChangesFailed
+2018-12-26 15:38:08.1706|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Jurisdiction/add|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 16:09:42.8203|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Jurisdiction/add|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 16:10:47.3052|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Jurisdiction/add|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 18:48:02.1090|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Jurisdiction/getJurisdictionList|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 18:49:14.6512|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Jurisdiction/getJurisdictionList/%20|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 19:42:53.9449|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Jurisdiction/getJurisdictionList|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 19:42:56.2048|10102|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from Permissionitems u in DbSet<Permissionitems> where !([u].IsDeleted) select [u]).Skip(__p_0).Tak...' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. |url: http://localhost/api/Jurisdiction/getJurisdictionList|action: GetJurisdictionAsync|Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.RowLimitingOperationWithoutOrderByWarning
+2018-12-26 19:43:05.4009|10102|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from Permissionitems u in DbSet<Permissionitems> where !([u].IsDeleted) where [u].Groups == __condi...' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. |url: http://localhost/api/Jurisdiction/getJurisdictionList|action: GetJurisdictionAsync|Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.RowLimitingOperationWithoutOrderByWarning
+2018-12-26 20:52:59.9269|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/Token/token|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.TryGetHttpsPort
+2018-12-26 20:53:00.8548|0|INFO|AuthorityManagementCent.Controllers.TokenController|1获取Token中。 |url: http://localhost/api/Token/token|action: Tokens|AuthorityManagementCent.Controllers.TokenController+<Tokens>d__3.MoveNext
+2018-12-26 20:53:00.8548|0|INFO|AuthorityManagementCent.Controllers.TokenController|1获取Token中。 |url: http://localhost/api/Token/token|action: Tokens|AuthorityManagementCent.Controllers.TokenController+<Tokens>d__3.MoveNext
+2018-12-26 20:53:03.5337|10102|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from Permissionitems u in DbSet<Permissionitems> where !([u].IsDeleted) select [u]).Skip(__p_0).Tak...' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. |url: http://localhost/api/Jurisdiction/getJurisdictionList/|action: GetJurisdictionAsync|Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.RowLimitingOperationWithoutOrderByWarning
+2018-12-26 20:53:05.1930|10102|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from Permissionitems u in DbSet<Permissionitems> where !([u].IsDeleted) where [u].Groups == __condi...' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. |url: http://localhost/api/Jurisdiction/getJurisdictionList/|action: GetJurisdictionAsync|Microsoft.EntityFrameworkCore.Internal.CoreLoggerExtensions.RowLimitingOperationWithoutOrderByWarning

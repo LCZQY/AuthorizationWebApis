@@ -11,7 +11,7 @@ namespace AuthorityManagementCent
 {
     public static class Plugin
     {
-        public static void AddScopeds(IServiceCollection services) 
+        public static void AddScopeds(IServiceCollection services)
         {
             //Token管理
             services.AddScoped<ITokenStore, TokenStore>();
@@ -24,6 +24,10 @@ namespace AuthorityManagementCent
             //组织管理
             services.AddScoped<IOranizationStore, OranizationStore>();
             services.AddScoped<OranizationManager>();
+
+            //权限管理
+            services.AddScoped<IJurisdictionStore, JurisdictionStore>();
+            services.AddScoped<JurisdictionManager>();
         }
     }
 }

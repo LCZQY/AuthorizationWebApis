@@ -4,6 +4,25 @@
         <name>AuthorityManagementCent</name>
     </assembly>
     <members>
+        <member name="T:AuthorityManagementCent.Controllers.JurisdictionController">
+            <summary>
+            组织管理
+            </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.JurisdictionController.AddJurisdiction(AuthorityManagementCent.Dto.Request.PermissionitemRequest)">
+            <summary>
+            添加组织
+            </summary>
+            <param name="permissionRequest">基本信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.JurisdictionController.GetJurisdictionAsync(AuthorityManagementCent.Dto.Request.SearchPermissiontemRequest)">
+            <summary>
+            获取权限列表
+            </summary>
+            <param name="permissionitem"></param>
+            <returns></returns>
+        </member>
         <member name="T:AuthorityManagementCent.Controllers.OranizationsController">
             <summary>
              组织管理
@@ -23,12 +42,19 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:AuthorityManagementCent.Controllers.OranizationsController.TreeSelect(System.String)">
+            <summary>
+            组织选择树
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="T:AuthorityManagementCent.Controllers.TokenController">
             <summary>
             发放Token
             </summary>
         </member>
-        <member name="M:AuthorityManagementCent.Controllers.TokenController.Tokens(AuthorityManagementCent.Dto.Request.UsersRequest)">
+        <member name="M:AuthorityManagementCent.Controllers.TokenController.Tokens(AuthorityManagementCent.Dto.Request.LoginRequest)">
             <summary>
             获取Token
             </summary>
@@ -40,11 +66,18 @@
             用户管理
             </summary>
         </member>
-        <member name="M:AuthorityManagementCent.Controllers.UserController.GetUsersMessageAsync(AuthorityManagementCent.Dto.Common.PageConditionSearch)">
+        <member name="M:AuthorityManagementCent.Controllers.UserController.GetUsersMessageAsync(AuthorityManagementCent.Dto.Request.OranizationUserRequest)">
             <summary>
             获取所有用户信息
             </summary>
             <param name="conditionSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.UserController.InsertUsers(AuthorityManagementCent.Dto.Request.UserRequest)">
+            <summary>
+            添加用户
+            </summary>
+            <param name="userRequest">基本信息</param>
             <returns></returns>
         </member>
         <member name="T:AuthorityManagementCent.Dto.Common.PageConditionSearch">
@@ -107,9 +140,29 @@
             500-服务器错误 
             </summary>
         </member>
+        <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.PasswordHash">
+            <summary>
+            默认密码
+            </summary>
+        </member>
         <member name="T:AuthorityManagementCent.Dto.Common.ResponseMessage">
             <summary>
             返回实体
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.LoginRequest.userName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.LoginRequest.passWord">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Dto.Request.OranizationRequest">
+            <summary>
+            添加组织
             </summary>
         </member>
         <member name="P:AuthorityManagementCent.Dto.Request.OranizationRequest.OrganizationName">
@@ -127,27 +180,117 @@
             父级Id
             </summary>
         </member>
-        <member name="P:AuthorityManagementCent.Dto.Request.UsersRequest.userName">
+        <member name="T:AuthorityManagementCent.Dto.Request.OranizationUserRequest">
+            <summary>
+            查询组织下的Id
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.OranizationUserRequest.OranizationId">
+            <summary>
+            组织ID
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Dto.Request.PermissionitemRequest">
+            <summary>
+            添加权限
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.PermissionitemRequest.Id">
+            <summary>
+            权限编号Key
+            </summary>        
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.PermissionitemRequest.Groups">
+            <summary>
+            权限分明名
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.PermissionitemRequest.Name">
+            <summary>
+            权限名称
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Dto.Request.SearchPermissiontemRequest">
+            <summary>
+            条件搜索
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.SearchPermissiontemRequest.Groups">
+            <summary>
+            权限分明名
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.UserRequest.OrganizationId">
+            <summary>
+            组织Id
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.UserRequest.TrueName">
+            <summary>
+            真实用户名
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.UserRequest.UserName">
             <summary>
             用户名
             </summary>
         </member>
-        <member name="P:AuthorityManagementCent.Dto.Request.UsersRequest.passWord">
+        <member name="P:AuthorityManagementCent.Dto.Request.UserRequest.PhoneNumber">
             <summary>
-            密码
+            号码
             </summary>
         </member>
-        <member name="T:AuthorityManagementCent.Dto.Response.OranizationTreeResponse">
+        <member name="P:AuthorityManagementCent.Dto.Request.UserRequest.PasswordHash">
+            <summary>
+            初始密码
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.UserRequest.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Dto.Response.PermissionResponse">
             <summary>
             组合组织树状结构
             </summary>
         </member>
-        <member name="P:AuthorityManagementCent.Dto.Response.OranizationTreeResponse.title">
+        <member name="P:AuthorityManagementCent.Dto.Response.PermissionResponse.Id">
+            <summary>
+            权限编号Key
+            </summary>        
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.PermissionResponse.Groups">
+            <summary>
+            权限分组
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.PermissionResponse.Name">
+            <summary>
+            权限名称
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Dto.Response.TreeResponse">
+            <summary>
+            组合组织树状结构
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.TreeResponse.title">
             <summary>
             组织名称
             </summary>
         </member>
-        <member name="P:AuthorityManagementCent.Dto.Response.OranizationTreeResponse.key">
+        <member name="P:AuthorityManagementCent.Dto.Response.TreeResponse.key">
+            <summary>
+            组织Id
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Dto.Response.TreeSelectResponse">
+            <summary>
+            组合组织选择树状结构
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.TreeSelectResponse.value">
             <summary>
             组织Id
             </summary>
@@ -197,6 +340,25 @@
             性别
             </summary>
         </member>
+        <member name="T:AuthorityManagementCent.Managers.JurisdictionManager">
+            <summary>
+            权限管理
+            </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.JurisdictionManager.InsertJurisdiction(AuthorityManagementCent.Dto.Request.PermissionitemRequest)">
+            <summary>
+            添加权限
+            </summary>
+            <param name="permissionitems"></param>
+            <returns></returns>        
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.JurisdictionManager.ListPermissions(AuthorityManagementCent.Dto.Request.SearchPermissiontemRequest)">
+            <summary>
+            查询数据
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
         <member name="T:AuthorityManagementCent.Managers.OranizationManager">
             <summary>
             组织管理
@@ -216,12 +378,19 @@
             <param name="OranizationId">OranizationId</param>
             <returns></returns>
         </member>
+        <member name="M:AuthorityManagementCent.Managers.OranizationManager.CreatSelectTree(System.String)">
+            <summary>
+            创建选择树
+            </summary>
+            <param name="OranizationId"></param>
+            <returns></returns>
+        </member>
         <member name="T:AuthorityManagementCent.Managers.TokenManager">
             <summary>
             登陆信息
             </summary>
         </member>
-        <member name="M:AuthorityManagementCent.Managers.TokenManager.Exiexistence(AuthorityManagementCent.Dto.Request.UsersRequest)">
+        <member name="M:AuthorityManagementCent.Managers.TokenManager.Exiexistence(AuthorityManagementCent.Dto.Request.LoginRequest)">
             <summary>
             用户名是否存在
             </summary>
@@ -233,11 +402,18 @@
             用户管理
             </summary>
         </member>
-        <member name="M:AuthorityManagementCent.Managers.UserManager.GettingUsers(AuthorityManagementCent.Dto.Common.PageConditionSearch)">
+        <member name="M:AuthorityManagementCent.Managers.UserManager.GettingUsers(AuthorityManagementCent.Dto.Request.OranizationUserRequest)">
             <summary>
             获取所有用户信息
             </summary>
             <returns></returns>               
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.UserManager.InsertUserInfo(AuthorityManagementCent.Dto.Request.UserRequest)">
+            <summary>
+            添加员工
+            </summary>
+            <param name="users"></param>
+            <returns></returns>
         </member>
         <member name="T:AuthorityManagementCent.Model.OrganizationExpansions">
             <summary>
@@ -311,12 +487,12 @@
         </member>
         <member name="P:AuthorityManagementCent.Model.Permissionitems.Id">
             <summary>
-            Key
+            权限编号Key
             </summary>
         </member>
         <member name="P:AuthorityManagementCent.Model.Permissionitems.Groups">
             <summary>
-            权限分明名
+            权限分组
             </summary>
         </member>
         <member name="P:AuthorityManagementCent.Model.Permissionitems.IsDeleted">
@@ -394,15 +570,23 @@
             号码
             </summary>
         </member>
-        <member name="P:AuthorityManagementCent.Model.Users.ParentId">
-            <summary>
-            父ID
-            </summary>
-        </member>
         <member name="P:AuthorityManagementCent.Model.Users.Sex">
             <summary>
             性别
             </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IJurisdictionStore.InsertJurisdiction(AuthorityManagementCent.Model.Permissionitems)">
+            <summary>
+            添加权限    
+            </summary>
+            <param name="permissionitems"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IJurisdictionStore.GettingPermissionitems">
+            <summary>
+            查询
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:AuthorityManagementCent.Stores.Interface.IOranizationStore.AddOraniztions(AuthorityManagementCent.Model.Organizations)">
             <summary>
@@ -423,7 +607,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:AuthorityManagementCent.Stores.Interface.ITokenStore.IExiexistence(AuthorityManagementCent.Dto.Request.UsersRequest)">
+        <member name="M:AuthorityManagementCent.Stores.Interface.ITokenStore.IExiexistence(AuthorityManagementCent.Dto.Request.LoginRequest)">
             <summary>
             判断该用户名是否存在
             </summary>
@@ -434,6 +618,26 @@
             <summary>
             获取用户信息
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IUserStore.InsertUser(AuthorityManagementCent.Model.Users)">
+            <summary>
+            添加用户       
+            </summary>
+            <param name="organizations"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.JurisdictionStore.GettingPermissionitems">
+            <summary>
+            查询权限数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.JurisdictionStore.InsertJurisdiction(AuthorityManagementCent.Model.Permissionitems)">
+            <summary>
+            添加权限
+            </summary>
+            <param name="permissionitems"></param>
             <returns></returns>
         </member>
         <member name="M:AuthorityManagementCent.Stores.OranizationStore.AddOraniztions(AuthorityManagementCent.Model.Organizations)">
@@ -460,7 +664,7 @@
             用户信息
             </summary>
         </member>
-        <member name="M:AuthorityManagementCent.Stores.TokenStore.IExiexistence(AuthorityManagementCent.Dto.Request.UsersRequest)">
+        <member name="M:AuthorityManagementCent.Stores.TokenStore.IExiexistence(AuthorityManagementCent.Dto.Request.LoginRequest)">
             <summary>
             判断该用户名是否存在
             </summary>
@@ -471,6 +675,13 @@
             <summary>
             用户信息
             </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.UserStore.InsertUser(AuthorityManagementCent.Model.Users)">
+            <summary>
+            添加用户
+            </summary>
+            <param name="users"></param>
+            <returns></returns>
         </member>
         <member name="M:AuthorityManagementCent.Stores.UserStore.GetUserInformation">
             <summary>

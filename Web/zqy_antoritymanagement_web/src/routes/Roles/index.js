@@ -4,7 +4,7 @@ class Roles extends Component {
 
     render() {
         return (
-            <div>权限管理</div>
+            <div>角色管理</div>
         );
     }
 }

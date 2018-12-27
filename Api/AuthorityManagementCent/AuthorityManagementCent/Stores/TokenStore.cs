@@ -26,7 +26,7 @@ namespace AuthorityManagementCent.Stores
         /// </summary>
         /// <param name="users"></param>
         /// <returns></returns>
-        public async Task<Users> IExiexistence(UsersRequest users)
+        public async Task<Users> IExiexistence(LoginRequest users)
         {  
             return await dbContext.Users.Where(u => u.UserName == users.userName && !u.IsDeleted).FirstOrDefaultAsync();
         }

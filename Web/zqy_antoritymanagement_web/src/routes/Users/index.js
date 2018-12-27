@@ -140,15 +140,16 @@ class Users extends Component {
                             <td style={{ textAlign: "right" }}>用户名：</td>
                             <td><Input style={{ zIndex: "1" }} /></td>
                             <td style={{ textAlign: "right" }}>所属角色：</td>
-                            <td> <Select
-                                showSearch
-                                style={{ width: 200, zIndex: "1" }}
-                                placeholder="Select a person"
-                                optionFilterProp="children"
-                                onChange={handleChange}
-                                onFocus={handleFocus}
-                                onBlur={handleBlur}
-                                filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
+                            <td>
+                                <Select
+                                    showSearch
+                                    style={{ width: 200, zIndex: "1" }}
+                                    placeholder="Select a person"
+                                    optionFilterProp="children"
+                                    onChange={handleChange}
+                                    onFocus={handleFocus}
+                                    onBlur={handleBlur}
+                                    filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
                             >
                                 <Option value="jack">Jack</Option>
                                 <Option value="lucy">Lucy</Option>

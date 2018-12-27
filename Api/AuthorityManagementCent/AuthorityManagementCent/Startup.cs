@@ -41,7 +41,6 @@ namespace AuthorityManagementCent
 
         public IConfiguration Configuration { get; }
         public MapperConfiguration _mapperConfiguration { get; set; }
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -56,12 +55,11 @@ namespace AuthorityManagementCent
                        ValidateLifetime = true,
                        ValidateIssuerSigningKey = true,
                        ValidIssuer = "zqy.com", //发放者
-                        ValidAudience = "pc.com", // 来源
-                        IssuerSigningKey = new SymmetricSecurityKey(
-                           Encoding.UTF8.GetBytes(Configuration["JWT:SecurityKey"]))
+                       ValidAudience = "pc.com", // 来源
+                       IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:SecurityKey"]))
                    };
                });
-            
+
 
             //AutoMapper
             services.AddSingleton<IMapper>(mp=> _mapperConfiguration.CreateMapper());
@@ -74,20 +72,36 @@ namespace AuthorityManagementCent
             Plugin.AddScopeds(services);
 
             //注册Swagger文件
-            services.AddSwaggerGen(c =>
+            services.AddSwaggerGen(options =>
             {
-                c.SwaggerDoc("v1", new Info
+                options.SwaggerDoc("v1", new Info
                 {
                     Version = "v1",
                     Title = "权限管理系统",
                     Description = "用户登陆请求Token/用户管理/组织管理/权限管理/角色管理",
                     TermsOfService = "None",                    
                 });
-                c.IgnoreObsoleteActions();      
+
+                //给Swagger界面新增添加权限界面
+                var security = new Dictionary<string, IEnumerable<string>> { { "Bearer", new string[] { } }, };
+                options.AddSecurityRequirement(security);
+                options.AddSecurityDefinition("Bearer", new ApiKeyScheme
+                {
+                    Description = "Authorization format : Bearer { token }",
+                    //JWt默认的参数名称
+                    Name="Authorzation",
+                    //jwt默认存放Authorization信息的位置（携带在请求头中）
+                    In="header",
+                    Type="apiKey"
+                });
+                options.DocInclusionPredicate((docName, description) => true);
+                options.IgnoreObsoleteActions();      
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                c.IncludeXmlComments(xmlPath);                
+                options.IncludeXmlComments(xmlPath);                
             });
+
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

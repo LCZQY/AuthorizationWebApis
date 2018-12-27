@@ -46,15 +46,10 @@ namespace AuthorityManagementCent.Model
         /// </summary>
         public string PhoneNumber { get; set; }
 
-        /// <summary>
-        /// 父ID
-        /// </summary>
-        public string ParentId { get; set; }
 
         /// <summary>
         /// 性别
         /// </summary>
-
         public bool Sex { get; set; }
     }
 }

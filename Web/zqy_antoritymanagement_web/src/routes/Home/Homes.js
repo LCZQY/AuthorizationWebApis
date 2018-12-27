@@ -3,25 +3,62 @@ import {
     Layout, Menu, Breadcrumb, Icon,
 } from 'antd';
 
-// import Users from '../Users/';
+import Users from '../Users/';
 import Oranizations from '../Oranizations/';
-
+import Permissionitems from '../Permissionitems/';
+import Roles from '../Roles';
 const {
     Header, Content, Footer, Sider,
 } = Layout;
 
 
- 
-export  default class Homes extends Component {
-    state = {
-        collapsed: false,
-    };
 
+export default class Homes extends Component {
+
+    constructor(){
+        super();
+        this.state = {
+            collapsed: false,
+            content : ""  ,
+            title : ""
+        };
+    
+    }   
     onCollapse = (collapsed) => {
         console.log(collapsed);
         this.setState({ collapsed });
     }
 
+    MenuClick = ({ item, key, keyPath }) => {
+        switch (key) {
+            case "1":
+                this.setState({
+                    content: <Users />,
+                    title:"用户管理"
+                })
+                break;
+            case "2":
+                this.setState({
+                    content: <Roles />,
+                    title:"角色管理"
+                })
+                break;
+            case "3":
+                this.setState({
+                    content: <Permissionitems />,
+                    title:"权限管理"
+                })
+                break;
+            case "4":
+                this.setState({
+                    content: <Oranizations />,
+                    title:"组织管理"
+                })
+                break;
+            default:
+                break
+        }        
+    }
     render() {
         return (
             <Layout style={{ minHeight: '100vh' }}>
@@ -31,7 +68,7 @@ export  default class Homes extends Component {
                     onCollapse={this.onCollapse}
                 >
                     <div className="logo" />
-                    <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
+                    <Menu onClick={this.MenuClick} theme="dark" defaultSelectedKeys={['1']} mode="inline">
                         <Menu.Item key="1">
                             <Icon type="pie-chart" />
                             <span>用户管理</span>
@@ -39,31 +76,26 @@ export  default class Homes extends Component {
                         <Menu.Item key="2">
                             <Icon type="desktop" />
                             <span>角色管理</span>
-                        </Menu.Item>                        
+                        </Menu.Item>
                         <Menu.Item key="3">
                             <Icon type="pie-chart" />
                             <span>权限管理</span>
-                        </Menu.Item>
-                        <Menu.Item key="4">
+                       </Menu.Item>
+                        <Menu.Item key="4" >
                             <Icon type="desktop" />
                             <span>组织管理</span>
-                        </Menu.Item>                       
+                        </Menu.Item>
                     </Menu>
                 </Sider>
                 <Layout>
-                    <Header style={{ background: '#fff', padding: 0 }} />
-                    <Content style={{ margin: '0 16px' }}>
-                        <Breadcrumb style={{ margin: '16px 0' }}>
-                            <Breadcrumb.Item>User</Breadcrumb.Item>
-                            <Breadcrumb.Item>Bill</Breadcrumb.Item>
-                        </Breadcrumb>
-                        <div style={{ padding: 24, background: '#fff', minHeight: 600 }}>
-                            <Oranizations />
-                       </div>
+                    <Header style={{ background: 'rgb(236,236,236)', paddingLeft: "1%", textAlign: "left" }} >                                  <h2> {this.state.title}</h2>
+                    </Header>
+                    <Content style={{ margin: '0 16px' }}>                      
+                        { this.state.content}                                                
                     </Content>
                     <Footer style={{ textAlign: 'center' }}>
-                        Ant Design ©2018 Created by Ant UED
-            </Footer>
+                        &copy;郑强勇2018
+                  </Footer>
                 </Layout>
             </Layout>
         );

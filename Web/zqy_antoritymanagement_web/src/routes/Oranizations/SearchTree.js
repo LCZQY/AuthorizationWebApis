@@ -1,71 +1,76 @@
 import React, { Component } from 'react';
 import { Tree } from 'antd';
-import {  messageWarn,  httpPost } from '../../utils/public';
+import { messageWarn, httpPost } from '../../utils/public';
 const TreeNode = Tree.TreeNode;
 
-const dataList = [];
-const generateList = (data) => {
-    for (let i = 0; i < data.length; i++) {
-        const node = data[i];
-        const key = node.key;
-        dataList.push({ key, title: node.title });
-        if (node.children) {
-            generateList(node.children);
-        }
-    }
-};
-
-/*对于异步加载的子节点使用该key进行自增赋值*/
+/**组植树造 对于异步加载的子节点使用该key进行自增赋值*/
 class SearchTree extends Component {
 
-    
     state = {
         expandedKeys: ['1'],
         searchValue: '',
         autoExpandParent: true,
         gData: [],
+        OranizationsId: ""
     };
-    
+
     //初始化树状结构
-    componentDidMount(){
-         this.Initialization("0"); 
+    componentDidMount() {
+        this.Initialization("0");
     }
 
     //请求后台数据
-    Initialization =(id) =>
-    {
-        let _url = '/api/Oranizations/createTreeStructure/'+id;         
+    Initialization = (id) => {
+        let _url = '/api/Oranizations/createTreeStructure/' + id;
+
         //所有的方法都要以 =>{} 表示 ！
-        httpPost(_url,null).then(data =>{
-            switch (data["code"]) {
-                case "0":
-                    console.log(data.extension,"初始化树状结构是！");
-                    this.setState({
-                        gData: data.extension
-                    })
-                    break;
-                default:
-                    messageWarn(data["message"]);
-                    break;
+        httpPost(_url, null).then(data => {
+            if (data.code != "0") {
+                messageWarn(data["message"]);
+                return;
             }
-        });                               
+            console.log(data.extension, "初始化树状结构是！");
+            this.setState({
+                gData: data.extension
+            })
+        });
     }
 
+    /**点击树节点 */
+    onSelect = (selectedKeys, {selected: bool, selectedNodes, node, event}) => {
+        this.props.ButtonFun(false);
+        //?????????? 点击2次就获取不到该 id
+        console.log(selectedKeys,selectedNodes[0].props.dataRef.title, "父Id");
+        var pages = {
+            "pageIndex": 0,
+            "pageSize": 10,
+            "oranizationId": selectedKeys[0]
+        }
 
-    onSelect = (selectedKeys, info) => {
-        /*用于打开该节点的详细信息*/
-        console.log('selected', selectedKeys, info);
-        console.log(this.state.expandedKeys, "点击点击。.......");
+        //获取用户信息
+        let url = "/api/User/getUsersMessages";
+        httpPost(url, pages).then(data => {
+            if (data.code != 0) {
+                messageWarn(data.message);
+                return;
+            }
+            console.log(data.extension, "返回的用户信息是");
+            this.props.OangizChange(data.extension);
+            var treeNodes ={
+                key:selectedKeys[0],
+                value: selectedNodes[0].props.dataRef.title
+            }
+            this.props.getMsg(treeNodes);
+        })
     };
 
     onExpand = (expandedKeys) => {
-        console.log(expandedKeys,"扩展.........");    
+        console.log(expandedKeys, "扩展.........");
         this.setState({
             expandedKeys,
-            autoExpandParent: false,         
+            autoExpandParent: false,
         });
     };
-
 
     loop = data => data.map((item) => {
         let { searchValue } = this.state;
@@ -89,24 +94,25 @@ class SearchTree extends Component {
         return <TreeNode dataRef={item} key={item.key} title={title} />;
     });
 
-    onLoadData = (treeNode) => {
-        let _url = '/api/Oranizations/createTreeStructure/'+treeNode.props.dataRef.key; 
-        console.log(_url, "加载数据中.......");            
-        let childrenArry = [];          
-        httpPost(_url,treeNode.props.dataRef).then(data=>{
+    onLoadData = (treeNode) => {     
+        let _url = '/api/Oranizations/createTreeStructure/' + treeNode.props.dataRef.key;
+        console.log(_url, "加载数据中.......");
+        let childrenArry = [];
+        httpPost(_url, treeNode.props.dataRef).then(data => {
             switch (data["code"]) {
                 case "0":
-                    console.log(data.extension,"二级菜单");
-                    childrenArry  = data.extension;
+                    console.log(data.extension, "二级菜单");
+                    childrenArry = data.extension;
                     break;
                 default:
                     messageWarn(data["message"]);
                     break;
             }
-        });          
+        });
+
         return new Promise((resolve) => {
             //如果没有children节点就记载新的数据
-            if (treeNode.props.children) { 
+            if (treeNode.props.children) {
                 resolve();
                 return;
             }
@@ -122,10 +128,10 @@ class SearchTree extends Component {
 
     render() {
         const { expandedKeys, autoExpandParent, gData } = this.state;
-        // 进行数组扁平化处理
-        generateList(gData);
-        return ( 
-                <Tree 
+        return (
+            <div>
+                <tablecointe />
+                <Tree
                     onSelect={this.onSelect}
                     onExpand={this.onExpand}
                     expandedKeys={expandedKeys}
@@ -133,7 +139,8 @@ class SearchTree extends Component {
                     loadData={this.onLoadData}
                 >
                     {this.loop(gData)}
-                </Tree>      
+                </Tree>
+            </div>
         );
     }
 }

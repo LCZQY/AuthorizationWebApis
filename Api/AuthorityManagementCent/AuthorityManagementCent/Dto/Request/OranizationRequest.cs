@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AuthorityManagementCent.Dto.Common;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -6,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace AuthorityManagementCent.Dto.Request
 {
+    /// <summary>
+    /// 添加组织
+    /// </summary>
     public class OranizationRequest
     {
         /// <summary>
@@ -16,12 +20,23 @@ namespace AuthorityManagementCent.Dto.Request
         /// <summary>
         /// 号码
         /// </summary>
-        [Phone(ErrorMessage ="请输入正确的手机号码")]
+        [Phone(ErrorMessage = "请输入正确的手机号码")]
         public string Phone { get; set; }
 
         /// <summary>
         /// 父级Id
         /// </summary>
         public string ParentId { get; set; }
+    }
+
+    /// <summary>
+    /// 查询组织下的Id
+    /// </summary>
+    public class OranizationUserRequest: PageConditionSearch
+    {
+        /// <summary>
+        /// 组织ID
+        /// </summary>
+        public string OranizationId { get; set; }
     }
 }

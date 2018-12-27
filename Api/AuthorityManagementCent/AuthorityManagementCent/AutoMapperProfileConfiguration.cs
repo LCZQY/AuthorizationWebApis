@@ -9,6 +9,7 @@ using AuthorityManagementCent.Dto.Request;
 
 namespace AuthorityManagementCent
 {
+
     public class AutoMapperProfileConfiguration : Profile
     {
         public AutoMapperProfileConfiguration()
@@ -16,10 +17,16 @@ namespace AuthorityManagementCent
             //用户
             CreateMap<UsersResponse,Users>();
             CreateMap<Users, UsersResponse>();
+            CreateMap<UserRequest, Users>();
+            CreateMap<Users,UserRequest>();
 
             //组织
             CreateMap<OranizationRequest, Organizations>();
             CreateMap<Organizations, OranizationRequest>();
+
+            //权限
+            CreateMap<PermissionitemRequest, Permissionitems>();
+            CreateMap<Permissionitems, PermissionitemRequest >();
 
         }       
     }

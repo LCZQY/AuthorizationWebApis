@@ -24,12 +24,29 @@ namespace AuthorityManagementCent.Stores
 
 
         /// <summary>
+        /// 添加用户
+        /// </summary>
+        /// <param name="users"></param>
+        /// <returns></returns>
+        public async Task<Users> InsertUser(Users users)
+        {
+            if (users == null)
+            {
+                throw new Exception(nameof(users));
+            }
+            dbContext.Users.Add(users);
+            await dbContext.SaveChangesAsync();
+            return users;
+        }
+
+
+        /// <summary>
         /// 获取所有用户信息
         /// </summary>
         /// <returns></returns>
         public IQueryable<Users> GetUserInformation()
         {
-            return dbContext.Users.AsNoTracking();
+            return dbContext.Users.AsNoTracking().Where(u=>!u.IsDeleted);
         }
     }
 }

@@ -42,6 +42,7 @@ namespace AuthorityManagementCent.Managers
                 newOranization.OrganizationName = newOranization.OrganizationName;
                 newOranization.Phone = newOranization.Phone;
                 newOranization.ParentId = newOranization.ParentId;
+                newOranization.CreateTime = DateTime.Now;
                 await _IOranizationStore.AddOraniztions(newOranization);
             }
             catch (Exception el)
@@ -56,12 +57,12 @@ namespace AuthorityManagementCent.Managers
         /// </summary>
         /// <param name="OranizationId">OranizationId</param>
         /// <returns></returns>
-        public async Task<ResponseMessage<List<OranizationTreeResponse>>> CreatOranizationTree(string OranizationId)
+        public async Task<ResponseMessage<List<TreeResponse>>> CreatOranizationTree(string OranizationId)
         {
-            var response = new ResponseMessage<List<OranizationTreeResponse>>();
+            var response = new ResponseMessage<List<TreeResponse>>();
             try
             {
-                response.Extension = await _IOranizationStore.GettingOraniztions().AsNoTracking().Where(u => u.ParentId == OranizationId).Select(p => new OranizationTreeResponse
+                response.Extension = await _IOranizationStore.GettingOraniztions().AsNoTracking().Where(u => u.ParentId == OranizationId).Select(p => new TreeResponse
                 {
                     title = p.OrganizationName,
                     key = p.Id,
@@ -74,6 +75,29 @@ namespace AuthorityManagementCent.Managers
             return response;
         }
 
+        /// <summary>
+        /// 创建选择树
+        /// </summary>
+        /// <param name="OranizationId"></param>
+        /// <returns></returns>
+        public async Task<ResponseMessage<List<TreeSelectResponse>>> CreatSelectTree(string OranizationId)
+        {
+            var response = new ResponseMessage<List<TreeSelectResponse>>();
+            try
+            {
+                response.Extension = await _IOranizationStore.GettingOraniztions().AsNoTracking().Where(u => u.ParentId == OranizationId).Select(p => new TreeSelectResponse
+                {
+                    title = p.OrganizationName,
+                    key = p.ParentId,
+                    value = p.Id
+                }).ToListAsync();
+            }
+            catch (Exception el)
+            {
+                throw new Exception(nameof(el));
+            }
+            return response;
+        }
 
     }
 }

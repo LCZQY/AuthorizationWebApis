@@ -49,5 +49,10 @@ namespace AuthorityManagementCent.Dto.Common
         /// 500-服务器错误 
         /// </summary>
         public static readonly string ServiceError = "500";
+
+        /// <summary>
+        /// 默认密码
+        /// </summary>
+        public static readonly string PasswordHash = "123456";
     }
 }

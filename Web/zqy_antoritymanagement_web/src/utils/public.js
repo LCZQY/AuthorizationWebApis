@@ -4,7 +4,13 @@ import {message} from 'antd';
 export const isPhoneNumber = (phoneNumber) => {
     const reg = /^0?(13[0-9]|15[012356789]|17[013678]|18[0-9]|14[57])[0-9]{8}$/;
     return reg.test(phoneNumber);
-};    
+};
+
+
+/**成功消息提示 */
+export const messageSuccess = (content) => {
+    message.success(content);
+};
 
 /** 错误消息提示 */
 export const messageError= (content) =>{
@@ -17,7 +23,7 @@ export const messageWarn = (content) =>{
 }
 
 /** 服务端地址 */
-export const $Url="http://localhost:5002";//需要设置成ip地址，不能设置成localhost????
+export const $Url="http://192.168.100.120:5002";
 
 
 /**GET Fetch 请求*/

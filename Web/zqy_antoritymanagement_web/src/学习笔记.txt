@@ -14,7 +14,7 @@ export class Son extends Component {
             ]
         }
     }
-
+    
     //删除方法
     del = (key) =>{
         let {list} = this.state;
@@ -28,11 +28,9 @@ export class Son extends Component {
         //获取输入框的值
         let newValue =  this.refs.inp.value;
         console.log(newValue,"newValue");        
-
         this.setState({
             list: [...list,newValue] //表示在最后一个元素，添加一个元素
         })
-
     }
     render() {
         let {num, changeNum} = this.props; //获取父级传递的参数
@@ -63,8 +61,5 @@ export class Son extends Component {
     changeNum = { this.changeNum}
 />
 
-
-
-
-
 >>页面生命周期： https://www.jianshu.com/p/c9bc994933d5
+>> 打包：npm run build

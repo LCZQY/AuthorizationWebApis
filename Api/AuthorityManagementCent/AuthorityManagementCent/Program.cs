@@ -16,9 +16,12 @@ namespace AuthorityManagementCent
         public static void Main(string[] args)
         {
             NLog.Web.NLogBuilder.ConfigureNLog("nlog.config");
-            CreateWebHostBuilder(args).Build().Run();
+            //约定访问地址
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>()
+                .UseUrls($"http://*:{5002}")
+                .Build().Run();                     
         }
-
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                     .UseStartup<Startup>()

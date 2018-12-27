@@ -10,16 +10,16 @@ namespace AuthorityManagementCent.Model
     /// <summary>
     /// 权限
     /// </summary>
-    public class Permissionitems : TraceUpdateBase
+    public class Permissionitems
     {
         /// <summary>
-        /// Key
+        /// 权限编号Key
         /// </summary>
         [Key]
-        public Guid Id { get; set; }
+        public string Id { get; set; }
 
         /// <summary>
-        /// 权限分明名
+        /// 权限分组
         /// </summary>
         public string Groups { get; set; }
 

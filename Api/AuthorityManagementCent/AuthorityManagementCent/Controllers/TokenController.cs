@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AuthorityManagementCent.Dto.Common;
 using AuthorityManagementCent.Managers;
-
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace AuthorityManagementCent.Controllers
 {
@@ -34,7 +35,7 @@ namespace AuthorityManagementCent.Controllers
         /// <param name="users"></param>
         /// <returns></returns>
         [HttpPost("token")]
-        public async Task<ResponseMessage<string>> Tokens([FromBody]UsersRequest users)
+        public async Task<ResponseMessage<string>> Tokens([FromBody]LoginRequest users)
         {
             _Logger.LogInformation($"{users.userName}获取Token中。");
             var response = new ResponseMessage<string>();
@@ -55,6 +56,14 @@ namespace AuthorityManagementCent.Controllers
                 response.Message = "请求Token时报错。";
             }
             return response;
+        }
+
+        [Authorize]
+        [HttpGet("get")]
+        public ActionResult get()
+        {
+            var claimsIdentity = User.Identity as ClaimsIdentity;
+            return Ok();
         }
     }
 }

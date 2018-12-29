@@ -7,6 +7,8 @@ using AuthorityManagementCent.Dto.Common;
 using AuthorityManagementCent.Managers;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
+using System.Linq;
+using AuthorityManagementCent.Filters;
 
 namespace AuthorityManagementCent.Controllers
 {
@@ -58,12 +60,27 @@ namespace AuthorityManagementCent.Controllers
             return response;
         }
 
-        [Authorize]
-        [HttpGet("get")]
+        [HttpPost("get")]
+        [JwtTokenAuthorize]
         public ActionResult get()
         {
-            var claimsIdentity = User.Identity as ClaimsIdentity;
-            return Ok();
+            var UseInfo = DataBaseUser.TokenModel;
+            if (UseInfo == null)
+            {
+                return BadRequest("请登录！");
+            }
+            else
+            {
+                return Ok(UseInfo);
+            }
+        }
+
+        [HttpPost("outLogin")]
+        public ActionResult outLogin()
+        {
+            return BadRequest("请登陆");
         }
     }
+
+
 }

@@ -23,8 +23,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using AutoMapper;
-
-
+using AuthorityManagementCent.Dto.Common;
+using AuthorityManagementCent.Filters;
 
 namespace AuthorityManagementCent
 {
@@ -38,27 +38,43 @@ namespace AuthorityManagementCent
                 cfg.AddProfile(new AutoMapperProfileConfiguration());
             });
         }
-
+        //推送是否成功了呢
         public IConfiguration Configuration { get; }
         public MapperConfiguration _mapperConfiguration { get; set; }
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             //配置Token
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-               .AddJwtBearer(options =>
-               {
-                   options.TokenValidationParameters = new TokenValidationParameters
-                   {
-                       ValidateIssuer = true,
-                       ValidateAudience = true,
-                       ValidateLifetime = true,
-                       ValidateIssuerSigningKey = true,
-                       ValidIssuer = "zqy.com", //发放者
-                       ValidAudience = "pc.com", // 来源
-                       IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:SecurityKey"]))
-                   };
-               });
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
+            }).AddJwtBearer(o =>
+            {
+                o.Events = new JwtBearerEvents()
+                {
+                    //默认是通过Http的Authorization头来获取的
+                    OnMessageReceived = context =>
+                    {
+                        context.Token = context.Request.Query["access_token"];
+                        return Task.CompletedTask;
+                    }
+                };
+                o.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true, //是否验证Issuer
+                    ValidateAudience = true, //是否验证Adience
+                    ValidateLifetime = true, //是否验证失效时间
+                    ValidateIssuerSigningKey = true, //是否验证SigningKey
+                    ValidIssuer = "ZQY", //发放者
+                    ValidAudience = "PC", // 来源(那个端)
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ABCDEFGHIJKLMNOPQRSTUVWXYZ1456789513"))
+                }; 
+            });
+
+
+
 
 
             //AutoMapper
@@ -101,8 +117,9 @@ namespace AuthorityManagementCent
                 options.IncludeXmlComments(xmlPath);                
             });
 
-
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc(options => {
+                options.Filters.Add<JwtTokenAuthorize>();
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -116,9 +133,14 @@ namespace AuthorityManagementCent
             {
                 app.UseHsts();
             }
-
+            
+            
             //启动权限验证
             app.UseAuthentication();
+            
+            //启用自定义权限验证
+            //app.UseMiddleware<JwtTokenAuth>();
+
             //启动Swagger
             app.UseSwagger();
             app.UseSwaggerUI(c =>
@@ -132,6 +154,7 @@ namespace AuthorityManagementCent
                 .AllowAnyHeader()
                 .AllowCredentials());
             app.UseHttpsRedirection();
+            
             app.UseMvc();
         }
     }

@@ -27,61 +27,67 @@ export const $Url="http://192.168.100.120:5002";
 
 
 /**GET Fetch 请求*/
-export function httpGet(uri) {
+export async function httpGet(uri, params, token) {
     uri = $Url + uri;
     let init = {
         method: 'GET',
         credentials: 'include',
         headers: {
             'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        }
+            'Content-Type': 'application/json',
+            'Authorization': token
+        },
+        body: JSON.stringify(params)
     };
-    return new Promise(function (resolve, reject) {
-        fetch(uri, init)
-            .then(response => response.json())
-            .then(data => {        
-                resolve(data);       
-                // if (data.status === 0) {
-                //     resolve(data);
-                // } else {
-                //     processError(data);
-                // }
-            }).catch(function (ex) {
-                reject(ex);
-                messageError("请求数据错误，请重试"+ex);
-            });
+
+    return new Promise(function(resolve, reject) {
+        try {
+            fetch(uri, init)
+                .then(response => response.json())
+                .then(data => {
+                    resolve(data);
+                })
+                .catch(function (ex) {
+                    reject(ex);
+                    messageError("请求数据错误，请重试");
+                });                
+        } catch (e) {
+            messageError("请求数据错误，请重试");
+            console.log(e, "请求：" + uri + "出现异常.")
+        }
     });
 }
 
 /**Post Fetch 请求 */
-export  async  function httpPost(uri, params) {
+export async function httpPost(uri, params, token) {
     uri = $Url + uri;
     let init = {
         method: 'POST',
         credentials: 'include',
         headers: {
             'Accept': 'application/json',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Authorization': token
         },
         body: JSON.stringify(params)
     };
-
     return new Promise(function (resolve, reject) {
+        
+        try {
+            fetch(uri, init)
+                .then(response => response.json())
+                .then(data => {
+                    resolve(data);
+                })
+                .catch(function (ex) {
+                    reject(ex);
+                    messageError("请求数据错误，请重试");
+                });
 
-        fetch(uri, init)
-            .then(response => response.json())
-            .then(data => {
-                resolve(data);
-                // if (data.code === 0) {
-                //     resolve(data);
-                // } else {
-                //    messageError(data["message"]);
-                // }
-            }).catch(function (ex) {
-                reject(ex);
-                messageError("请求数据错误，请重试");
-            });
+        } catch (e) {
+            messageError("请求数据错误，请重试");
+            console.log(e, "请求：" + uri + "出现异常.")
+        }
     });
 }
- 
+

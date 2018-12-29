@@ -14,7 +14,7 @@ export class Son extends Component {
             ]
         }
     }
-    
+
     //删除方法
     del = (key) =>{
         let {list} = this.state;
@@ -60,6 +60,6 @@ export class Son extends Component {
     num={this.state.num}
     changeNum = { this.changeNum}
 />
-
 >>页面生命周期： https://www.jianshu.com/p/c9bc994933d5
 >> 打包：npm run build
+>>

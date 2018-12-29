@@ -11,8 +11,6 @@ const {
     Header, Content, Footer, Sider,
 } = Layout;
 
-
-
 export default class Homes extends Component {
 
     constructor(){
@@ -20,10 +18,17 @@ export default class Homes extends Component {
         this.state = {
             collapsed: false,
             content : ""  ,
-            title : ""
-        };
-    
+            title : "",
+            token:""
+        };    
     }   
+
+    /**每次访问Home页面就检查该Token值是否存在，如果不存在就跳回从新登陆 ??*/
+    componentDidMount()
+    {
+
+    }
+
     onCollapse = (collapsed) => {
         console.log(collapsed);
         this.setState({ collapsed });

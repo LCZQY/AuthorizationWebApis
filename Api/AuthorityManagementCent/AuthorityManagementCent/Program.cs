@@ -27,8 +27,8 @@ namespace AuthorityManagementCent
                     .UseStartup<Startup>()
                     .ConfigureLogging(logging =>
                     {
-                        logging.ClearProviders(); ///移除已经注册的其他日志处理程序
-                        logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace); ////设置最小的日志级别
+                        logging.ClearProviders(); //移除已经注册的其他日志处理程序
+                        logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace); //设置最小的日志级别
                     })
                     .UseNLog();
     }

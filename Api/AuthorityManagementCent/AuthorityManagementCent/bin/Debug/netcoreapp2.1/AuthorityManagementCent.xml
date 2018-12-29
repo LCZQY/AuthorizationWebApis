@@ -80,6 +80,18 @@
             <param name="userRequest">基本信息</param>
             <returns></returns>
         </member>
+        <member name="T:AuthorityManagementCent.Dto.Common.JwtHelpers">
+            <summary>
+            JWY的生成和解析
+            </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Dto.Common.JwtHelpers.IssueJWT(AuthorityManagementCent.Dto.Common.TokenModel)">
+            <summary>
+            发放Token
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
         <member name="T:AuthorityManagementCent.Dto.Common.PageConditionSearch">
             <summary>
             分页基础类
@@ -148,6 +160,41 @@
         <member name="T:AuthorityManagementCent.Dto.Common.ResponseMessage">
             <summary>
             返回实体
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Dto.Common.TokenModel">
+            <summary>
+            Token请求数据
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Common.TokenModel.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Common.TokenModel.OrganizationId">
+            <summary>
+            组织Id
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Common.TokenModel.RoleName">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Common.TokenModel.TrueName">
+            <summary>
+            真实用户名
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Common.TokenModel.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Dto.Common.DataBaseUser">
+            <summary>
+            储存登陆信息
             </summary>
         </member>
         <member name="P:AuthorityManagementCent.Dto.Request.LoginRequest.userName">
@@ -339,6 +386,14 @@
             <summary>
             性别
             </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Filters.JwtTokenAuthorize.LeavCheckPermissionImpl.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+            在执行该方法之前执行// 解析Token 此处只是该静态类赋值并不是调用的过滤器中的方法给接口实体赋值，后期需要优化 ??
+            </summary>
+            <param name="context"></param>
+            <param name="next"></param>
+            <returns></returns>
         </member>
         <member name="T:AuthorityManagementCent.Managers.JurisdictionManager">
             <summary>

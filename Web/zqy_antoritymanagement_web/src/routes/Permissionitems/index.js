@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Table, Button, Icon, Select, Alert } from 'antd';
 import {CollectionCreateForm} from './ModalFrom';
-import { httpPost, messageWarn, messageSuccess } from '../../utils/public';
+import { httpPost, messageWarn, messageSuccess, httpGet } from '../../utils/public';
 import {TablePermission} from './table';
 
 
@@ -107,9 +107,19 @@ class Permissionitems extends Component {
     handleCancel = () => {
         this.setState({ visible: false });
     } 
+//Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxIiwiMSJdLCJqdGkiOiIwNmQ2NmY5OC0yMGMwLTQ2NjEtOWEzOC05ZWJmNjFjNTM0YmMiLCJpYXQiOjE1NDU5ODA1NTEsInJvbGUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiLpg5HlvLrli4ciLCJPcmdhbml6YXRpb24iOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiN2MwY2NlNjktYzc0Ni00YWU4LTkyYzktNWQ0ZDhiYmQ2MTE4IiwibmJmIjoxNTQ1OTgwNTUxLCJleHAiOjE1NDYwNjY5NTEsImlzcyI6IlpRWSIsImF1ZCI6IlBDIn0.OjvqU86I3H02UCqRsiZcEpbHWVGtqdLDn1ATWlCXCEk
+
+    del =() =>{
+        alert("方法请求中...");
+        let url = "/api/Token/get";
+        httpPost(url,null,null).then(data=>{
+                console.log(data,"携带Token是否成功~~");
+        });
+    }
    
     /**添加权限 */
     handleCreate = () => {        
+       
         const form = this.formRef.props.form;
         form.validateFields((err, values) => {
             if (err) {
@@ -145,7 +155,7 @@ class Permissionitems extends Component {
                             onCreate={this.handleCreate}
                             info={this.props.GuidAndName}
                     />
-                    <Button style={{ marginRight: "1%" }} type="primary" shape="circle" size="default">
+                    <Button style={{ marginRight: "1%" }} type="primary" onClick={()=>{ this.del()}} shape="circle" size="default">
                         <Icon type="delete" />
                     </Button>
                 </div>

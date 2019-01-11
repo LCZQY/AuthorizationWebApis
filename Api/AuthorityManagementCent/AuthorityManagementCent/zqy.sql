@@ -11,7 +11,7 @@
  Target Server Version : 50723
  File Encoding         : 65001
 
- Date: 11/01/2019 16:57:08
+ Date: 11/01/2019 17:37:13
 */
 
 SET NAMES utf8mb4;
@@ -117,6 +117,7 @@ CREATE TABLE `identityuser`  (
 -- ----------------------------
 INSERT INTO `identityuser` VALUES ('0', '0', '4cba486f-a98e-4d95-8746-551304bbae03', '张三', '1', '1', 1, '1', '1', '1', b'1', b'0', b'1', '2018-12-14 13:56:25.000000', '1', '1', '1', '13167874692', b'1', '1', b'1', '1', '1', '2018-12-25 15:31:36', '1', '2018-12-25 15:31:36', '1', '1', b'1', '2536156085', '1', '1', b'1', '1');
 INSERT INTO `identityuser` VALUES (NULL, '1', '1', '李四', NULL, '2', 1, '1', '1', '1', b'1', b'0', b'1', NULL, '2', '2', '2', '18755554820', b'1', '2', b'1', '2', '2', '2018-12-19 20:58:37', '1', '2018-12-19 20:58:37', '1', '1', b'1', '2536156085', '1', '1', b'1', '1');
+INSERT INTO `identityuser` VALUES (NULL, NULL, 'd132fcd8-5d44-46f1-a1d6-deee3983218c', '张饥饿', NULL, '65d534cc-af6a-439d-821c-9e4bbf03014e', NULL, NULL, NULL, NULL, NULL, b'0', NULL, NULL, NULL, NULL, '123456', '15167874692', NULL, NULL, NULL, 'er', NULL, NULL, NULL, '2019-01-11 17:00:13', NULL, NULL, b'1', NULL, NULL, NULL, b'0', NULL);
 INSERT INTO `identityuser` VALUES (NULL, NULL, '0', '郑强勇', NULL, 'ab2c7f05-9b75-4016-b982-42db3099ea07', NULL, NULL, NULL, NULL, NULL, b'0', NULL, NULL, NULL, NULL, '123456', '13167874692', NULL, NULL, NULL, 'zqy', NULL, NULL, NULL, '2018-12-26 11:14:16', NULL, NULL, b'1', NULL, NULL, NULL, b'1', NULL);
 INSERT INTO `identityuser` VALUES (NULL, NULL, '1', '郑强勇', NULL, 'ccc0d570-0901-47c6-8e6e-380e8668246e', NULL, NULL, NULL, NULL, NULL, b'0', NULL, NULL, NULL, NULL, '123456', '13167874692', NULL, NULL, NULL, 'zqy', NULL, NULL, NULL, '2018-12-26 11:15:49', NULL, NULL, b'1', NULL, NULL, NULL, b'1', NULL);
 
@@ -484,5 +485,16 @@ INSERT INTO `rolepermissions` VALUES ('744ef098-794c-4c94-b3e6-71b3220b5de6', 'Q
 INSERT INTO `rolepermissions` VALUES ('744ef098-794c-4c94-b3e6-71b3220b5de6', 'Query', 'bda28aeb-8403-4a6d-af3e-5a1b88bfdbb1');
 INSERT INTO `rolepermissions` VALUES ('744ef098-794c-4c94-b3e6-71b3220b5de6', 'Query', 'd132fcd8-5d44-46f1-a1d6-deee3983218c');
 INSERT INTO `rolepermissions` VALUES ('744ef098-794c-4c94-b3e6-71b3220b5de6', 'Query', 'd6d9ae8e-2f74-4053-9888-affafd11dffb');
+
+-- ----------------------------
+-- Table structure for userrole
+-- ----------------------------
+DROP TABLE IF EXISTS `userrole`;
+CREATE TABLE `userrole`  (
+  `UserId` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `RoleId` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `IsDeleted` bit(1) NULL DEFAULT NULL,
+  PRIMARY KEY (`UserId`, `RoleId`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 SET FOREIGN_KEY_CHECKS = 1;

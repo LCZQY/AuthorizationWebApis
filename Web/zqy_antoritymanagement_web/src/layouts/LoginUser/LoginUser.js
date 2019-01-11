@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'antd';
+import { Row, Col, Affix } from 'antd';
 //一个变量不用括号标识
 import LoginFrom from '../../components/Form/LoginForm';
 
@@ -9,17 +9,18 @@ export default class LoginUser extends Component {
         return (
             <div id="login">
                 {
-                    /* <header>
-                    <Row>
-                        <Col span={24}>
-                            <Col span={2}><h2>权限管理系统</h2></Col>
-                            <Col span={12}><h2>权限管理系统</h2></Col>
-                        </Col>
-                    </Row>
-                </header> */
+                    <header>
+                        <Row>
+                            <Col span={24}>
+                                <Affix>
+                                    
+                                </Affix>
+                            </Col>
+                        </Row>
+                    </header>
                 }
                 <Row>
-                    <Col span={12} push={6}  >
+                    <Col span={6} push={9}  >
                         <h2>权限管理系统</h2>
                         <LoginFrom />
                     </Col>

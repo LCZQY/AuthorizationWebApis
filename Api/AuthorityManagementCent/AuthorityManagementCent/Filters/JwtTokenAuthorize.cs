@@ -20,9 +20,9 @@ namespace AuthorityManagementCent.Filters
 
         private class LeavCheckPermissionImpl : IAsyncActionFilter
         {
-
             /// <summary>
-            /// 在执行该方法之前执行// 解析Token 此处只是该静态类赋值并不是调用的过滤器中的方法给接口实体赋值，后期需要优化 ??
+            /// 在执行该方法之前执行
+            /// 解析Token 此处只是该静态类赋值并不是调用的过滤器中的方法给接口实体赋值，后期需要优化 ??
             /// </summary>
             /// <param name="context"></param>
             /// <param name="next"></param>
@@ -33,13 +33,13 @@ namespace AuthorityManagementCent.Filters
                 //获取到当前用户名
                 string uses = identity.Identity.Name;
                 if (uses == null)
-                {
-                    //如何直接在这个管道中跳出呢？ 
-                    context.Result = new ContentResult()
+                {                       
+                    var result = new ResponseMessage()
                     {
-                        Content = "请登陆",
-                        StatusCode = 403,
+                        Code =  ResponseCodeDefines.ArgumentError,
+                        Message = "请登陆，或重新登陆."
                     };
+                    context.Result = new ObjectResult(result);
                     return;
                 }
                 else

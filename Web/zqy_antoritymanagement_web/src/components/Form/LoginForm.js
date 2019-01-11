@@ -10,10 +10,12 @@ function hasErrors(fieldsError) {
 }
 
 class LoginForm extends Component {
+
     constructor(props) { //构造函数
         super(props);      
         this.props.form.validateFields();
     }
+
     handleSubmit = e => {
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
@@ -24,7 +26,8 @@ class LoginForm extends Component {
                     console.log(data, "登陆日志");
                     switch (data["code"]) {
                         case "0":
-                            window.location.href = "#/home?returnurl=" + data["extension"] + "";
+                            window.location.href = "#/home?returnurl=";
+                            localStorage.setItem('id_token', "Bearer "+data["extension"]);
                             break;
                         default:
                             messageWarn(data["message"] || data["userName"]);
@@ -65,6 +68,7 @@ class LoginForm extends Component {
                         htmlType="submit"
                         className="login-form-button"
                         size="large"
+                        style={{ width:"100%", textAlign:"center"}}
                         disabled={hasErrors(getFieldsError())}>登陆</Button>
                 </FormItem>
             </Form>

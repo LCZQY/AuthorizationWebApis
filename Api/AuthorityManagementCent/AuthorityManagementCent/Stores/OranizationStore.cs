@@ -52,5 +52,6 @@ namespace AuthorityManagementCent.Stores
         {
             return dbContext.OrganizationExpansions.AsNoTracking();
         }
+
     }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-    Layout, Menu, Breadcrumb, Icon,
+    Layout, Menu, Icon,
 } from 'antd';
 
 import Users from '../Users/';
@@ -17,18 +17,22 @@ export default class Homes extends Component {
         super();
         this.state = {
             collapsed: false,
-            content : ""  ,
+            content :<Users />  ,
             title : "",
             token:""
         };    
     }   
-
-    /**每次访问Home页面就检查该Token值是否存在，如果不存在就跳回从新登陆 ??*/
+        
     componentDidMount()
-    {
-
+    {        
+        //用携带的Token，请求后台判断是否过期和验证其角色和身份！！！！ 然后展示对应的菜单项
+        var  tokens = localStorage.getItem("id_token");        
+        if(tokens == null)
+        {
+            window.location.href = "/";
+        }
     }
-
+    
     onCollapse = (collapsed) => {
         console.log(collapsed);
         this.setState({ collapsed });
@@ -75,19 +79,19 @@ export default class Homes extends Component {
                     <div className="logo" />
                     <Menu onClick={this.MenuClick} theme="dark" defaultSelectedKeys={['1']} mode="inline">
                         <Menu.Item key="1">
-                            <Icon type="pie-chart" />
+                            <Icon type="user" />
                             <span>用户管理</span>
                         </Menu.Item>
                         <Menu.Item key="2">
-                            <Icon type="desktop" />
+                            <Icon type="fire" />
                             <span>角色管理</span>
                         </Menu.Item>
                         <Menu.Item key="3">
-                            <Icon type="pie-chart" />
+                            <Icon type="deployment-unit" />
                             <span>权限管理</span>
                        </Menu.Item>
                         <Menu.Item key="4" >
-                            <Icon type="desktop" />
+                            <Icon type="usergroup-add" />
                             <span>组织管理</span>
                         </Menu.Item>
                     </Menu>
@@ -96,7 +100,7 @@ export default class Homes extends Component {
                     <Header style={{ background: 'rgb(236,236,236)', paddingLeft: "1%", textAlign: "left" }} >                                  <h2> {this.state.title}</h2>
                     </Header>
                     <Content style={{ margin: '0 16px' }}>                      
-                        { this.state.content}                                                
+                         { this.state.content}                               
                     </Content>
                     <Footer style={{ textAlign: 'center' }}>
                         &copy;郑强勇2018

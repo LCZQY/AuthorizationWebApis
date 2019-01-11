@@ -21,14 +21,13 @@ namespace AuthorityManagementCent.Controllers
     {
         private readonly ILogger<TokenController> _Logger;
         private readonly TokenManager _UserInfoManager;
-
         public TokenController(
             ILogger<TokenController> logger,
-            TokenManager userInfoManager          
+            TokenManager userInfoManager
             )
         {
             this._Logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            this._UserInfoManager = userInfoManager ?? throw new ArgumentNullException(nameof(userInfoManager));           
+            this._UserInfoManager = userInfoManager ?? throw new ArgumentNullException(nameof(userInfoManager));
         }
 
         /// <summary>
@@ -37,6 +36,7 @@ namespace AuthorityManagementCent.Controllers
         /// <param name="users"></param>
         /// <returns></returns>
         [HttpPost("token")]
+        [AllowAnonymous]
         public async Task<ResponseMessage<string>> Tokens([FromBody]LoginRequest users)
         {
             _Logger.LogInformation($"{users.userName}获取Token中。");

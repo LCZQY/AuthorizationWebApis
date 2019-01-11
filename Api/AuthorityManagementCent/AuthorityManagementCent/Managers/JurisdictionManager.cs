@@ -83,6 +83,5 @@ namespace AuthorityManagementCent.Managers
                 throw new Exception(nameof(el.Message));
             }
         }
-
     }
 }

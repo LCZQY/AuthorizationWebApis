@@ -63,3 +63,49 @@ export class Son extends Component {
 >>页面生命周期： https://www.jianshu.com/p/c9bc994933d5
 >> 打包：npm run build
 >>
+
+
+====*************************************************************************************************************
+import React, {Component} from 'react';
+export default class Parent extends Component {
+    render() {
+        return(
+            <div>
+                <Child onRef={this.onRef} />
+                <button onClick={this.click} >click</button>
+            </div>
+        )
+    }
+    onRef = (ref) => {
+        this.child = ref
+    }
+    click = (e) => {
+        this.child.myName()
+    }
+}
+
+class Child extends Component {
+    componentDidMount(){
+        this.props.onRef(this)
+    }
+    myName = () => alert('xiaohesong')
+    render() {
+        return ('woqu')
+    }
+}
+====*************************************************************************************************************
+
+1.Bug：
+    角色列表中的字数过长其操作按钮就漂了?
+    组织列表点击2点整个页面就漂了 ?
+    工具权限对应的组织权限取消和选中在取消在选中这里的数据有问题？？？？？？
+    
+
+
+2.需要深入学习的有：
+    Select 的动态加载和动态取消选择
+    Muen 的动态加载
+
+
+3.经验总结：
+    树形结构的复选框问题，清空选中框必须要先给 checkedKeys 赋值选好的Key ,在清空的时候 直接清空

@@ -4,6 +4,11 @@
         <name>AuthorityManagementCent</name>
     </assembly>
     <members>
+        <member name="T:AuthorityManagementCent.AutoMapperProfileConfiguration">
+            <summary>
+            AutoMapper配置文件
+            </summary>
+        </member>
         <member name="T:AuthorityManagementCent.Controllers.JurisdictionController">
             <summary>
             组织管理
@@ -49,6 +54,29 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="T:AuthorityManagementCent.Controllers.RolesController">
+            <summary>
+            角色管理
+            </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.RolesController.GettingRoles">
+            <summary>
+            获取角色列表
+            </summary>       
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.RolesController.PulshRole(AuthorityManagementCent.Dto.Request.RolesRequest)">
+            <summary>
+            添加角色
+            </summary>       
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.RolesController.PulshRolePermissions(AuthorityManagementCent.Dto.Request.RolePermissionsRequest)">
+            <summary>
+            添加角色组织权限表
+            </summary>       
+            <returns></returns>
+        </member>
         <member name="T:AuthorityManagementCent.Controllers.TokenController">
             <summary>
             发放Token
@@ -78,6 +106,21 @@
             添加用户
             </summary>
             <param name="userRequest">基本信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Dto.Common.JsonHelpers.ToJSON(System.Object)">
+            <summary>
+            对象转化成JSON字符串
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Dto.Common.JsonHelpers.FromJSON``1(System.String)">
+            <summary>
+            把JSon文本转成实体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="input"></param>
             <returns></returns>
         </member>
         <member name="T:AuthorityManagementCent.Dto.Common.JwtHelpers">
@@ -155,6 +198,11 @@
         <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.PasswordHash">
             <summary>
             默认密码
+            </summary>
+        </member>
+        <member name="F:AuthorityManagementCent.Dto.Common.ResponseCodeDefines.ArgumentError">
+            <summary>
+            10001-未登录
             </summary>
         </member>
         <member name="T:AuthorityManagementCent.Dto.Common.ResponseMessage">
@@ -267,6 +315,46 @@
             权限分明名
             </summary>
         </member>
+        <member name="T:AuthorityManagementCent.Dto.Request.RolePermissionsRequest">
+            <summary>
+            角色-权限-范围表
+            </summary>    
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.RolePermissionsRequest.RoledId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.RolePermissionsRequest.PermissionsScopes">
+            <summary>
+            权限对应的组织范围
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.PermissionsScope.PermissionsId">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.PermissionsScope.OrganizationScope">
+            <summary>
+            组织范围
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.RolesRequest.Id">
+            <summary>
+            key
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.RolesRequest.OrganizationId">
+            <summary>
+            组织 ID
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.RolesRequest.Name">
+            <summary>
+            角色名称
+            </summary>
+        </member>
         <member name="P:AuthorityManagementCent.Dto.Request.UserRequest.OrganizationId">
             <summary>
             组织Id
@@ -315,6 +403,31 @@
         <member name="P:AuthorityManagementCent.Dto.Response.PermissionResponse.Name">
             <summary>
             权限名称
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.GroupByPermissionResponse.Groups">
+            <summary>
+            权限分组
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.RolesInforResponse.Id">
+            <summary>
+            Key
+            </summary>    
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.RolesInforResponse.OrganizationId">
+            <summary>
+            组织 ID
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.RolesInforResponse.IsDeleted">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Response.RolesInforResponse.Name">
+            <summary>
+            角色名称
             </summary>
         </member>
         <member name="T:AuthorityManagementCent.Dto.Response.TreeResponse">
@@ -389,7 +502,8 @@
         </member>
         <member name="M:AuthorityManagementCent.Filters.JwtTokenAuthorize.LeavCheckPermissionImpl.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
             <summary>
-            在执行该方法之前执行// 解析Token 此处只是该静态类赋值并不是调用的过滤器中的方法给接口实体赋值，后期需要优化 ??
+            在执行该方法之前执行
+            解析Token 此处只是该静态类赋值并不是调用的过滤器中的方法给接口实体赋值，后期需要优化 ??
             </summary>
             <param name="context"></param>
             <param name="next"></param>
@@ -438,6 +552,31 @@
             创建选择树
             </summary>
             <param name="OranizationId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AuthorityManagementCent.Managers.RolesManager">
+             <summary>
+            角色管理
+             </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.RolesManager.InforResponseList">
+            <summary>
+            获取所有角色
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.RolesManager.AddRoles(AuthorityManagementCent.Dto.Request.RolesRequest)">
+            <summary>
+            添加/修改角色
+            </summary>
+            <param name="rolesRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.RolesManager.AddRolePermissions(AuthorityManagementCent.Dto.Request.RolePermissionsRequest)">
+            <summary>
+            添加角色权限表
+            </summary>
+            <param name="rolesRequest"></param>
             <returns></returns>
         </member>
         <member name="T:AuthorityManagementCent.Managers.TokenManager">
@@ -560,6 +699,26 @@
             权限名称
             </summary>
         </member>
+        <member name="T:AuthorityManagementCent.Model.RolePermissions">
+            <summary>
+            角色-权限-范围表
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.RolePermissions.RoledId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.RolePermissions.PermissionsId">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.RolePermissions.OrganizationScope">
+            <summary>
+            组织范围
+            </summary>
+        </member>
         <member name="T:AuthorityManagementCent.Model.Roles">
             <summary>
             角色
@@ -583,6 +742,26 @@
         <member name="P:AuthorityManagementCent.Model.Roles.Name">
             <summary>
             角色名称
+            </summary>
+        </member>
+        <member name="T:AuthorityManagementCent.Model.UserRole">
+             <summary>
+            用户角色表
+             </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.UserRole.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Model.UserRole.RoleId">
+            <summary>
+            角色Id
+            </summary>        
+        </member>
+        <member name="P:AuthorityManagementCent.Model.UserRole.IsDeleted">
+            <summary>
+            删除标识
             </summary>
         </member>
         <member name="T:AuthorityManagementCent.Model.Users">
@@ -662,6 +841,40 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.GetRolesList">
+            <summary>
+            获取角色列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.InsertRoles(AuthorityManagementCent.Model.Roles)">
+            <summary>
+            添加角色       
+            </summary>
+            <param name="roles"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.InsertRolePermissions(System.Collections.Generic.List{AuthorityManagementCent.Model.RolePermissions})">
+            <summary>
+            添加角色-权限表       
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.isExistence(System.String)">
+            <summary>
+            角色是否存在
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.UpdateRoles(AuthorityManagementCent.Model.Roles)">
+            <summary>
+            编辑角色
+            </summary>
+            <param name="roles"></param>
+            <returns></returns>
+        </member>
         <member name="M:AuthorityManagementCent.Stores.Interface.ITokenStore.IExiexistence(AuthorityManagementCent.Dto.Request.LoginRequest)">
             <summary>
             判断该用户名是否存在
@@ -712,6 +925,40 @@
             <summary>
             组织信息
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.RolesStore.GetRolesList">
+            <summary>
+            获取用户信息列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.RolesStore.InsertRoles(AuthorityManagementCent.Model.Roles)">
+            <summary>
+            添加角色
+            </summary>
+            <param name="roles"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.RolesStore.UpdateRoles(AuthorityManagementCent.Model.Roles)">
+            <summary>
+            修改角色
+            </summary>
+            <param name="roles"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.RolesStore.isExistence(System.String)">
+            <summary>
+            角色是否存在
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.RolesStore.InsertRolePermissions(System.Collections.Generic.List{AuthorityManagementCent.Model.RolePermissions})">
+            <summary>
+            添加角色权限表
+            </summary>
+            <param name="role"></param>
             <returns></returns>
         </member>
         <member name="T:AuthorityManagementCent.Stores.TokenStore">

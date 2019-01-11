@@ -54,5 +54,10 @@ namespace AuthorityManagementCent.Dto.Common
         /// 默认密码
         /// </summary>
         public static readonly string PasswordHash = "123456";
+
+        /// <summary>
+        /// 10001-未登录
+        /// </summary>
+        public static readonly string ArgumentError = "10001";
     }
 }

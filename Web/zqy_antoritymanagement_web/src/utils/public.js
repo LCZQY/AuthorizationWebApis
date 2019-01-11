@@ -27,7 +27,8 @@ export const $Url="http://192.168.100.120:5002";
 
 
 /**GET Fetch 请求*/
-export async function httpGet(uri, params, token) {
+export async function httpGet(uri, params) {
+    let tokens = localStorage.getItem("id_token");
     uri = $Url + uri;
     let init = {
         method: 'GET',
@@ -35,7 +36,7 @@ export async function httpGet(uri, params, token) {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-            'Authorization': token
+            'Authorization': tokens
         },
         body: JSON.stringify(params)
     };
@@ -59,7 +60,8 @@ export async function httpGet(uri, params, token) {
 }
 
 /**Post Fetch 请求 */
-export async function httpPost(uri, params, token) {
+export async function httpPost(uri, params) {
+    let tokens = localStorage.getItem("id_token");
     uri = $Url + uri;
     let init = {
         method: 'POST',
@@ -67,7 +69,7 @@ export async function httpPost(uri, params, token) {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-            'Authorization': token
+            'Authorization': tokens
         },
         body: JSON.stringify(params)
     };
@@ -83,7 +85,6 @@ export async function httpPost(uri, params, token) {
                     reject(ex);
                     messageError("请求数据错误，请重试");
                 });
-
         } catch (e) {
             messageError("请求数据错误，请重试");
             console.log(e, "请求：" + uri + "出现异常.")

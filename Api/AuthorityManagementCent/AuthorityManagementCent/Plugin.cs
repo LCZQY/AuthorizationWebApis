@@ -28,6 +28,10 @@ namespace AuthorityManagementCent
             //权限管理
             services.AddScoped<IJurisdictionStore, JurisdictionStore>();
             services.AddScoped<JurisdictionManager>();
+
+            //角色管理
+            services.AddScoped<IRolesStore, RolesStore>();
+            services.AddScoped<RolesManager>();
         }
     }
 }

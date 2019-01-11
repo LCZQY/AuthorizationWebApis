@@ -34,7 +34,7 @@ namespace AuthorityManagementCent.Stores
             {
                 throw new Exception(nameof(users));
             }
-            dbContext.Users.Add(users);
+            await dbContext.Users.AddAsync(users);
             await dbContext.SaveChangesAsync();
             return users;
         }

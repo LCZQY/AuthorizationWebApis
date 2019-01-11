@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Table, Button, Icon, Select, Alert } from 'antd';
+import { Table, Button, Icon, Select, Tooltip } from 'antd';
 import {CollectionCreateForm} from './ModalFrom';
 import { httpPost, messageWarn, messageSuccess, httpGet } from '../../utils/public';
 import {TablePermission} from './table';
@@ -52,6 +52,7 @@ class Permissionitems extends Component {
             searchName: value
         })
     }
+
     /**初始化权限列表 */
     Initialization = () =>{        
 
@@ -94,26 +95,31 @@ class Permissionitems extends Component {
             })
         });
     }
-
-  
+      
     /**模态框打开 */
     showModal = ()=>{       
         this.setState({
             visible:true    
-        })
+        });
+        
+
     }
 
     /**模态框关闭 */
     handleCancel = () => {
         this.setState({ visible: false });
     } 
-//Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxIiwiMSJdLCJqdGkiOiIwNmQ2NmY5OC0yMGMwLTQ2NjEtOWEzOC05ZWJmNjFjNTM0YmMiLCJpYXQiOjE1NDU5ODA1NTEsInJvbGUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiLpg5HlvLrli4ciLCJPcmdhbml6YXRpb24iOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiN2MwY2NlNjktYzc0Ni00YWU4LTkyYzktNWQ0ZDhiYmQ2MTE4IiwibmJmIjoxNTQ1OTgwNTUxLCJleHAiOjE1NDYwNjY5NTEsImlzcyI6IlpRWSIsImF1ZCI6IlBDIn0.OjvqU86I3H02UCqRsiZcEpbHWVGtqdLDn1ATWlCXCEk
 
-    del =() =>{
-        alert("方法请求中...");
+    del =() =>{    
         let url = "/api/Token/get";
-        httpPost(url,null,null).then(data=>{
+        httpPost(url,null).then(data=>{
                 console.log(data,"携带Token是否成功~~");
+                if(data.code == "10001")
+                {                 
+                    messageWarn("0");
+                    return;
+                }     
+                messageSuccess("恭喜，Token携带过去了！！！！");                           
         });
     }
    
@@ -145,9 +151,11 @@ class Permissionitems extends Component {
         return (
             <div>
                 <div style={{ textAlign: "left" }}>
-                    <Button style={{ marginRight: "1%" }} type="primary" onClick={()=>{ this.showModal()}} shape="circle" size="default">
-                        <Icon type="plus" />
-                    </Button>
+                     <Tooltip placement="top" title="新增权限">
+                        <Button style={{ marginRight: "1%" }} type="primary" onClick={()=>{ this.showModal()}} shape="circle" size="default">
+                            <Icon type="plus" />
+                        </Button>
+                    </Tooltip>
                     <CollectionCreateForm
                             wrappedComponentRef={this.saveFormRef}
                             visible={this.state.visible}
@@ -155,9 +163,11 @@ class Permissionitems extends Component {
                             onCreate={this.handleCreate}
                             info={this.props.GuidAndName}
                     />
-                    <Button style={{ marginRight: "1%" }} type="primary" onClick={()=>{ this.del()}} shape="circle" size="default">
-                        <Icon type="delete" />
-                    </Button>
+                    <Tooltip placement="top" title="删除权限">                   
+                        <Button style={{ marginRight: "1%" }} type="primary" onClick={()=>{ this.del()}} shape="circle" size="default">
+                            <Icon type="delete" />
+                        </Button>
+                    </Tooltip>
                 </div>
                 <div style={{width:"100%" }}>                    
                     <div style={{textAlign:"left", paddingTop:"0.5%",  width:"20%"}}>

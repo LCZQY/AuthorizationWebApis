@@ -12,7 +12,10 @@ namespace AuthorityManagementCent.Model
         public ModelContext(DbContextOptions<ModelContext> options)
             : base(options)
         {
+
         }
+
+        public DbSet<UserRole> UserRoles { get; set; }
 
         public DbSet<OrganizationExpansions> OrganizationExpansions { get; set; }
 
@@ -24,9 +27,26 @@ namespace AuthorityManagementCent.Model
 
         public DbSet<Users> Users { get; set; }
 
+        public DbSet<RolePermissions> RolePermissions { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
+            builder.Entity<UserRole>(b =>
+            {
+                b.HasKey(k => new { k.UserId, k.RoleId });
+                b.Property<bool>("IsDeleted").HasColumnType("bit");
+                b.ToTable("userrole");
+            });
+
+
+            builder.Entity<RolePermissions>(b =>
+            {
+                b.HasKey(k => new { k.OrganizationScope, k.PermissionsId, k.RoledId });
+                b.ToTable("rolepermissions");
+            });
+
             builder.Entity<Users>(b =>
             {
                 b.Property<bool>("IsDeleted").HasColumnType("bit");

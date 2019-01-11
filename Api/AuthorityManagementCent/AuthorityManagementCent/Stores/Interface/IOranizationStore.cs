@@ -29,5 +29,7 @@ namespace AuthorityManagementCent.Stores.Interface
         /// <returns></returns>
         IQueryable<OrganizationExpansions> GettingOrganizationExpansions();
 
+      
+        
     }
 }

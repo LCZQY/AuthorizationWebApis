@@ -20,7 +20,7 @@ namespace AuthorityManagementCent
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
                 .UseUrls($"http://*:{5002}")
-                .Build().Run();                     
+                .Build().Run();
         }
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)

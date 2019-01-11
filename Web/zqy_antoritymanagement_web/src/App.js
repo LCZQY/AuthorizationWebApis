@@ -22,7 +22,7 @@ class App extends Component {
   render() {
       
     return (
-      <div className="App">
+      <div className="App" >
         <RouterWrap />
         {/* <Button onClick={this.changeNum()}>当前数值 :{this.num}</Button> */}
       </div>

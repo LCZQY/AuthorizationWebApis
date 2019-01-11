@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Tree } from 'antd';
 import { messageWarn, httpPost } from '../../utils/public';
+import  "./oranization.css";
 const TreeNode = Tree.TreeNode;
+
 
 /**组植树造 对于异步加载的子节点使用该key进行自增赋值*/
 class SearchTree extends Component {

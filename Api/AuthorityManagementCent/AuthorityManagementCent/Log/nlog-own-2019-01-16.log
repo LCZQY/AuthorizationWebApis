@@ -1,0 +1,1337 @@
+2019-01-16 09:21:06.8975|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 09:21:06.9708|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:21:07.0120|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:21:09.8622|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-16 09:21:42.1840|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:21:48.6801|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-16 09:21:50.9831|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":1,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-16 09:21:52.6484|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-16 09:21:58.2899|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 09:21:58.3135|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:21:58.3951|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:21:59.0810|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:21:59.1216|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 09:21:59.1449|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-16 09:21:59.2219|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:33:04.6596|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:33:04.6893|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:33:04.7154|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 09:33:13.9208|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-16 09:33:21.1224|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:33:23.0964|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:33:25.4841|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:33:28.6260|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"d132fcd8-5d44-46f1-a1d6-deee3983218c","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:33:29.5848|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"d132fcd8-5d44-46f1-a1d6-deee3983218c" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:34:09.6216|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:34:09.6460|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:34:09.6460|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 09:34:13.2141|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:34:13.2400|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:34:13.3230|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 09:34:13.3794|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-16 09:34:14.6182|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-16 09:34:16.2714|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:34:21.2607|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:38:09.0538|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:38:11.1488|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:38:11.1488|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-16 09:38:11.1921|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 09:38:11.2520|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:38:12.3386|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 09:38:12.3845|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:38:12.3845|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:38:14.6901|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:38:19.4379|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:39:01.5465|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:39:16.2845|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:39:43.8416|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:39:46.4802|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:39:59.4181|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:40:02.2156|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:40:03.7569|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:40:12.6838|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:40:14.4268|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:40:53.2327|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:40:56.0022|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:40:59.3027|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:41:01.8269|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:41:19.5334|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:41:21.1279|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:41:21.9290|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:41:23.0879|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:44:27.5274|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:44:38.4230|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:44:54.3294|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:45:00.7721|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:45:01.9837|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:45:06.1069|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:45:06.1293|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 09:45:06.2582|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-16 09:45:06.3175|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:45:06.6903|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:45:09.4720|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"4cba486f-a98e-4d95-8746-551304bbae03","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:45:27.4711|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:46:01.3713|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:46:04.4905|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 09:46:04.5332|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:46:04.5643|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:46:06.0963|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:46:08.4521|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"4cba486f-a98e-4d95-8746-551304bbae03","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:48:38.9659|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-16 09:48:39.6319|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:48:43.9333|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"4cba486f-a98e-4d95-8746-551304bbae03","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:48:58.4837|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 09:48:58.5158|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:48:58.5664|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:48:59.7374|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:49:02.6427|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:49:04.4778|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:49:08.1799|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:51:12.8572|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:53:17.2193|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:53:28.6690|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:53:39.1981|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:53:40.7600|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"4cba486f-a98e-4d95-8746-551304bbae03","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:55:51.1365|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:55:52.2156|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:55:53.8557|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"4cba486f-a98e-4d95-8746-551304bbae03","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:57:21.1002|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 09:57:21.1584|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:57:21.1768|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:57:21.6945|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:57:24.1924|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"866d150f-ba37-4c99-b608-5bd95b9a7fc6","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:57:25.8507|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:58:30.1637|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:58:38.7134|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:59:19.4296|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:59:22.9244|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 09:59:26.5745|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 09:59:33.1497|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:59:35.8066|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"4cba486f-a98e-4d95-8746-551304bbae03","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:59:36.6846|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"866d150f-ba37-4c99-b608-5bd95b9a7fc6","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:59:38.4108|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"bda28aeb-8403-4a6d-af3e-5a1b88bfdbb1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 09:59:39.4580|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:03:35.2285|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-16 10:03:35.6954|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:03:36.3461|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:03:39.2143|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:03:40.0843|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-16 10:03:40.8395|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:03:41.5148|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:04:26.0464|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:04:26.8475|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:04:27.6390|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:05:04.6384|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:05:05.3595|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:05:06.7171|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"4cba486f-a98e-4d95-8746-551304bbae03","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:05:07.4346|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:05:43.4164|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:05:44.4786|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:05:45.2072|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:06:47.1281|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:06:54.8498|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:06:55.6555|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:06:56.6524|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:06:57.5197|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:08:04.2161|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:08:06.5104|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:08:07.3083|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:08:08.2222|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:08:24.9168|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:08:25.7252|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:08:26.4000|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:08:38.4452|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:09:58.7426|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:09:59.4494|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:10:33.9174|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:10:34.5668|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:10:35.6916|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:10:51.6436|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:12:08.3033|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:12:11.8292|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:12:18.6271|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:12:20.3868|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:12:20.9152|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:12:41.5928|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:16:42.6976|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:17:49.6429|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:17:51.2301|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:17:53.5888|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"4cba486f-a98e-4d95-8746-551304bbae03","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:17:54.9605|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"866d150f-ba37-4c99-b608-5bd95b9a7fc6","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:17:55.9184|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"bda28aeb-8403-4a6d-af3e-5a1b88bfdbb1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:17:56.5387|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"d132fcd8-5d44-46f1-a1d6-deee3983218c","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:17:57.1362|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"d6d9ae8e-2f74-4053-9888-affafd11dffb","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:17:58.1658|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"bda28aeb-8403-4a6d-af3e-5a1b88bfdbb1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:17:58.5296|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"866d150f-ba37-4c99-b608-5bd95b9a7fc6","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:17:58.9127|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"4cba486f-a98e-4d95-8746-551304bbae03","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:23:44.6555|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:24:02.5256|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:24:03.5740|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:25:35.8058|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:25:42.6157|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:25:44.4381|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:25:45.6000|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:25:47.4562|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:27:12.1182|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:27:13.4660|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:27:14.2478|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"bda28aeb-8403-4a6d-af3e-5a1b88bfdbb1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:27:14.7852|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:28:30.3102|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:29:34.0980|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:29:41.9041|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:29:47.8758|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:29:49.8754|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:29:54.8523|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:30:08.6580|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:30:19.4486|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:30:35.3123|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:30:41.3517|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:30:47.8027|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 10:30:47.8260|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:30:47.8706|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-16 10:30:47.8706|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:30:49.9327|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 10:30:50.0077|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:30:50.0077|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:31:11.6346|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:31:11.7012|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-16 10:31:11.7730|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:31:11.8647|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户1,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-16 10:31:12.6335|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-16 10:31:14.5437|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:31:15.7960|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 10:56:04.9116|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 10:56:07.5963|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-16 10:56:08.9229|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 10:58:26.1457|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:00:49.5854|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:01:12.8789|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:01:20.6862|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:01:40.7738|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:01:55.2935|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:02:02.5791|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:02:03.5586|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:02:32.2778|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:02:42.3220|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 11:06:06.2195|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"33b48f69-96c5-454f-94c9-a865034144a5" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:21:32.2863|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:21:33.8943|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:21:53.2943|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:21:54.4441|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:22:03.8251|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:22:06.3891|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:22:08.1322|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:22:19.0530|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:22:21.6118|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:22:47.2727|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:22:48.9829|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:22:50.9729|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:22:56.9449|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:23:00.7058|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:23:02.5673|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:23:12.5362|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:23:13.4878|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:23:59.6266|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:24:06.2952|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:24:17.8199|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:24:30.0223|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:24:30.0445|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:24:33.8638|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 11:28:02.9047|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:28:02.9047|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:28:07.2504|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 11:28:10.0623|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"4cba486f-a98e-4d95-8746-551304bbae03","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 11:28:14.0786|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"866d150f-ba37-4c99-b608-5bd95b9a7fc6","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 11:28:43.1137|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:28:43.1161|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:28:49.5255|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 11:29:34.7989|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:29:34.8181|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:29:37.3765|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:29:37.4456|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:29:45.9587|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:29:45.9817|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:29:49.0085|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 11:30:31.9358|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:30:31.9569|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:30:42.5599|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:30:42.5834|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:30:52.1217|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:30:52.1217|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:30:53.0692|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 11:31:10.8824|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:31:10.9052|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:31:13.8733|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 11:31:44.1907|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:31:44.2459|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:31:45.9626|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:31:46.0142|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:31:57.3049|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:31:57.3264|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:32:08.7375|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:32:08.7524|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:32:10.3998|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:32:10.3998|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:32:18.1713|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:32:18.1770|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:32:23.8110|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:32:23.8110|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:32:27.1608|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:32:27.2095|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:32:29.6156|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 11:32:40.3628|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:32:40.3861|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:32:42.2339|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 11:32:42.2412|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 11:33:21.3207|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:03:01.3654|0|INFO|AuthorityManagementCent.Controllers.TokenController|1获取Token中。 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<Tokens>d__3.MoveNext
+2019-01-16 14:03:02.7279|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__4.MoveNext
+2019-01-16 14:03:02.7279|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:06:46.5336|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:06:46.5726|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:09:29.7509|0|INFO|AuthorityManagementCent.Controllers.TokenController|1获取Token中。 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<Tokens>d__3.MoveNext
+2019-01-16 14:09:30.0668|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:09:30.0735|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:09:31.6943|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:10:29.6514|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:10:29.6631|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:10:45.2417|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:10:45.2609|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:10:48.1699|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:10:48.2116|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:11:23.3991|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:11:23.4304|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:11:28.9076|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:11:28.9307|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:11:47.8056|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:11:47.8806|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:12:04.1049|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:12:04.1918|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:12:09.1041|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:12:09.1300|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:12:12.1536|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:12:12.1802|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:12:21.2656|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:12:21.2893|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:12:35.6070|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:12:35.6484|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:12:40.2666|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:12:40.3041|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:15:39.5689|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:15:39.7848|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:15:41.2992|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:15:41.4405|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:16:06.1862|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:16:06.2374|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:16:15.7638|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:16:15.7893|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:16:30.4967|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:16:30.4967|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:17:10.7184|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:17:10.7416|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:17:19.3404|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:17:19.3404|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:19:08.4268|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:19:08.4639|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:19:24.9690|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"d132fcd8-5d44-46f1-a1d6-deee3983218c","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:20:02.6920|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:20:02.6981|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:20:04.5498|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:20:04.5727|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:20:09.7036|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"d132fcd8-5d44-46f1-a1d6-deee3983218c","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:20:13.2101|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+"d132fcd8-5d44-46f1-a1d6-deee3983218c" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<DelOranizatin>d__4.MoveNext
+2019-01-16 14:21:10.8729|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"d6d9ae8e-2f74-4053-9888-affafd11dffb","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:21:16.7878|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+"d6d9ae8e-2f74-4053-9888-affafd11dffb" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<DelOranizatin>d__4.MoveNext
+2019-01-16 14:23:52.1247|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+"d6d9ae8e-2f74-4053-9888-affafd11dffb" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<DelOranizatin>d__4.MoveNext
+2019-01-16 14:24:36.9558|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+"d6d9ae8e-2f74-4053-9888-affafd11dffb" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<DelOranizatin>d__4.MoveNext
+2019-01-16 14:25:20.8751|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+"d6d9ae8e-2f74-4053-9888-affafd11dffb" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<DelOranizatin>d__4.MoveNext
+2019-01-16 14:25:22.1733|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"undefined" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:25:56.5985|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:25:56.6712|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:26:01.0830|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"d132fcd8-5d44-46f1-a1d6-deee3983218c" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:26:03.3572|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"d132fcd8-5d44-46f1-a1d6-deee3983218c","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:26:07.4536|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+"d132fcd8-5d44-46f1-a1d6-deee3983218c" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<DelOranizatin>d__4.MoveNext
+2019-01-16 14:26:07.5882|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:26:31.7159|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"bda28aeb-8403-4a6d-af3e-5a1b88bfdbb1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:26:32.3718|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"866d150f-ba37-4c99-b608-5bd95b9a7fc6","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:26:33.0405|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"4cba486f-a98e-4d95-8746-551304bbae03","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:26:33.7185|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:26:34.9687|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"bda28aeb-8403-4a6d-af3e-5a1b88bfdbb1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:28:24.1005|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:28:24.0892|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:28:26.5084|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"d132fcd8-5d44-46f1-a1d6-deee3983218c" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:28:27.3515|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"d132fcd8-5d44-46f1-a1d6-deee3983218c","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:28:31.0656|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+"d132fcd8-5d44-46f1-a1d6-deee3983218c" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<DelOranizatin>d__4.MoveNext
+2019-01-16 14:28:34.7012|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"bda28aeb-8403-4a6d-af3e-5a1b88bfdbb1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:28:35.4171|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"866d150f-ba37-4c99-b608-5bd95b9a7fc6","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:28:36.1071|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"866d150f-ba37-4c99-b608-5bd95b9a7fc6" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:28:43.9434|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:28:45.0648|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"866d150f-ba37-4c99-b608-5bd95b9a7fc6","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:28:47.1994|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+"866d150f-ba37-4c99-b608-5bd95b9a7fc6" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<DelOranizatin>d__4.MoveNext
+2019-01-16 14:28:48.5647|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:29:11.8716|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:29:11.9267|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:29:25.4266|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:29:25.5811|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:29:30.3178|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:29:30.3488|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:29:36.5491|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"d132fcd8-5d44-46f1-a1d6-deee3983218c","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:30:04.6257|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:30:04.6541|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:30:46.5399|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:31:22.2663|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:32:11.6212|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"bda28aeb-8403-4a6d-af3e-5a1b88bfdbb1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:32:14.6490|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+"bda28aeb-8403-4a6d-af3e-5a1b88bfdbb1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<DelOranizatin>d__4.MoveNext
+2019-01-16 14:32:14.7954|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:32:16.5664|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:32:18.9818|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"4cba486f-a98e-4d95-8746-551304bbae03","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:32:20.3268|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:32:23.8125|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:32:23.8379|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:32:25.7620|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:32:29.9120|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"4cba486f-a98e-4d95-8746-551304bbae03","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:32:30.9168|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"4cba486f-a98e-4d95-8746-551304bbae03" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:32:32.8856|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"d132fcd8-5d44-46f1-a1d6-deee3983218c","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:32:33.4890|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"d132fcd8-5d44-46f1-a1d6-deee3983218c" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:32:46.2340|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"二-1","Phone":"17764834692","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 14:32:46.4309|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:32:48.7812|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"82825075-b128-4e78-aebb-814c0f45cc57" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:32:53.2171|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"82825075-b128-4e78-aebb-814c0f45cc57","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:33:04.7545|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+"82825075-b128-4e78-aebb-814c0f45cc57" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<DelOranizatin>d__4.MoveNext
+2019-01-16 14:33:04.8995|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:33:12.4318|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:33:12.5171|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:33:33.1604|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:33:33.1647|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:33:37.0497|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:33:37.0784|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:33:42.6389|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:33:42.6389|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:33:45.6697|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:33:45.6697|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:33:54.3645|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"d132fcd8-5d44-46f1-a1d6-deee3983218c","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:34:05.4074|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"111","Phone":"13167874692","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 14:34:05.6148|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:34:07.8157|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"d132fcd8-5d44-46f1-a1d6-deee3983218c" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:34:10.2505|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1a7ba1f5-35db-4084-a915-988544690bc3" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:34:11.2723|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1a7ba1f5-35db-4084-a915-988544690bc3","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:34:12.1045|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"d132fcd8-5d44-46f1-a1d6-deee3983218c","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:34:52.9654|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1a7ba1f5-35db-4084-a915-988544690bc3","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:35:53.9460|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:35:53.9857|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:36:00.5828|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:36:00.5893|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:36:02.6592|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:36:02.6754|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:36:04.6075|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:36:04.6075|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:36:14.5649|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1a7ba1f5-35db-4084-a915-988544690bc3","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:36:28.4262|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"12","Phone":"13167874692","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 14:36:28.6211|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:37:56.6535|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:37:56.6535|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:39:24.6493|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:39:24.6493|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:39:54.8326|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:39:54.8455|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:39:57.1833|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"92e4bb7d-7b20-4dde-95f6-68db7e4a1fc1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:39:59.6767|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"d132fcd8-5d44-46f1-a1d6-deee3983218c","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:40:00.8069|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"92e4bb7d-7b20-4dde-95f6-68db7e4a1fc1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:40:13.1468|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"12121","Phone":"13167874692","ParentId":"92e4bb7d-7b20-4dde-95f6-68db7e4a1fc1"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 14:40:13.3154|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:40:24.1041|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:40:24.1156|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:40:25.4095|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"92e4bb7d-7b20-4dde-95f6-68db7e4a1fc1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:40:34.7623|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"59ac5af1-eb22-451b-beb8-924bf65f6153","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:40:36.7178|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+"59ac5af1-eb22-451b-beb8-924bf65f6153" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<DelOranizatin>d__4.MoveNext
+2019-01-16 14:40:36.8616|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:40:44.6796|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"92e4bb7d-7b20-4dde-95f6-68db7e4a1fc1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:40:57.9062|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"13167874692","Phone":"13167874692","ParentId":"92e4bb7d-7b20-4dde-95f6-68db7e4a1fc1"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 14:40:58.2185|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:41:19.6710|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:41:19.6981|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:41:20.9986|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"92e4bb7d-7b20-4dde-95f6-68db7e4a1fc1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:41:23.2590|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"58928423-6827-4207-afa0-86ec89ea6a12","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:41:53.3112|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:44:58.6731|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:44:58.6731|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:45:00.4660|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:45:03.2323|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 14:47:34.0361|0|INFO|AuthorityManagementCent.Controllers.TokenController|1获取Token中。 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<Tokens>d__3.MoveNext
+2019-01-16 14:47:34.3573|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:47:34.3832|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:50:36.9717|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 14:50:37.0092|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 14:50:54.9302|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"重庆分公司","Phone":"15678489989","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 15:45:00.3900|0|INFO|AuthorityManagementCent.Controllers.TokenController|1获取Token中。 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<Tokens>d__3.MoveNext
+2019-01-16 15:45:01.6919|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 15:45:01.7144|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 15:45:09.1637|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 15:45:09.1637|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 15:45:10.7798|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 15:47:49.0017|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 15:47:49.0278|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 15:48:26.7376|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 15:49:01.3272|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"总裁室","Phone":"13167874692","ParentId":"1"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 15:57:24.3823|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"总裁室","Phone":"13167874692","ParentId":"1"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 15:59:47.5768|0|ERROR|AuthorityManagementCent.Controllers.UserController|用户1(1)添加组织报错：
+System.Exception: The binary operator Equal is not defined for the types 'System.Boolean' and 'System.Int16'.
+   at AuthorityManagementCent.Managers.OranizationManager.PlusOranization(OranizationRequest oranizationRequest)
+   at AuthorityManagementCent.Controllers.OranizationsController.PlusOranizatin(OranizationRequest oranization) |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 16:01:08.9323|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 16:01:08.9323|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:01:12.8251|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:01:16.2614|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 16:01:33.5100|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"总裁室","Phone":"13167465654","ParentId":"1"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 16:04:11.0239|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:04:11.0239|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 16:04:15.3928|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 16:04:37.2866|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"总裁室","Phone":"13142434343","ParentId":"1"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 16:06:03.7750|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"总裁室","Phone":"13142434343","ParentId":"1"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 16:06:05.0878|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:06:07.4480|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:11:39.3759|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 16:11:39.3810|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:11:42.0198|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:11:44.6325|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 16:12:03.8897|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"行政中心","Phone":"13164668898","ParentId":"1"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 16:12:04.3297|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:12:25.9784|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"财务中心","Phone":"13164668898","ParentId":"1"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 16:12:26.2354|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:12:29.3748|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:12:29.7989|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 16:12:30.5927|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:13:33.8466|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"7796f3a9-a70d-45a9-8a81-429ca5ba0cf8","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 16:14:08.3883|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"技术研究中心","Phone":"13678454695","ParentId":"7796f3a9-a70d-45a9-8a81-429ca5ba0cf8"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 16:14:08.7684|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:14:15.8808|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:14:15.8808|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 16:14:17.5449|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:14:19.5345|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"7796f3a9-a70d-45a9-8a81-429ca5ba0cf8" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:33:47.4640|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"ee82a118-95e8-4676-a21e-161689b19c1b" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 16:33:48.0608|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"c10dbc6c-32ee-4532-8fbd-d8db6d2b0d5f" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:02:50.7426|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"91f6ffa0-bfd3-4480-8349-21ca86a10e5d","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 17:03:33.0055|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"前端组","Phone":"13645979795","ParentId":"91f6ffa0-bfd3-4480-8349-21ca86a10e5d"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 17:06:37.7253|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"前端组","Phone":"13645979795","ParentId":"91f6ffa0-bfd3-4480-8349-21ca86a10e5d"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 17:08:32.5068|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"前端组","Phone":"13645979795","ParentId":"91f6ffa0-bfd3-4480-8349-21ca86a10e5d"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 17:09:10.4047|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"前端组","Phone":"13645979795","ParentId":"91f6ffa0-bfd3-4480-8349-21ca86a10e5d"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 17:10:52.7214|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"前端组","Phone":"13645979795","ParentId":"91f6ffa0-bfd3-4480-8349-21ca86a10e5d"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 17:15:25.4266|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"前端组","Phone":"13645979795","ParentId":"91f6ffa0-bfd3-4480-8349-21ca86a10e5d"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 17:28:16.0863|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:44:30.8962|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 17:44:36.1171|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"前端组","Phone":"13645979795","ParentId":"1"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 17:44:36.8117|0|ERROR|AuthorityManagementCent.Controllers.UserController|用户1(1)添加组织报错：
+System.Exception: The instance of entity type 'OrganizationExpansions' cannot be tracked because another instance with the same key value for {'OrganizationId', 'SonId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at AuthorityManagementCent.Managers.OranizationManager.PlusOranization(OranizationRequest oranizationRequest) in D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\Managers\OranizationManager.cs:line 92
+   at AuthorityManagementCent.Controllers.OranizationsController.PlusOranizatin(OranizationRequest oranization) in D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\Controllers\OranizationsController.cs:line 50 |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 17:44:44.5012|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:44:44.5105|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 17:44:45.8802|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:44:56.5624|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"7796f3a9-a70d-45a9-8a81-429ca5ba0cf8","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 17:45:07.3613|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"后端组","Phone":"13164657497","ParentId":"7796f3a9-a70d-45a9-8a81-429ca5ba0cf8"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 17:51:54.2545|0|ERROR|AuthorityManagementCent.Controllers.UserController|用户1(1)添加组织报错：
+System.Exception: The instance of entity type 'OrganizationExpansions' cannot be tracked because another instance with the same key value for {'OrganizationId', 'SonId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at AuthorityManagementCent.Managers.OranizationManager.PlusOranization(OranizationRequest oranizationRequest)
+   at AuthorityManagementCent.Controllers.OranizationsController.PlusOranizatin(OranizationRequest oranization) |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 17:52:25.2878|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"后端组","Phone":"13164657497","ParentId":"7796f3a9-a70d-45a9-8a81-429ca5ba0cf8"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 17:52:26.7604|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:52:32.2182|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:52:32.2496|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 17:52:33.1731|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:52:35.1888|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"7796f3a9-a70d-45a9-8a81-429ca5ba0cf8" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:52:37.8539|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"a2d578cc-38eb-4325-b652-af0315a2f9df" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:53:41.5677|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"91f6ffa0-bfd3-4480-8349-21ca86a10e5d" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:53:43.8242|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"b5369a6e-3129-4a29-8d2d-9b0eae19057e","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 17:53:44.4023|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"b5369a6e-3129-4a29-8d2d-9b0eae19057e" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:54:02.4555|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"Web端","Phone":"13165467497","ParentId":"b5369a6e-3129-4a29-8d2d-9b0eae19057e"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 17:56:30.9120|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:56:30.9120|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 17:56:32.9915|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:56:35.0009|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"7796f3a9-a70d-45a9-8a81-429ca5ba0cf8" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:56:37.3098|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"a2d578cc-38eb-4325-b652-af0315a2f9df" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:56:38.4586|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"91f6ffa0-bfd3-4480-8349-21ca86a10e5d" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:56:40.0697|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"b5369a6e-3129-4a29-8d2d-9b0eae19057e" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 17:56:48.3427|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"b5369a6e-3129-4a29-8d2d-9b0eae19057e","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 17:57:00.5961|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"Web小组","Phone":"13167498746","ParentId":"b5369a6e-3129-4a29-8d2d-9b0eae19057e"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 17:57:50.3380|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"Web小组","Phone":"13167498746","ParentId":"b5369a6e-3129-4a29-8d2d-9b0eae19057e"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 18:00:43.4897|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"Web小组","Phone":"13167498746","ParentId":"b5369a6e-3129-4a29-8d2d-9b0eae19057e"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 18:01:49.3384|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"Web小组","Phone":"13167498746","ParentId":"b5369a6e-3129-4a29-8d2d-9b0eae19057e"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 19:05:21.3155|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 19:05:21.3155|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 19:05:40.8165|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"重庆分公司","Phone":"13165464596","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 19:06:50.0820|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 19:08:19.9188|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 19:08:24.4504|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"8fa30f66-9423-4665-97db-94f7f57e4fc6","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 19:37:18.1349|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"重庆分公司1","Phone":"13165464596","ParentId":"8fa30f66-9423-4665-97db-94f7f57e4fc6"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:08:08.7838|0|INFO|AuthorityManagementCent.Controllers.TokenController|1获取Token中。 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<Tokens>d__3.MoveNext
+2019-01-16 20:08:10.0315|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:08:10.0562|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 20:08:13.8428|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"8fa30f66-9423-4665-97db-94f7f57e4fc6","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 20:10:38.5549|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"8fa30f66-9423-4665-97db-94f7f57e4fc6" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:10:40.7722|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"bc500acd-6e08-403f-91a4-90d40d8ec832","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 20:10:58.7891|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"刑侦部","Phone":"13241654444","ParentId":"bc500acd-6e08-403f-91a4-90d40d8ec832"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:13:45.9676|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 20:13:45.9997|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:13:49.9144|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"8fa30f66-9423-4665-97db-94f7f57e4fc6" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:13:51.7465|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"bc500acd-6e08-403f-91a4-90d40d8ec832" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:18:24.8209|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:18:24.8074|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 20:18:50.5391|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"昆明分公司","Phone":"13646497977","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:23:39.8249|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"昆明分公司","Phone":"13646497977","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:25:07.0117|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"昆明分公司","Phone":"13646497977","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:28:49.2688|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"昆明分公司","Phone":"13646497977","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:37:03.7532|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"昆明分公司","Phone":"13646497977","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:37:09.3900|0|ERROR|AuthorityManagementCent.Controllers.UserController|用户1(1)添加组织报错：
+System.Exception: The instance of entity type 'OrganizationExpansions' cannot be tracked because another instance with the same key value for {'OrganizationId', 'SonId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at AuthorityManagementCent.Managers.OranizationManager.PlusOranization(OranizationRequest oranizationRequest) in D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\Managers\OranizationManager.cs:line 94
+   at AuthorityManagementCent.Controllers.OranizationsController.PlusOranizatin(OranizationRequest oranization) in D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\Controllers\OranizationsController.cs:line 50 |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:38:09.5179|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:38:09.5179|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 20:38:14.1182|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"561b73b9-9562-49a3-9c6d-9b2ca54695fe" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:38:16.0622|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:39:25.0411|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:39:25.0706|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 20:39:27.7910|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"ddbcd462-7f5c-4812-b271-eaaaad703576" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:39:29.4414|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:39:59.7804|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:39:59.8632|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 20:40:01.3996|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:40:17.4558|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"重庆新空间","Phone":"13588555555","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:44:38.9182|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 20:44:38.9182|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:44:41.7205|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"f127557e-9ac6-473b-abbc-c61f222174e9" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:44:43.4021|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:45:19.3514|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:45:19.3752|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 20:45:32.4391|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"重庆新空间","Phone":"13555541654","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:47:06.6459|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:47:30.5486|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"新药行","Phone":"13555541654","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:53:09.8174|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:53:14.6609|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:53:14.9392|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 20:53:16.2189|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"245f51e7-d40a-408b-817e-6bddd172a091" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:53:17.7450|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"c028b8f0-ee3c-4b6a-b009-90a24ec46965" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:53:19.0014|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:53:20.1956|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"245f51e7-d40a-408b-817e-6bddd172a091","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 20:53:28.1356|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:53:28.1356|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 20:53:44.7091|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"瀚华","Phone":"13689459848","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:55:12.3441|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:55:17.7452|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:55:17.7683|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 20:55:36.1251|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"华为","Phone":"13856256216","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:56:00.0509|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:56:04.9520|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:56:05.1681|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 20:56:07.0355|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:56:09.2830|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"245f51e7-d40a-408b-817e-6bddd172a091" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:58:05.4987|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:58:05.5123|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 20:58:20.9893|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"水边","Phone":"13555555555","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:58:48.0374|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:58:59.1434|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:58:59.1498|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 20:59:49.2263|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"测试公司","Phone":"13699888888","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 20:59:49.5803|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:59:50.8335|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"ccef1a7a-577f-4707-8f4c-f134a695e09b" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 20:59:53.6077|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"ccef1a7a-577f-4707-8f4c-f134a695e09b","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 21:00:03.3583|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"行政部","Phone":"13699888888","ParentId":"ccef1a7a-577f-4707-8f4c-f134a695e09b"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 21:00:03.7884|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:00:06.1919|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"c028b8f0-ee3c-4b6a-b009-90a24ec46965","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 21:00:09.7482|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:00:09.7482|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 21:00:12.1282|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"2e100ea9-8554-4e9e-b38a-8a1edc9c4a05" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:00:12.6920|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"ccef1a7a-577f-4707-8f4c-f134a695e09b" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:00:15.2146|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"ccef1a7a-577f-4707-8f4c-f134a695e09b","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 21:00:28.4336|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"人力资源部","Phone":"18952106506","ParentId":"ccef1a7a-577f-4707-8f4c-f134a695e09b"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 21:00:28.6773|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:00:31.7117|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:00:31.9391|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 21:00:33.3511|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"ccef1a7a-577f-4707-8f4c-f134a695e09b" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:00:35.8634|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"82a9489a-89d2-4d7d-8843-07ee8c2598a0","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 21:00:56.5863|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"助理组","Phone":"15286541964","ParentId":"82a9489a-89d2-4d7d-8843-07ee8c2598a0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 21:00:56.8593|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:01:00.0354|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:01:00.3152|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 21:02:39.0066|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"ccef1a7a-577f-4707-8f4c-f134a695e09b" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:02:41.3308|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"82a9489a-89d2-4d7d-8843-07ee8c2598a0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:04:08.3947|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"你好","Phone":"13595964194","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 21:05:35.1121|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:10:38.0539|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:10:38.0539|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 21:10:53.0055|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"价格","Phone":"13599999999","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 21:10:53.6410|0|ERROR|AuthorityManagementCent.Controllers.UserController|用户1(1)添加组织报错：
+System.Exception: Source sequence contains more than one element.
+   at AuthorityManagementCent.Managers.OranizationManager.PlusOranization(OranizationRequest oranizationRequest) in D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\Managers\OranizationManager.cs:line 95
+   at AuthorityManagementCent.Controllers.OranizationsController.PlusOranizatin(OranizationRequest oranization) in D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\Controllers\OranizationsController.cs:line 50 |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 21:18:05.0453|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"哈哈","Phone":"13599999999","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 21:19:35.0390|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:19:40.5986|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0be3d897-aae5-42ee-af0b-87f5a38e41df" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:19:43.4768|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:19:43.5170|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 21:19:46.0564|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"4dcdf3a3-8875-4375-8739-d5f7d36b5f0a","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 21:19:55.4774|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"呵呵","Phone":"13595641654","ParentId":"4dcdf3a3-8875-4375-8739-d5f7d36b5f0a"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 21:27:00.5296|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 21:27:00.5296|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:27:16.1939|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"丫丫","Phone":"13526596416","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 21:27:16.7483|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:27:30.6749|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"9b53b102-7c00-40e2-872d-0796b5258140","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 21:27:36.9772|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"爱爱","Phone":"13526596416","ParentId":"9b53b102-7c00-40e2-872d-0796b5258140"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 21:27:37.2597|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:28:45.3918|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:28:45.4336|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 21:28:48.7073|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"9b53b102-7c00-40e2-872d-0796b5258140","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 21:29:01.3682|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"歪歪","Phone":"13659498465","ParentId":"9b53b102-7c00-40e2-872d-0796b5258140"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 21:44:26.3232|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"歪歪","Phone":"13659498465","ParentId":"9b53b102-7c00-40e2-872d-0796b5258140"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 21:46:45.5629|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:47:53.4477|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:47:53.5358|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 21:47:57.2667|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:47:57.2791|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 21:48:50.5722|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:48:50.5722|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 21:49:05.8809|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"YY","Phone":"13685984984","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 21:55:59.6411|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:55:59.6411|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 21:56:02.7756|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"8427cc19-b07b-4311-80d6-33085de02a9b" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 21:56:04.5068|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"8427cc19-b07b-4311-80d6-33085de02a9b","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 21:56:19.7728|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"鸡鸡","Phone":"13216464796","ParentId":"8427cc19-b07b-4311-80d6-33085de02a9b"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 22:14:37.9381|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"鸡鸡","Phone":"13216464796","ParentId":"8427cc19-b07b-4311-80d6-33085de02a9b"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 22:15:40.8514|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"鸡鸡","Phone":"13216464796","ParentId":"8427cc19-b07b-4311-80d6-33085de02a9b"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 22:18:40.4185|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"鸡鸡","Phone":"13216464796","ParentId":"8427cc19-b07b-4311-80d6-33085de02a9b"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 22:20:21.0716|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 22:20:21.0716|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 22:20:32.1631|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"哈哈","Phone":"13456456449","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 22:20:42.7449|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 22:21:19.7703|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"5b13a35e-524a-483d-929d-1eb9eb028b54","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 22:21:24.4820|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"小鸡鸡","Phone":"13456456449","ParentId":"5b13a35e-524a-483d-929d-1eb9eb028b54"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 22:21:30.6962|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 22:22:50.4228|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 22:22:50.3912|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：1，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-16 22:23:10.6773|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"新药行","Phone":"13464979797","ParentId":"0"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 22:23:13.8776|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 22:23:24.6431|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户1,其ID:(1) 获取所有用户信息:
+{"OranizationId":"f21f02b7-6756-4f50-89b7-e7a0853999a3","PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-16 22:23:28.3585|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 获取权限列表:
+{"OrganizationName":"新药行2222","Phone":"13464979797","ParentId":"f21f02b7-6756-4f50-89b7-e7a0853999a3"} |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<PlusOranizatin>d__3.MoveNext
+2019-01-16 22:23:31.1102|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext
+2019-01-16 22:23:34.9368|0|INFO|AuthorityManagementCent.Controllers.UserController|用户1,其ID:(1) 创建组织树状结构:
+"f21f02b7-6756-4f50-89b7-e7a0853999a3" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__5.MoveNext

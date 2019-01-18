@@ -18,12 +18,14 @@ namespace AuthorityManagementCent.Managers
     public class OranizationManager
     {
         private readonly IOranizationStore _IOranizationStore;
+        private readonly IUserStore _IUserStore;
         private readonly IMapper _Mapper;
 
-        public OranizationManager(IOranizationStore IOranizationStore, IMapper IMapper)
+        public OranizationManager(IOranizationStore IOranizationStore, IUserStore IUserStore, IMapper IMapper)
         {
             this._IOranizationStore = IOranizationStore;
             this._Mapper = IMapper;
+            this._IUserStore = IUserStore;
         }
 
         /// <summary>
@@ -34,16 +36,136 @@ namespace AuthorityManagementCent.Managers
         public async Task<ResponseMessage> PlusOranization(OranizationRequest oranizationRequest)
         {
             var response = new ResponseMessage();
+          
             var newOranization = _Mapper.Map<Organizations>(oranizationRequest);
             try
             {
-                ///如果没有点击树状组件表示直接添加的是最顶级的组织 !! 配合树状组件                
-                newOranization.Id = Guid.NewGuid().ToString();
+                //修改
+                if (oranizationRequest.id != string.Empty)
+                {
+                    var oran = await _IOranizationStore.GettingOraniztions().AsNoTracking().Where(u => u.Id.Equals(oranizationRequest.id)).SingleOrDefaultAsync();
+                    oran.OrganizationName = newOranization.OrganizationName;
+                    oran.Phone = newOranization.Phone;
+                    await _IOranizationStore.EditOrganization(oran);
+                    return response;
+                }
+
+                //添加
+                var oranizationid = Guid.NewGuid().ToString();
+                newOranization.Id = oranizationid;
                 newOranization.OrganizationName = newOranization.OrganizationName;
                 newOranization.Phone = newOranization.Phone;
                 newOranization.ParentId = newOranization.ParentId;
                 newOranization.CreateTime = DateTime.Now;
                 await _IOranizationStore.AddOraniztions(newOranization);
+                List<OrganizationExpansions> organizationExpansions = new List<OrganizationExpansions>() { };
+
+
+                //递归找到所有的父级节点信息
+                var parentList = await ListPrantOranization(new List<Organizations>(), oranizationRequest.ParentId, oranizationRequest.OrganizationName);             
+                foreach (var item in parentList)
+                {
+                    organizationExpansions.Add(new OrganizationExpansions
+                    {
+                        OrganizationId = item.Id, // 父节点ID
+                        OrganizationName = item.OrganizationName,
+                        SonId = oranizationid,  // 子节点ID
+                        FullName = item.FullName,
+                        SonName = oranizationRequest.OrganizationName,
+                        //对比父级ID是否相同，相同则是直属关系
+                        IsImmediate = item.Id == oranizationRequest.ParentId 
+                    });
+                }
+                await _IOranizationStore.AddOrganizationExpansions(organizationExpansions);
+            }
+            catch (Exception el)
+            {
+                throw new Exception(el.Message);
+            }
+            return response;
+        }
+
+
+
+        private string _fullName;
+        /// <summary>
+        /// 找到组织(sonId)的所有父级组织
+        /// 整体思路： 通过下级向上级拼凑组织全名称
+        /// </summary>
+        /// <returns></returns>
+        public async Task<List<Organizations>> ListPrantOranization(List<Organizations> Parentlist, string sonId, string fullname = "")
+        {
+            if (sonId == null)
+            {
+                throw new ArgumentNullException(nameof(sonId));
+            }
+            var query = await _IOranizationStore.GettingOraniztions().Where(p => p.Id.Equals(sonId)).SingleOrDefaultAsync();
+            if (query != null)
+            {
+                ///组合组织全名称
+                if (fullname == "")
+                {
+                    query.FullName = query.OrganizationName;
+                }
+                else
+                {
+                    query.FullName = query.OrganizationName + "-" + fullname;
+                    _fullName = query.FullName;
+                }
+                Parentlist.Add(query);
+                await ListPrantOranization(Parentlist, query.ParentId, _fullName);
+            }
+            return Parentlist;
+        }
+
+
+        /// <summary>
+        /// 删除组织信息
+        /// </summary>
+        /// <param name="oranizationRequest"></param>
+        /// <returns></returns>
+        public async Task<ResponseMessage> RemoveOranization(string oraId)
+        {
+            var response = new ResponseMessage();
+            try
+            {
+                var uses=await _IUserStore.GetUserInformation().Where(p=>p.OrganizationId.Contains(oraId)).ToListAsync();
+                if (uses.Count() > 0)
+                {
+                    response.Code = ResponseCodeDefines.ObjectAlreadyExists;
+                    response.Message = "该组织下存在用户，不能被删除";
+                    return response;
+                }
+
+                var sonOran = await _IOranizationStore.GettingOraniztions().Where(p => p.ParentId.Equals(oraId)).ToListAsync();
+                if (sonOran.Count() > 0)
+                {
+                    response.Code = ResponseCodeDefines.ObjectAlreadyExists;
+                    response.Message = "该组织下存在下级组织，不能被删除";
+                    return response;
+                }
+
+                await _IOranizationStore.DeleteOrganization(oraId);
+            }
+            catch (Exception el)
+            {
+                throw new Exception(el.Message);
+            }
+            return response;
+        }
+
+
+        /// <summary>
+        /// 找到组织信息
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<ResponseMessage<Organizations>> GetOrgnization(string id)
+        {
+            var response = new ResponseMessage<Organizations>();
+            try
+            {
+                response.Extension = await _IOranizationStore.GettingOraniztions().AsNoTracking().Where(u => u.Id.Equals(id)).SingleOrDefaultAsync();
             }
             catch (Exception el)
             {
@@ -51,6 +173,7 @@ namespace AuthorityManagementCent.Managers
             }
             return response;
         }
+
 
         /// <summary>
         /// 创建组织树状结构

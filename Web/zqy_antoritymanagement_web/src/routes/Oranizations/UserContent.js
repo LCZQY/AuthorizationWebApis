@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Table, Button, Icon} from 'antd';
-import {CollectionCreateForm} from './ModelFrom';
-import { httpPost, messageWarn } from '../../utils/public';
-
-
+import { Table, Button, Icon, Tooltip } from 'antd';
+import { CollectionCreateForm } from './ModelFrom';
+import { httpPost, messageWarn, messageSuccess } from '../../utils/public';
 
 /**组织下的用户列表 */
 class UserContent extends Component {
@@ -11,59 +9,10 @@ class UserContent extends Component {
     constructor() {
         super();
         this.state = {
-            columns: [
-                {
-                    title: 'key',
-                    dataIndex: 'id',
-                    key: "id",
-                    render: function (text) {
-                        return <a href="##:;">{text}</a>;
-                    }
-                },
-                {
-                    title: '组织',
-                    dataIndex: 'organizationId',
-                    key: 'organizationId'
-                },            
-                {
-                    title: '真实姓名',
-                    dataIndex: 'trueName',
-                    key: 'trueName'
-                },
-                {
-                    title: '用户名',
-                    dataIndex: 'userName',
-                    key: 'userName'
-                },
-                {
-                    title: '联系方式',
-                    dataIndex: 'phoneNumber',
-                    key: 'phoneNumber'
-                },              
-                {
-                    title: '操作',
-                    dataIndex: '',
-                    render: function (text, record) {
-                        return <span>
-                            <a href="##:;">删除</a>
-                            <span className="ant-divider"></span>
-                            <a href="##:;">增加</a>
-                            <span className="ant-divider"></span>
-                            <a href="##:;" className="ant-dropdown-link">
-                                修改 <i className="anticon anticon-down"></i>
-                            </a>
-                            <a href="##:;" className="ant-dropdown-link">
-                                重置密码 <i className="anticon anticon-down"></i>
-                            </a>
-                        </span>;
-                    }
-                }],
             visible: false,
-            ButtonDisplay:false
-
+            ButtonDisplay: false,           
         }
     }
-
     showModel = () => {
         this.setState({
             visible: true
@@ -71,56 +20,121 @@ class UserContent extends Component {
     }
     handleCancel = () => {
         this.setState({ visible: false });
-    } 
-   
+    }
+
     /**创建员工 */
     handleCreate = () => {
         const form = this.formRef.props.form;
-        form.validateFields((err, values) => {
+        form.validateFields((err, values) => {            
+
             if (err) {
-                 return;               
-            }           
-            values.organizationId = this.props.GuidAndName.Id;
-            console.log(values,"传递的参数是");    
-            let url="/api/User/addUser";            
-            httpPost(url,values).then(data => {
-                if(data.code != "0")
-                {
+                return;
+            }            
+            values.organizationId = this.props.GuidAndName.Id;            
+            let url = "/api/User/addUser";
+            httpPost(url, values).then(data => {
+                if (data.code != "0") {
                     messageWarn(data["message"]);
-                }     
-                form.resetFields();
-                alert("添加成功！")                
-                this.setState({ visible: false });            
-            });          
+                    return;
+                }
+                form.resetFields();                
+                this.setState({ visible: false });
+                messageSuccess("员工添加成功");
+
+            });
         });
     }
     saveFormRef = (formRef) => {
         this.formRef = formRef;
     }
-    render() {       
-        return (          
-            <div id="uses" >              
+    reset = (texts) => {
+        console.log(texts, "这个是个什么东东");
+        alert("事件绑定成功！");
+    }
+
+    // /**选择表格的复选框样式始终不管怎么修改样式他的列永远都不动！！！！！！！！！！！！！！！！！！ */
+    // rowSelection = {    
+    //     onChange: (selectedRowKeys, selectedRows) => {
+    //         console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+    //     },
+    //     getCheckboxProps: record => ({
+    //         disabled: record.name === 'Disabled User', 
+    //     }),
+    // };
+
+    render() {
+        
+        const _this = this;
+        const columns = [
+            {
+                title: '真实姓名',
+                dataIndex: 'trueName',
+                key: 'trueName'
+            },
+            {
+                title: '用户名',
+                dataIndex: 'userName',
+                key: 'userName'
+            },
+            {
+                title: '联系方式',
+                dataIndex: 'phoneNumber',
+                key: 'phoneNumber'
+            },
+            {
+                title: "员工状态",
+                key: "isDeleted",
+                dataIndex: "isDeleted",
+                render: function (text) {
+                    return text == true ? "离职" : "在职";
+                }
+            },
+            {
+                title: '性别',
+                dataIndex: 'sex',
+                key: 'sex',
+                render: function (text) {
+                    return text == true ? "男" : "女";
+                }
+            },
+            {
+                title: '操作',
+                dataIndex: '',
+                render: function (text, record) {
+                    return <span>
+                        <Tooltip placement="top" title="用户编辑">
+                            <Button type="primary" onClick={() => _this.reset(record)} size="small" shape="circle" icon="edit" />
+                        </Tooltip>
+                        <Tooltip placement="top" title="用户权限设置">
+                            <Button type="primary" onClick={() => _this.reset(record)} size="small" shape="circle" icon="team" />
+                        </Tooltip>
+                        <Tooltip placement="top" title="删除">
+                            <Button type="primary" onClick={() => _this.reset(record)} size="small" shape="circle" icon="delete" />
+                        </Tooltip>
+                    </span>
+                }
+            }];
+        return (
+            <div id="uses" >
                 <div style={{ float: "left", width: "100%", marginBottom: "0.5%", border: "none", background: "rgb(236, 236, 236)" }}>
                     <h2 style={{ textAlign: "left" }}>员工查询</h2>
                     <div style={{ textAlign: "left" }}>
-                        <Button style={{ marginLeft: "0.5%",zIndex:"1" }} disabled={this.props.ButtonDisplay} onClick={()=>{this.showModel()}} type="primary" shape="circle" size="default">
+                        <Button style={{ marginLeft: "0.5%", zIndex: "1" }} disabled={this.props.ButtonDisplay} onClick={() => { this.showModel() }} type="primary" shape="circle" size="default">
                             <Icon type="plus" />
-                        </Button>                   
+                        </Button>
                         <CollectionCreateForm
                             wrappedComponentRef={this.saveFormRef}
                             visible={this.state.visible}
                             onCancel={this.handleCancel}
                             onCreate={this.handleCreate}
                             info={this.props.GuidAndName}
-                        />
-                        <Button style={{ marginLeft: "0.5%",zIndex:"1" }} type="primary" shape="circle" size="default">
-                            <Icon type="delete" />
-                        </Button>
+                        />                      
                     </div>
                 </div>
                 <Table
-                    columns={this.state.columns}
-                    dataSource={this.props.data}
+                    columns={columns}
+                    dataSource={this.props.data}                  
+                    ///rowSelection={this.rowSelection}//复选框
                 />
             </div>
         )

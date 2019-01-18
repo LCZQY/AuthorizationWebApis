@@ -9,10 +9,16 @@ namespace AuthorityManagementCent.Model
 {
     public class ModelContext : DbContext
     {
+
         public ModelContext(DbContextOptions<ModelContext> options)
             : base(options)
         {
+
         }
+
+        public DbSet<PermissionExpansion> PermissionExpansions { get; set; }
+
+        public DbSet<UserRole> UserRoles { get; set; }
 
         public DbSet<OrganizationExpansions> OrganizationExpansions { get; set; }
 
@@ -24,9 +30,31 @@ namespace AuthorityManagementCent.Model
 
         public DbSet<Users> Users { get; set; }
 
+        public DbSet<RolePermissions> RolePermissions { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
+            builder.Entity<PermissionExpansion>(b =>
+            {
+                b.ToTable("permissionexpansion");
+            });
+
+            builder.Entity<UserRole>(b =>
+            {
+                b.HasKey(k => new { k.RoleId });
+                b.Property<bool>("IsDeleted").HasColumnType("bit");
+                b.ToTable("userrole");
+            });
+
+
+            builder.Entity<RolePermissions>(b =>
+            {
+                //b.HasKey(k => new { k.OrganizationScope, k.PermissionsId, k.RoledId });
+                b.ToTable("rolepermissions");
+            });
+
             builder.Entity<Users>(b =>
             {
                 b.Property<bool>("IsDeleted").HasColumnType("bit");
@@ -41,8 +69,9 @@ namespace AuthorityManagementCent.Model
             });
 
             builder.Entity<OrganizationExpansions>(b =>
-            {
-                b.Property<bool>("IsDeleted").HasColumnType("bit");
+            {              
+                b.Property<bool>("IsImmediate").HasColumnType("bit");
+                b.HasKey(k => new { k.OrganizationId ,k.SonId });
                 b.ToTable("organizationexpansions");
             });
 

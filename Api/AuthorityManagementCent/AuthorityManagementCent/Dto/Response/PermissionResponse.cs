@@ -25,4 +25,20 @@ namespace AuthorityManagementCent.Dto.Response
         /// </summary>
         public string Name { get; set; }
     }
+
+    public class GroupByPermissionResponse
+    {    
+        /// <summary>
+        /// 权限分组
+        /// </summary>
+        public string Groups { get; set; }
+        
+        public List<PermissionResponse> permissionResponses { get; set; }
+    }
+
+
+
+
+
+
 }

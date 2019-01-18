@@ -1,15 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using AutoMapper;
 using System.Threading.Tasks;
-using AuthorityManagementCent.Dto.Request;
+using AuthorityManagementCent.Dto.Response;
 using AuthorityManagementCent.Stores.Interface;
 using AuthorityManagementCent.Dto.Common;
-using System.Security.Claims;
-using System.Security.Principal;
-using System.IdentityModel.Tokens.Jwt;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
-using Microsoft.Extensions.Configuration;
-
+using Microsoft.EntityFrameworkCore;
+using AuthorityManagementCent.Dto.Request;
+using AuthorityManagementCent.Model;
 
 namespace AuthorityManagementCent.Managers
 {
@@ -20,12 +19,11 @@ namespace AuthorityManagementCent.Managers
     public class TokenManager
     {
         private readonly ITokenStore _IUserInfo;
-        public IConfiguration _Configuration { get; }
-
-        public TokenManager(ITokenStore IUserInfo, IConfiguration configuration)
-        {
+        private readonly IRolesStore _IRolesStore;
+        public TokenManager(ITokenStore IUserInfo, IRolesStore IRolesStore)
+        {            
             this._IUserInfo = IUserInfo;
-            this._Configuration = configuration;        
+            this._IRolesStore = IRolesStore;
         }
 
         /// <summary>
@@ -50,19 +48,45 @@ namespace AuthorityManagementCent.Managers
                 return response;
             }
             else
-            {
+            {                
                 TokenModel jwt = new TokenModel
                 {
-                    Id = Guid.NewGuid().ToString(),
-                    UserName= users.userName,
-                    RoleName="admin",
-                    TrueName ="郑强勇",
-                    OrganizationId= "1",                    
+                    Id = returnUsers.Id,
+                    RoleName="",
+                    UserName = users.userName,                  
+                    TrueName = returnUsers.TrueName,
+                    OrganizationId = returnUsers.OrganizationId,
                 };
                 response.Extension= JwtHelpers.IssueJWT(jwt);               
             }
             return response;
         }
+
+
+        /// <summary>
+        /// 获取该用户的所有的权限列表
+        /// </summary>
+        /// <returns></returns>
+        public async Task<ResponseMessage<List<string>>> JurisdictionList(string useId)
+        {
+            var response = new ResponseMessage<List<string>>();
+            try
+            {          
+                var UserRole = from b in _IRolesStore.GetUserRoleAsync().Where(p => p.UserId == useId)
+                               join c in _IRolesStore.GetRolePermissionsAsync()
+                               on b.RoleId equals c.RoledId into b1
+                               from c1 in b1.DefaultIfEmpty()
+                               select c1;
+                response.Extension = await UserRole.Select(p => p.PermissionsId).Distinct().ToListAsync();
+            }
+            catch (Exception el)
+            {
+                throw new Exception(el.Message);
+            }
+            return response;
+
+        }
+
 
     }
 }

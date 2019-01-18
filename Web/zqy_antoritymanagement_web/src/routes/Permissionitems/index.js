@@ -1,90 +1,114 @@
 import React, { Component } from 'react';
-import { Table, Button, Icon, Select, Alert } from 'antd';
-import {CollectionCreateForm} from './ModalFrom';
-import { httpPost, messageWarn, messageSuccess, httpGet } from '../../utils/public';
-import {TablePermission} from './table';
+import { Table, Button, Icon, Select, Tooltip,Modal} from 'antd';
+import { ModalAdd } from './ModalAdd';
+import { httpPost, messageWarn, messageSuccess, NoRepeat } from '../../utils/public';
+import { ModalUpdate } from './ModalUpdate';
 
 
-
-const searchInfo="";
+const confirm = Modal.confirm;
 class Permissionitems extends Component {
+
 
     constructor() {
         super();
         this.state = {
             visible: false,
-            columns: [               
-                {
-                    title: '权限名',
-                    dataIndex: 'name',
-                    key: 'name'
-                },
-                {
-                    title: '分组名',
-                    dataIndex: 'groups',
-                    key: 'groups'
-                },                       
-                {
-                    title: '操作',
-                    dataIndex: '',
-                    render: function (text, record) {
-                        return <span>                          
-                            <a href="##:;" className="ant-dropdown-link">
-                                修改 <i className="anticon anticon-down"></i>
-                            </a>                  
-                        </span>;
-                    }
-                }],
-            data:[],
-            searchName:""
+            EditVisible: false,
+            data: [],
+            searchName: "",
+            optionsData: [],
+            updateMsg: [],
+            selectedRowKeys: [],
+            totalCount:0            
         }
     }
 
-    componentDidMount()
-    {
-        this.Initialization();
+    componentDidMount() {
+        this.Initialization(0);
     }
-    
-    handleSelect =(value) =>{
+
+    /**初始化权限列表 */
+    Initialization = (pageSizeNumber) => {
+        let url = "/api/Jurisdiction/getJurisdictionList/";
+        var bodys = {
+            pageIndex: pageSizeNumber,
+            pageSize: 10
+        }
+        httpPost(url, bodys).then(data => {
+
+            if (data.code != "0") {
+                messageWarn(data["message"]);
+            }
+         
+            var msg = [];
+            for (var i in data.extension) {
+                msg.push(data.extension[i].groups);
+            }
+            this.setState({
+                data: data.extension,
+                optionsData: NoRepeat(msg),
+                totalCount: data.totalCount
+            });        
+        });
+    }
+
+
+    /**权限修改 */
+    PermissionEdit = (records) => {
+        console.log(records, "传递的参数是...");
+        this.setState({
+            EditVisible: true,
+            updateMsg: records
+        })
+    }
+
+    handleSelect = (value) => {
         alert(value);
         this.searchInfo = value;
         this.setState({
             searchName: value
         })
     }
-    /**初始化权限列表 */
-    Initialization = () =>{        
 
-       let url="/api/Jurisdiction/getJurisdictionList/";
-       var bodys={           
-            pageIndex: 0,
-            pageSize: 10
-       }        
-        httpPost(url, bodys).then(data => {
-            if (data.code != "0") {
-                messageWarn(data["message"]);
+
+    /**提交修改 */
+    PermissionSubmit = () => {
+        const form = this.formRef.props.form;
+        form.validateFields((err, values) => {
+            if (err) {
+                this.setState({ EditVisible: false });
+                return;
             }
-            this.setState({
-                data: data.extension
-            })
-     });
+       
+            let url = "/api/Jurisdiction/add";
+            httpPost(url, values).then(data => {
+                if (data.code != "0") {
+                    messageWarn(data.message);
+                }
+                form.resetFields();
+                this.setState({ EditVisible: false });
+                this.Initialization();
+                messageSuccess("权限修改成功！");
+               
+            });
+        });
     }
 
-    optionSelect =(value)=>{      
+    optionSelect = (value) => {
         this.setState({
             searchName: value
-        })
+        });
     }
 
     /**搜索 */
-    searchs =() =>{
+    searchs = () => {
         let url = "/api/Jurisdiction/getJurisdictionList/";
         var bodys = {
             pageIndex: 0,
             pageSize: 10,
-            groups : this.state.searchName || "数据维护"
+            groups: this.state.searchName
         }
-        console.log(bodys,"这个数是");
+        console.log(bodys, "这个数是");
         httpPost(url, bodys).then(data => {
             if (data.code != "0") {
                 messageWarn(data["message"]);
@@ -95,84 +119,179 @@ class Permissionitems extends Component {
         });
     }
 
-  
     /**模态框打开 */
-    showModal = ()=>{       
+    showModal = () => {
         this.setState({
-            visible:true    
-        })
+            visible: true
+        });
     }
 
     /**模态框关闭 */
     handleCancel = () => {
-        this.setState({ visible: false });
-    } 
-//Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxIiwiMSJdLCJqdGkiOiIwNmQ2NmY5OC0yMGMwLTQ2NjEtOWEzOC05ZWJmNjFjNTM0YmMiLCJpYXQiOjE1NDU5ODA1NTEsInJvbGUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiLpg5HlvLrli4ciLCJPcmdhbml6YXRpb24iOiIxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiN2MwY2NlNjktYzc0Ni00YWU4LTkyYzktNWQ0ZDhiYmQ2MTE4IiwibmJmIjoxNTQ1OTgwNTUxLCJleHAiOjE1NDYwNjY5NTEsImlzcyI6IlpRWSIsImF1ZCI6IlBDIn0.OjvqU86I3H02UCqRsiZcEpbHWVGtqdLDn1ATWlCXCEk
-
-    del =() =>{
-        alert("方法请求中...");
-        let url = "/api/Token/get";
-        httpPost(url,null,null).then(data=>{
-                console.log(data,"携带Token是否成功~~");
+        this.setState({
+            visible: false,
+            EditVisible: false
         });
     }
-   
+    
+    /**权限的删除 */
+    PermissionDelete = (record) => {
+        confirm({
+            title: '删除权限',
+            content: '是否确认删除？',
+            okText: '确认',
+            okType: '取消',
+            cancelText: '',
+            onOk() {                  
+                let url="/api/Jurisdiction/delete";
+                var idlist={
+                    id: [record.id]
+                }
+                console.log(idlist,"id");
+                httpPost(url,idlist ).then(data=>{
+                    if (data.code != "0") {
+                        messageWarn(data["message"]);
+                    }                                        
+                    messageSuccess("删除权限成功");
+                });
+            },
+            onCancel() {           
+            },
+          });        
+    }
+
+
     /**添加权限 */
-    handleCreate = () => {        
-       
+    handleCreate = () => {
         const form = this.formRef.props.form;
         form.validateFields((err, values) => {
             if (err) {
-                 return;               
-            }                
-            console.log(values,"传递的参数是");    
-            let url="/api/Jurisdiction/add";           
-            httpPost(url,values).then(data => {
-                if(data.code != "0")
-                {                 
+                return;
+            }
+            let url = "/api/Jurisdiction/add";
+            httpPost(url, values).then(data => {
+                if (data.code != "0") {
                     messageWarn("0");
-                }     
+                }
                 messageSuccess("添加成功！");
-                form.resetFields();                            
-                this.setState({ visible: false });            
-            });          
+                form.resetFields();
+                this.setState({ visible: false });
+                this.Initialization();
+            });
         });
     }
     saveFormRef = (formRef) => {
         this.formRef = formRef;
     }
+
+    /**权限项的删除 */
+    onTableSelectChange = (selectedRowKeys) => {
+
+        console.log('selectedRowKeys changed: ', selectedRowKeys);
+        this.setState({ selectedRowKeys });
+    }
+
+
+    /**分页按钮 */
+    handlePageChange = (pagination, filters, sorter) => {
+       console.log(pagination.current,"第几页？？？？");
+        let val = {
+            rows: 10,
+            page: pagination.current ? pagination.current : 1
+        }
+        this.Initialization(pagination.current-1);       
+    }
+
+ 
     render() {
+        var _this = this;
+        var selectData = _this.state.optionsData || [];        
+        ///申明变量后要
+        const columns = [
+            {
+                title: '权限名',
+                dataIndex: 'name',
+                key: 'name',
+            },
+            {
+                title: '分组名',
+                dataIndex: 'groups',
+                key: 'groups'
+            },
+            {
+                title: '操作',
+                dataIndex: '',
+                render: function (text, record) {
+                    return <span>
+                        <Tooltip placement="top" title="编辑">
+                            <Button type="primary" onClick={() => _this.PermissionEdit(record)} size="small" shape="circle" icon="edit" />     
+                        </Tooltip>
+                        <Tooltip placement="top" title="删除">
+                            <Button type="primary" onClick={() => _this.PermissionDelete(record)} size="small" shape="circle" icon="delete" />
+                        </Tooltip>
+                    </span>
+                }
+            }];
+        
+        const paginationProps ={
+            pageSize: 10,      
+            total: _this.state.totalCount,              //后台读取的total
+        }
         return (
             <div>
                 <div style={{ textAlign: "left" }}>
-                    <Button style={{ marginRight: "1%" }} type="primary" onClick={()=>{ this.showModal()}} shape="circle" size="default">
-                        <Icon type="plus" />
-                    </Button>
-                    <CollectionCreateForm
-                            wrappedComponentRef={this.saveFormRef}
-                            visible={this.state.visible}
-                            onCancel={this.handleCancel}
-                            onCreate={this.handleCreate}
-                            info={this.props.GuidAndName}
+                    <Tooltip placement="top" title="新增权限">
+                        <Button style={{ marginRight: "1%" }} type="primary" onClick={() => { this.showModal() }} shape="circle" size="default">
+                            <Icon type="plus" />
+                        </Button>
+                    </Tooltip>
+                    <ModalAdd
+                        wrappedComponentRef={this.saveFormRef}
+                        visible={this.state.visible}
+                        onCancel={this.handleCancel}
+                        onCreate={this.handleCreate}
+                        info={this.props.GuidAndName}
                     />
-                    <Button style={{ marginRight: "1%" }} type="primary" onClick={()=>{ this.del()}} shape="circle" size="default">
-                        <Icon type="delete" />
-                    </Button>
+                    {console.log(selectData, "分组名称有不有")}
+                    <ModalUpdate
+                        wrappedComponentRef={this.saveFormRef}
+                        visible={this.state.EditVisible}
+                        onCancel={this.handleCancel}
+                        onCreate={this.PermissionSubmit}
+                        SelectData={selectData}
+                        data={this.state.updateMsg}
+                    />
+                    {/* <Tooltip placement="top" title="删除权限">
+                        <Button style={{ marginRight: "1%" }} type="primary" onClick={() => { this.del() }} shape="circle" size="default">
+                            <Icon type="delete" />
+                        </Button>
+                    </Tooltip> */}
                 </div>
-                <div style={{width:"100%" }}>                    
-                    <div style={{textAlign:"left", paddingTop:"0.5%",  width:"20%"}}>
+                <div style={{ width: "100%" }}>
+                    <div style={{ textAlign: "left", paddingTop: "0.5%", width: "20%" }}>
+
                         <label>分组名：</label>
-                        <Select defaultValue="数据维护" onSelect={this.optionSelect}>
-                            <Select.Option value="数据维护">数据维护</Select.Option>
-                            <Select.Option value="数据浏览">数据浏览</Select.Option>
-                        </Select>
-                        <Button  type="primary" onClick={() =>{ this.searchs()}} style={{float:"right"}} icon="search">查询</Button>
-                    </div>                   
-                </div>              
-               <Table                 
-                    columns={this.state.columns}
+                        {
+                            <Select style={{ width: "150px" }} onSelect={this.optionSelect} >
+                                {
+                                    Object.keys(selectData).map(function (i) {
+                                        return <Select.Option value={selectData[i]}>{selectData[i]}</Select.Option>
+                                    })
+                                }
+                            </Select>
+                        }
+                        <Button type="primary" onClick={() => { this.searchs() }} style={{ float: "right" }} icon="search">查询</Button>
+                    </div>
+                </div>
+                <Table
+                    columns={columns}
                     dataSource={this.state.data}
+                    rowKey="id"            
+                    bordered={false}                     
+                    pagination={paginationProps}                
+                    onChange={this.handlePageChange}           
                 />
+                 
             </div>
         );
     }

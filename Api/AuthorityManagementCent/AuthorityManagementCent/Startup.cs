@@ -25,6 +25,8 @@ using System.Text;
 using AutoMapper;
 using AuthorityManagementCent.Dto.Common;
 using AuthorityManagementCent.Filters;
+using NLog.Extensions.Logging;
+using NLog.Web;
 
 namespace AuthorityManagementCent
 {
@@ -123,7 +125,7 @@ namespace AuthorityManagementCent
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -154,8 +156,17 @@ namespace AuthorityManagementCent
                 .AllowAnyHeader()
                 .AllowCredentials());
             app.UseHttpsRedirection();
-            
+
+            //日志配置，为了防止中文乱码
+            ConfigureNLog(app,env,loggerFactory);
             app.UseMvc();
+        }
+
+        public void ConfigureNLog(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        {
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);//这是为了防止中文乱码
+            loggerFactory.AddNLog();//添加NLog
+            env.ConfigureNLog("nlog.config");//读取Nlog配置文件                                             
         }
     }
 }

@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 namespace AuthorityManagementCent.Dto.Request
 {
     public class UserRequest
-    {       
+    {
+        /// <summary>
+        ///主键
+        /// </summary>
+        public string Id { get; set; }
+
         /// <summary>
         /// 组织Id
         /// </summary>
@@ -26,7 +31,7 @@ namespace AuthorityManagementCent.Dto.Request
         /// 号码
         /// </summary>
         public string PhoneNumber { get; set; }
-        
+
         /// <summary>
         /// 初始密码
         /// </summary>

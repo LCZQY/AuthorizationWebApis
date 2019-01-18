@@ -8,12 +8,14 @@ using AuthorityManagementCent.Managers;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using AuthorityManagementCent.Dto.Request;
+using AuthorityManagementCent.Filters;
+using AuthorityManagementCent.Dto.Response;
 
 namespace AuthorityManagementCent.Controllers
 {
     /// <summary>
     /// 用户管理
-    /// </summary>
+    /// </summary>    
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : Controller
@@ -27,19 +29,22 @@ namespace AuthorityManagementCent.Controllers
             this._Logger = Logger;
         }
         
-
         /// <summary>
         /// 获取所有用户信息
         /// </summary>
         /// <param name="conditionSearch"></param>
         /// <returns></returns>
         [HttpPost("getUsersMessages")]
-        public async Task<ResponseMessage> GetUsersMessageAsync(OranizationUserRequest conditionSearch)
+        [JwtTokenAuthorize]
+        public async Task<PagingResponseMessage<UsersResponse>> GetUsersMessageAsync(OranizationUserRequest conditionSearch)
         {
-            var response = new ResponseMessage();
+            var users = DataBaseUser.TokenModel;
+            _Logger.LogInformation($"\r\n 用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 获取所有用户信息:\r\n" + (conditionSearch != null ? JsonHelpers.ToJSON(conditionSearch) : ""));
+
+            var response = new PagingResponseMessage<UsersResponse>();
             if (conditionSearch == null)
             {
-                //_Logger.LogInformation($"{users.userName}获取Token中,请求的参数为空。");
+                _Logger.LogInformation($"{users.UserName}获取所有用户信息,请求的参数为空。");
                 response.Code = ResponseCodeDefines.NotAllow;
                 response.Message = "请求参数为空";
             }
@@ -49,6 +54,7 @@ namespace AuthorityManagementCent.Controllers
             }
             catch (Exception el)
             {
+                _Logger.LogError($"用户{users?.UserName ?? ""}({users?.Id ?? ""})获取所有用户信息报错：\r\n{el.ToString()}");
                 response.Code = ResponseCodeDefines.ModelStateInvalid;
                 response.Message = $"获取所有用户信息报错：{ el.Message}";
             }
@@ -62,12 +68,15 @@ namespace AuthorityManagementCent.Controllers
         /// <param name="userRequest">基本信息</param>
         /// <returns></returns>
         [HttpPost("addUser")]
+        [JwtTokenAuthorize]
         public async Task<ResponseMessage> InsertUsers(UserRequest userRequest)
-        {
+        {      
+            var users = DataBaseUser.TokenModel;
+            _Logger.LogInformation($"\r\n 用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 获取所有用户信息:\r\n" + (userRequest != null ? JsonHelpers.ToJSON(userRequest) : "\r\n"));
             var response = new ResponseMessage();
             if (userRequest == null)
             {
-                //_Logger.LogInformation($"{users.userName}获取Token中,请求的参数为空。");
+                _Logger.LogInformation($"{users.UserName}添加用户,请求的参数为空。");
                 response.Code = ResponseCodeDefines.NotAllow;
                 response.Message = "请求参数为空";
             }
@@ -77,11 +86,11 @@ namespace AuthorityManagementCent.Controllers
             }
             catch (Exception el)
             {
+                _Logger.LogError($"用户{users?.UserName ?? ""}({users?.Id ?? ""})获取所有用户信息报错：\r\n{el.ToString()}");
                 response.Code = ResponseCodeDefines.NotAllow;
                 response.Message = $"添加用户信息失败，请联系管理员.";
             }
             return response;
-
         }
     }
 }

@@ -58,6 +58,6 @@ namespace AuthorityManagementCent.Dto.Common
                     Expires = expiresAt
                 });
             return new JwtSecurityTokenHandler().WriteToken(securityToken);
-        }       
+        }
     }
 }

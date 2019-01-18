@@ -9,13 +9,13 @@ namespace AuthorityManagementCent.Model
     /// <summary>
     /// 角色
     /// </summary>
-    public class Roles: TraceUpdateBase
+    public class Roles
     {
         /// <summary>
         /// Key
         /// </summary>
         [Key]
-        public Guid Id { get; set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// 组织 ID

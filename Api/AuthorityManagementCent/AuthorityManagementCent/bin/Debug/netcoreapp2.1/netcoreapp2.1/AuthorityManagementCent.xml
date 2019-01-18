@@ -338,6 +338,16 @@
             角色ID
             </summary>
         </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.OranizationUserRequest.IsDelete">
+            <summary>
+            员工状态
+            </summary>
+        </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.OranizationUserRequest.EpartmentId">
+            <summary>
+            部门id
+            </summary>
+        </member>
         <member name="T:AuthorityManagementCent.Dto.Request.PermissionitemRequest">
             <summary>
             添加权限

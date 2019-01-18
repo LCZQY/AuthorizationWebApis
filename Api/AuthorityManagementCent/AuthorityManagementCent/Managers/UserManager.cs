@@ -47,12 +47,10 @@ namespace AuthorityManagementCent.Managers
                 pagingResponse.Code = ResponseCodeDefines.NotAllow;
                 return pagingResponse;
             }
-
             //1.2.对应权限的所有的可以浏览的范围(默认包含可查看本组织的内容)
             var scopeList = await _RolesStore.BrowsingScope(users.Id, "User_Add_Edit");
             scopeList.OrganizationScope.Add(users.OrganizationId);
             var query = _IUserStore.GetUserInformation().Where(p => scopeList.OrganizationScope.Contains(p.OrganizationId));
-
             
             if (condition.OranizationId != null)
             {
@@ -69,11 +67,10 @@ namespace AuthorityManagementCent.Managers
                         where c2.RoleId.Equals(condition.RoleId)
                         select c;
             }
-
             //员工管理筛选条件【姓名】//
             if (condition.TrueName != null)
             {
-                query = query.Where(p=>p.TrueName.Equals(condition.TrueName));
+                query = query.Where(p=>p.TrueName.Contains(condition.TrueName));
             }
 
             //员工管理筛选条件【部门】
@@ -87,7 +84,6 @@ namespace AuthorityManagementCent.Managers
             {
                 query = query.Where(p => p.IsDeleted.Equals(condition.IsDelete));
             }
-
             pagingResponse.TotalCount = await query.CountAsync();
             var qlist = await query.Skip(condition.PageIndex * condition.PageSize).Take(condition.PageSize).ToListAsync();
             pagingResponse.PageIndex = condition.PageIndex;

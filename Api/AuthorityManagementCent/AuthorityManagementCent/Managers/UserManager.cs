@@ -70,7 +70,7 @@ namespace AuthorityManagementCent.Managers
                         select c;
             }
 
-            //员工管理筛选条件【姓名】
+            //员工管理筛选条件【姓名】//
             if (condition.TrueName != null)
             {
                 query = query.Where(p=>p.TrueName.Equals(condition.TrueName));

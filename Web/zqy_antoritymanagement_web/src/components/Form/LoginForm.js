@@ -26,10 +26,10 @@ class LoginForm extends Component {
                     console.log(data, "登陆日志");
                     switch (data["code"]) {
                         case "0":
-                            window.location.href = "#/home?returnurl=";
+                            window.location.href = "#/home";
                             localStorage.setItem('id_token', "Bearer "+data["extension"]);
                             break;
-                        default:
+                        default:                            
                             messageWarn(data["message"] || data["userName"]);
                             break;
                     }

@@ -2,7 +2,7 @@ import React from 'react';
 import { Modal, Form, Input } from 'antd';
 
 
-export const CollectionCreateForm = Form.create()(
+export const ModalAdd = Form.create()(
 
     class extends React.Component {   
         render() {

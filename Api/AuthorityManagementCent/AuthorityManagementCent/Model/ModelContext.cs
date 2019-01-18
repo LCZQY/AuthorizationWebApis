@@ -9,11 +9,14 @@ namespace AuthorityManagementCent.Model
 {
     public class ModelContext : DbContext
     {
+
         public ModelContext(DbContextOptions<ModelContext> options)
             : base(options)
         {
 
         }
+
+        public DbSet<PermissionExpansion> PermissionExpansions { get; set; }
 
         public DbSet<UserRole> UserRoles { get; set; }
 
@@ -33,9 +36,14 @@ namespace AuthorityManagementCent.Model
         {
             base.OnModelCreating(builder);
 
+            builder.Entity<PermissionExpansion>(b =>
+            {
+                b.ToTable("permissionexpansion");
+            });
+
             builder.Entity<UserRole>(b =>
             {
-                b.HasKey(k => new { k.UserId, k.RoleId });
+                b.HasKey(k => new { k.RoleId });
                 b.Property<bool>("IsDeleted").HasColumnType("bit");
                 b.ToTable("userrole");
             });
@@ -43,7 +51,7 @@ namespace AuthorityManagementCent.Model
 
             builder.Entity<RolePermissions>(b =>
             {
-                b.HasKey(k => new { k.OrganizationScope, k.PermissionsId, k.RoledId });
+                //b.HasKey(k => new { k.OrganizationScope, k.PermissionsId, k.RoledId });
                 b.ToTable("rolepermissions");
             });
 
@@ -61,8 +69,9 @@ namespace AuthorityManagementCent.Model
             });
 
             builder.Entity<OrganizationExpansions>(b =>
-            {
-                b.Property<bool>("IsDeleted").HasColumnType("bit");
+            {              
+                b.Property<bool>("IsImmediate").HasColumnType("bit");
+                b.HasKey(k => new { k.OrganizationId ,k.SonId });
                 b.ToTable("organizationexpansions");
             });
 

@@ -5,6 +5,7 @@ import  "./oranization.css";
 const TreeNode = Tree.TreeNode;
 
 
+
 /**组植树造 对于异步加载的子节点使用该key进行自增赋值*/
 class SearchTree extends Component {
 
@@ -13,12 +14,14 @@ class SearchTree extends Component {
         searchValue: '',
         autoExpandParent: true,
         gData: [],
-        OranizationsId: ""
+        OranizationsId: "",
+        
     };
 
     //初始化树状结构
     componentDidMount() {
         this.Initialization("0");
+        this.props.onRef(this);
     }
 
     //请求后台数据
@@ -38,17 +41,19 @@ class SearchTree extends Component {
         });
     }
 
+   
     /**点击树节点 */
-    onSelect = (selectedKeys, {selected: bool, selectedNodes, node, event}) => {
+    onSelect = (selectedKeys, {selected: bool, selectedNodes, node}) => {
         this.props.ButtonFun(false);
         //?????????? 点击2次就获取不到该 id
-        console.log(selectedKeys,selectedNodes[0].props.dataRef.title, "父Id");
+        // console.log(selectedNodes[0].props, "selectedNodes");        
+        // console.log(node, "node");             
+        // console.log(selectedKeys,selectedNodes[0].props.dataRef.title, "父Id");              
         var pages = {
             "pageIndex": 0,
             "pageSize": 10,
             "oranizationId": selectedKeys[0]
         }
-
         //获取用户信息
         let url = "/api/User/getUsersMessages";
         httpPost(url, pages).then(data => {
@@ -63,8 +68,11 @@ class SearchTree extends Component {
                 value: selectedNodes[0].props.dataRef.title
             }
             this.props.getMsg(treeNodes);
-        })
+        });
+
     };
+    
+
 
     onExpand = (expandedKeys) => {
         console.log(expandedKeys, "扩展.........");

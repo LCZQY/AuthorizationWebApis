@@ -16,6 +16,7 @@ namespace AuthorityManagementCent.Controllers
     /// <summary>
     /// 角色管理
     /// </summary>
+
     [Route("api/[controller]")]
     [ApiController]
     public class RolesController : ControllerBase
@@ -83,11 +84,11 @@ namespace AuthorityManagementCent.Controllers
         /// </summary>       
         /// <returns></returns>
         [HttpPost("add/RolePermissions")]
-        //[JwtTokenAuthorize]
+        [JwtTokenAuthorize]
         public async Task<ResponseMessage> PulshRolePermissions(RolePermissionsRequest rolesRequest)
         {
             var users = DataBaseUser.TokenModel;
-            _Logger.LogInformation($"用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 获取权限列表:\r\n" + (rolesRequest != null ? JsonHelpers.ToJSON(rolesRequest) : ""));
+            _Logger.LogInformation($"用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 添加角色组织权限表:\r\n" + (rolesRequest != null ? JsonHelpers.ToJSON(rolesRequest) : ""));
             var response = new ResponseMessage();
             try
             {
@@ -101,6 +102,35 @@ namespace AuthorityManagementCent.Controllers
             }
             return response;
         }
+
+
+        /// <summary>
+        /// 添加用户角色表
+        /// </summary>       
+        /// <returns></returns>
+        [HttpPost("add/UserRoles")]
+        [JwtTokenAuthorize]
+        public async Task<ResponseMessage> PulshUserRole(UserRolesRequest rolesRequest)
+        {
+            var users = DataBaseUser.TokenModel;
+            _Logger.LogInformation($"用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 添加用户角色表:\r\n" + (rolesRequest != null ? JsonHelpers.ToJSON(rolesRequest) : ""));
+            var response = new ResponseMessage();
+            try
+            {
+                response = await _RolesManager.AddUserRoles(rolesRequest);
+            }
+
+            catch (Exception el)
+            {
+                _Logger.LogError($"用户{users?.UserName ?? ""}({users?.Id ?? ""})添加用户角色表报错：\r\n{el.ToString()}");
+                response.Code = ResponseCodeDefines.ArgumentNullError;
+                response.Message = $"添加用户角色表报错:{el.Message}";
+            }
+            return response;
+        }
+
+
+
 
 
 

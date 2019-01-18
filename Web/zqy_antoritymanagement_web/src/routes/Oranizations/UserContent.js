@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { Table, Button, Icon, Tooltip } from 'antd';
 import { CollectionCreateForm } from './ModelFrom';
-import { httpPost, messageWarn } from '../../utils/public';
-
-
+import { httpPost, messageWarn, messageSuccess } from '../../utils/public';
 
 /**组织下的用户列表 */
 class UserContent extends Component {
@@ -11,13 +9,10 @@ class UserContent extends Component {
     constructor() {
         super();
         this.state = {
-
             visible: false,
-            ButtonDisplay: false
-
+            ButtonDisplay: false,           
         }
     }
-
     showModel = () => {
         this.setState({
             visible: true
@@ -30,20 +25,22 @@ class UserContent extends Component {
     /**创建员工 */
     handleCreate = () => {
         const form = this.formRef.props.form;
-        form.validateFields((err, values) => {
+        form.validateFields((err, values) => {            
+
             if (err) {
                 return;
-            }
-            values.organizationId = this.props.GuidAndName.Id;
-            console.log(values, "传递的参数是");
+            }            
+            values.organizationId = this.props.GuidAndName.Id;            
             let url = "/api/User/addUser";
             httpPost(url, values).then(data => {
                 if (data.code != "0") {
                     messageWarn(data["message"]);
+                    return;
                 }
-                form.resetFields();
-                alert("添加成功！")
+                form.resetFields();                
                 this.setState({ visible: false });
+                messageSuccess("员工添加成功");
+
             });
         });
     }
@@ -54,6 +51,17 @@ class UserContent extends Component {
         console.log(texts, "这个是个什么东东");
         alert("事件绑定成功！");
     }
+
+    // /**选择表格的复选框样式始终不管怎么修改样式他的列永远都不动！！！！！！！！！！！！！！！！！！ */
+    // rowSelection = {    
+    //     onChange: (selectedRowKeys, selectedRows) => {
+    //         console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+    //     },
+    //     getCheckboxProps: record => ({
+    //         disabled: record.name === 'Disabled User', 
+    //     }),
+    // };
+
     render() {
         
         const _this = this;
@@ -100,8 +108,8 @@ class UserContent extends Component {
                         <Tooltip placement="top" title="用户权限设置">
                             <Button type="primary" onClick={() => _this.reset(record)} size="small" shape="circle" icon="team" />
                         </Tooltip>
-                        <Tooltip placement="top" title="重置密码">
-                            <Button type="primary" onClick={() => _this.reset(record)} size="small" shape="circle" icon="redo" />
+                        <Tooltip placement="top" title="删除">
+                            <Button type="primary" onClick={() => _this.reset(record)} size="small" shape="circle" icon="delete" />
                         </Tooltip>
                     </span>
                 }
@@ -120,15 +128,13 @@ class UserContent extends Component {
                             onCancel={this.handleCancel}
                             onCreate={this.handleCreate}
                             info={this.props.GuidAndName}
-                        />
-                        <Button style={{ marginLeft: "0.5%", zIndex: "1" }} type="primary" shape="circle" size="default">
-                            <Icon type="delete" />
-                        </Button>
+                        />                      
                     </div>
                 </div>
                 <Table
                     columns={columns}
-                    dataSource={this.props.data}
+                    dataSource={this.props.data}                  
+                    ///rowSelection={this.rowSelection}//复选框
                 />
             </div>
         )

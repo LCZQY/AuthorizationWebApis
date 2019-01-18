@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Table, message,Button,Tooltip } from 'antd';
-import { httpPost } from '../../utils/public';
+import { httpPost, messageSuccess, messageError,messageWarn } from '../../utils/public';
 import {ModalUserRole} from './ModalUserRole';
+import {ModalUserEdit} from './ModalUserEdit';
 
  class UserTable extends Component {
 
@@ -11,22 +12,27 @@ import {ModalUserRole} from './ModalUserRole';
              selectedItems: [],             
              data: [],
              visible: false,
-             User:[]
+             Editvisible: false,
+             EditData:[],
+             User:[],
+             SelectData:[],
+             totalCount:0
          }
     }   
-
      //组件第一次渲染完成，此时dom节点已经生成，可以调用Ajax请求
      componentDidMount() {
-         this.Initialization();
+         this.Initialization(0);         
+         clearTimeout(this.myClear);
      }
 
      //初始化用户列表
-     Initialization = () => {
+     Initialization = (index) => {
          var pages = {
-             "pageIndex": 0,
+             "pageIndex": index,
              "pageSize": 10
          }
-         // 获取用户信息
+         console.log(pages ,"分页请求·················");
+         /**获取用户信息 */
          let url = "/api/User/getUsersMessages";
          httpPost(url, pages).then(data => {
              if (data.code != 0) {
@@ -34,51 +40,138 @@ import {ModalUserRole} from './ModalUserRole';
                  return;
              }
              this.setState({
-                 data: data.extension
-             })
-         })
+                 data: data.extension,
+                 EditData: [],
+                 totalCount: data.totalCount
+             });
+             console.log(data,"用户信息时");
+             
+        });
+
+         /**获取组织列表 */
+         url = "/api/Oranizations/createTreeStructure/0";
+         httpPost(url, null).then(data => {
+             if (data.code != "0") {
+                 messageWarn(data["message"]);
+                 return;
+             }
+             this.setState({
+                 SelectData: data.extension
+             });
+         });
      }
 
      /**重置密码 */
-     reset = (texts) => {
-         console.log(texts, "这个是个什么东东");
-         alert("事件绑定成功！");
+     UserEdit = (texts) => {
+         console.log(texts, "这个是个什么东东");    
+         this.setState({
+            Editvisible: true,
+            EditData: texts
+         })
      }
 
      /**用户权限设置 */
      UserRoles = (objectkey) => {
-
          console.log(objectkey, "对象是");
          this.setState({
              visible: true,
-             User: objectkey
+             User: objectkey,
+             totalCount:0
          });
-
-
      }
-
+     
      /**模态框关闭 */
      handleCancel = () => {
-         this.setState({ visible: false });
+         this.setState({
+             visible: false,
+             Editvisible: false
+         });
      }
 
-     /**提交编辑 */
+     /**添加用户角色数据 提交编辑 */
      handleCreate = () => {
          const form = this.formRef.props.form;
          form.validateFields((err, values) => {
              if (err) {
-                 return;
+                messageError(err);
+                this.setState({
+                    visible: false
+                });
+                 return;                 
              }
              console.log(values, "传递的参数是");
+             let url ="/api/Roles/add/UserRoles";
+             var body = {
+                userId : values.id,
+                roleId : values.rolesID
+             }
+             httpPost(url,body).then(data=>{
+                if (data.code != 0) {          
+                    this.setState({
+                        visible: false
+                    });          
+                    messageError(data.message);
+                    return;
+                }
+                this.setState({
+                    visible: false
+                });
+               messageSuccess("用户绑定角色成功！");
+             }); 
+         });
+     }
+
+     /**编辑用户信息 */
+     userEditSubmit = () => {
+         const form = this.formRef.props.form;
+         form.validateFields((err, values) => {
+             if (err) {
+                 messageError(err);
+                 this.setState({
+                     Editvisible: false,
+                 });
+                 return;
+             }
+            console.log(values,"··");
+            let url="/api/User/addUser";                     
+            httpPost(url,values).then(data=>{
+                if(data.code != "0")
+                { 
+                    messageError(data.message);                    
+                }
+                this.Initialization()
+                this.setState({
+                    Editvisible: false
+                });
+                //清空表单
+                this.myClear = setTimeout(this.formRef.props.form.resetFields,2000);
+                messageSuccess("修改用户信息成功！");
+             });            
          });
      }
      saveFormRef = (formRef) => {
          this.formRef = formRef;
      }
 
-    render() {        
+    /**分页按钮 */
+    handlePageChange = (pagination, filters, sorter) => {
+        console.log(pagination.current,"第几页？？？？");
+        let val = {
+            rows: 10,
+            page: pagination.current ? pagination.current : 1
+        }
+        this.Initialization(pagination.current-1);       
+    }
+
+    render() {   
+
+        const _this = this;
+        const paginationProps ={
+            pageSize: 10,      
+            total: _this.state.totalCount,              //后台读取的total
+        }     
         //为了防止this的指向发生了变化，所以绑定不了，在render函数里面保存this值到局部变量。
-         const _this = this;
+
          const columns= [
             {
                 title: '真实姓名',
@@ -117,14 +210,11 @@ import {ModalUserRole} from './ModalUserRole';
                 render: function (texts, record) {
                     return <span>
                              <Tooltip placement="top" title="用户编辑">
-                                <Button type="primary" onClick={() => _this.reset(record)} size="small" shape="circle" icon="edit" />
+                                <Button type="primary" onClick={() => _this.UserEdit(record)} size="small" shape="circle" icon="edit" />
                             </Tooltip>                          
                             <Tooltip placement="top" title="用户权限设置">
                                 <Button type="primary" onClick={() => _this.UserRoles(record)} size="small" shape="circle" icon="team" />
-                            </Tooltip>    
-                            <Tooltip placement="top" title="重置密码">
-                                <Button type="primary" onClick={() => _this.reset(record)} size="small" shape="circle" icon="redo" />
-                            </Tooltip>   
+                            </Tooltip>                              
                     </span>
                 }
             }];
@@ -135,11 +225,23 @@ import {ModalUserRole} from './ModalUserRole';
                     visible={this.state.visible}
                     onCancel={this.handleCancel}
                     onCreate={this.handleCreate}   
-                    userName={this.state.User}                                                                       
+                    userName={this.state.User}                                                                                           
+                />                
+                <ModalUserEdit
+                    wrappedComponentRef={this.saveFormRef}
+                    visible={this.state.Editvisible}
+                    onCancel={this.handleCancel}
+                    onCreate={this.userEditSubmit}   
+                    data={this.state.EditData}           
+                    OptionsData={ this.state.SelectData}
                 />
                 <Table
                     columns={columns}
                     dataSource={this.state.data}
+                    pagination={paginationProps}      
+                    onChange={this.handlePageChange}     
+                    rowKey="id"            
+                    bordered={false}    
                 />
             </div>
         )

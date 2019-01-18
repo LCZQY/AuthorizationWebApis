@@ -13,6 +13,11 @@ namespace AuthorityManagementCent.Dto.Request
     public class OranizationRequest
     {
         /// <summary>
+        /// 组织id
+        /// </summary>
+        public string id { get; set; }
+
+        /// <summary>
         /// 组织名称
         /// </summary>
         public string OrganizationName { get; set; }
@@ -32,11 +37,32 @@ namespace AuthorityManagementCent.Dto.Request
     /// <summary>
     /// 查询组织下的Id
     /// </summary>
-    public class OranizationUserRequest: PageConditionSearch
+    public class OranizationUserRequest : PageConditionSearch
     {
         /// <summary>
         /// 组织ID
         /// </summary>
         public string OranizationId { get; set; }
+
+        /// <summary>
+        /// 员工姓名
+        /// </summary>
+        public string TrueName { get; set; }
+
+        /// <summary>
+        /// 角色ID
+        /// </summary>
+        public string RoleId { get; set; }
+
+
+        /// <summary>
+        /// 员工状态
+        /// </summary>
+        public bool? IsDelete { get; set; }
+
+        /// <summary>
+        /// 部门id
+        /// </summary>
+        public string EpartmentId { get; set; }
     }
 }

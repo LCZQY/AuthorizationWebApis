@@ -27,18 +27,18 @@ namespace AuthorityManagementCent.Dto.Response
     }
 
     public class GroupByPermissionResponse
-    {
-    
-
+    {    
         /// <summary>
         /// 权限分组
         /// </summary>
         public string Groups { get; set; }
         
         public List<PermissionResponse> permissionResponses { get; set; }
-
-
     }
+
+
+
+
 
 
 }

@@ -21,6 +21,11 @@ namespace AuthorityManagementCent.Stores
             dbContext = _dbContext;
         }
 
+        public  IQueryable<Users> GetUsers()
+        {
+            return dbContext.Users.AsNoTracking();
+        }
+
         /// <summary>
         /// 判断该用户名是否存在
         /// </summary>

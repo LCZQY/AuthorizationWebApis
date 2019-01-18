@@ -38,6 +38,11 @@ namespace AuthorityManagementCent
             CreateMap<RolePermissionsRequest, RolePermissions>();
             CreateMap<RolePermissions, RolePermissionsRequest>();
 
+
+            //用户角色表
+            CreateMap<UserRolesRequest, UserRole>();
+            CreateMap<UserRole, UserRolesRequest>();
+
         }       
     }
 }

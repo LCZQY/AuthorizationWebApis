@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using System.Linq;
 using AuthorityManagementCent.Filters;
+using System.Collections.Generic;
+using AuthorityManagementCent.Dto.Response;
 
 namespace AuthorityManagementCent.Controllers
 {
@@ -21,6 +23,7 @@ namespace AuthorityManagementCent.Controllers
     {
         private readonly ILogger<TokenController> _Logger;
         private readonly TokenManager _UserInfoManager;
+
         public TokenController(
             ILogger<TokenController> logger,
             TokenManager userInfoManager
@@ -60,19 +63,34 @@ namespace AuthorityManagementCent.Controllers
             return response;
         }
 
-        [HttpPost("get")]
+
+        /// <summary>
+        /// 检查所属权限列表
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("listPermissionCheck")]
         [JwtTokenAuthorize]
-        public ActionResult get()
+        public async Task<ResponseMessage<PerUserResponse>> PermissionCheck()
         {
-            var UseInfo = DataBaseUser.TokenModel;
-            if (UseInfo == null)
+            var users = DataBaseUser.TokenModel;
+            _Logger.LogInformation($"用户：{users.UserName}，其ID:{ users.Id},验证所属所有权限列表");
+            var response = new ResponseMessage<PerUserResponse>();
+            try
             {
-                return BadRequest("请登录！");
+                var list = await _UserInfoManager.JurisdictionList(users.Id);
+                var  perUser = new PerUserResponse() {
+                     PermissionList =  list.Extension,
+                     UserName = users.TrueName
+                };
+                response.Extension = perUser;
             }
-            else
+            catch (Exception el)
             {
-                return Ok(UseInfo);
+                _Logger.LogError($"用户：{users.UserName }检查所属权限列表报错{ el.Message}\t\n");
+                response.Code = ResponseCodeDefines.ModelStateInvalid;
+                response.Message = $"检查所属权限列表失败：{ el.Message}";
             }
+            return response;
         }
 
         [HttpPost("outLogin")]

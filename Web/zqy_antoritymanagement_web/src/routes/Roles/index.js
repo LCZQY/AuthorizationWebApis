@@ -9,8 +9,7 @@ import SelectTree from "./SelectTree";
 const CheckboxGroup = Checkbox.Group;
 const { Content, Sider } = Layout;
 
-
-const PermissionId = []; //权限Id
+const PermissionId = ""; //权限Id
 let RolesId = ""; //角色Id
 let OranizationId = {}; //组织ID
 let endArray = []; //每个权限对应的组织范围
@@ -37,6 +36,7 @@ class Roles extends Component {
     }
 
     componentDidMount() {
+        clearTimeout(this.myClear);
         this.Initialization();
     }
 
@@ -67,7 +67,7 @@ class Roles extends Component {
         });
 
         /**工具权限数据 */
-        url = "/api/Jurisdiction/getJurisdictionList/";
+        url = "/api/Jurisdiction/getGroupPermissionList/";
         var bodys = {
             pageIndex: 0,
             pageSize: 10
@@ -75,8 +75,7 @@ class Roles extends Component {
         httpPost(url, bodys).then(data => {
             if (data.code != "0") {
                 messageWarn(data["message"]);
-            }
-            console.log(data.extension, "工具权限数据")
+            }            
             this.setState({
                 CollapseData: data.extension
             });
@@ -96,11 +95,10 @@ class Roles extends Component {
 
     /**组织范围权限选择 */
     checkbox = (checkedValue) => {
-
+                 
         if (checkedValue[0] != null) {
 
-
-            PermissionId.push(checkedValue);
+             this.permissionsId = checkedValue[0];                                   
             this.setState({
                 _checkState: true,
                 _ResetKeys: []
@@ -109,22 +107,13 @@ class Roles extends Component {
             this.setState({
                 _checkState: false,
                 _ResetKeys: []
-            });
-            //入如果是取消选择直接剔除上一个值                
-            PermissionId.pop();
-            endArray.pop();
-            console.log("删除中.....");
+            });       
         }
     }
-
+ 
     /**组织范围Id */
     OranChecked = (arry) => {
-        this.OranizationId = arry;
-        /**=== 该权限对应的组织范围 */
-
-
-
-        console.log(arry, "组织权限范围....");
+        this.OranizationId = arry;           
         this.setState({
             _ResetKeys: arry,
             _OranizationScoed: arry
@@ -142,16 +131,16 @@ class Roles extends Component {
     /**组织权限保存 */
     save = () => {
         // 一个角色对应多个权限 该权限又有组织范围 ，保存该数据时只保留该组织的最高部门即可！ 判断该角色时只需要，在数据库中查询该组织Id有无子集组织既是权限范围..                        
-        ///********************这里的处理一次性只可以添加一个权限的组织范围？？ 此处是重点修改对象 */
+        /** 优化方案： 这里的数组是记录的一个权限项对应的多个组织id，没有办法一次性提交多个，只能一次提交一个权限         **/                     
         endArray.push({
-            permissionsId: PermissionId.length == 0 ? PermissionId[0] : PermissionId[PermissionId.length - 1],
-            organizationScope: this.OranizationId
-        });
+            permissionsId: this.permissionsId,//PermissionId.length == 0 ? PermissionId[0] : PermissionId[PermissionId.length - 1],
+            organizationScope: this.OranizationId,        
+        });      
         var body = {
             roledId: this.RolesId,
             permissionsScopes: endArray
         }
-        console.log(body, "上传到后台的数据是======================");
+        console.log(body, "上传到后台的数据是======================");           
         let url = "/api/Roles/add/RolePermissions";
         httpPost(url, body).then(data => {
             if (data.code != "0") {
@@ -161,8 +150,6 @@ class Roles extends Component {
             messageSuccess("角色赋予权限成功.");
             window.location.reload();
         });
-
-
     }
 
     /**模态框打开，编辑角色 */
@@ -198,7 +185,9 @@ class Roles extends Component {
                 this.setState({
                     visible: false
                 })
-                this.Initialization();
+                this.Initialization();    
+                //注意点：内部回调函数this.props.form.resetFields不要带括号，否则无效
+                this.myClear = setTimeout(this.props.form.resetFields,2000);
             });
         });
     }
@@ -217,7 +206,7 @@ class Roles extends Component {
 
     render() {
         var obj = this.state.RoleList
-        var panel = this.state.CollapseData;
+        var panel = this.state.CollapseData || [];
         var _this = this;
         const options = [
             { label: '全部', value: 'all', disabled: _this.state.optionDisable },
@@ -226,7 +215,7 @@ class Roles extends Component {
         return (
             <div>
                 <Content>
-                    <table style={{ width: "100%", boxShadow: "black 3px -5px 3px -2px" }}>
+                    <table style={{ width: "100%" }}>
                         <tbody>
                             <tr style={{ background: "#FFF" }}>
                                 <td style={{ textAlign: "left", width: "1.28%" }}>
@@ -248,6 +237,7 @@ class Roles extends Component {
                             </tr>
                         </tbody>
                     </table>
+
                     {/* 左侧角色列表 */}
                     <Layout>
                         <Sider
@@ -283,19 +273,23 @@ class Roles extends Component {
                             />
                         </Sider>
                         {/* 中间工具权限 */}
-                        <div style={{ width: "100%", float: "left" }}>
-                            <div></div>
-                            <Collapse bordered={false}>
-                                {
-                                    Object.keys(panel).map(function (i) {
-                                        let options = [
-                                            { label: panel[i].name, value: panel[i].id, disabled: _this.state.optionDisable }
-                                        ];
-                                        return <Collapse.Panel header={panel[i].groups} key={panel[i].id}>
-                                            <CheckboxGroup options={options} onChange={(checkedValue) => _this.checkbox(checkedValue)} />
-                                        </Collapse.Panel>
-                                    })
-                                }
+                        <div style={{ width: "100%", float: "left" }}>                
+                            <Collapse bordered={false}>                                                                                    
+                            {                                    
+                                    Object.keys(panel).map(function (i) {                                        
+                                        var checkboxs = panel[i].permissionResponses
+                                        return <Collapse.Panel header={panel[i].groups}>
+                                            {
+                                                Object.keys(checkboxs).map(function (j) {
+                                                    let options = [
+                                                        { label: checkboxs[j].name, value: checkboxs[j].id, disabled: _this.state.optionDisable }
+                                                    ];
+                                                    return <CheckboxGroup options={options} onChange={checkedValue => _this.checkbox(checkedValue)} />;
+                                                })
+                                            }
+                                        </Collapse.Panel>                                     
+                                    })                                                            
+                            }
                             </Collapse>
                         </div>
                         {/* 右边组织权限 */}

@@ -23,7 +23,8 @@ class Users extends Component {
   constructor() {
     super();
     this.state = {
-      selectedItems: []
+      selectedItems: [],
+     
     };
   }
 
@@ -46,17 +47,8 @@ class Users extends Component {
   render() {
     const { selectedItems } = this.state;
     const filteredOptions = OPTIONS.filter(o => !selectedItems.includes(o));
-    return (
-      <div id="uses">
-        <div
-          style={{
-            float: "left",
-            width: "100%",
-            marginBottom: "0.5%",
-            boxShadow: "black 3px -2px 3px",
-            background: "rgb(236, 236, 236)"
-          }}
-        >
+    return <div id="uses">
+        <div style={{ float: "left", width: "100%", marginBottom: "0.5%", background: "#fff" }}>
           <h2 style={{ textAlign: "left" }}>员工查询</h2>
           <talbe style={{ float: "left", width: "80%" }}>
             <tr>
@@ -66,20 +58,9 @@ class Users extends Component {
               </td>
               <td style={{ textAlign: "right" }}>所属角色：</td>
               <td>
-                <Select
-                    showSearch
-                    style={{ width: 200, zIndex: "1" }}
-                    placeholder="Select a person"
-                    optionFilterProp="children"
-                    onChange={handleChange}
-                    onFocus={handleFocus}
-                    onBlur={handleBlur}
-                    filterOption={(input, option) =>
-                        option.props.children
-                        .toLowerCase()
-                        .indexOf(input.toLowerCase()) >= 0
-                    }
-                >
+                <Select showSearch style={{ width: 200, zIndex: "1" }} placeholder="Select a person" optionFilterProp="children" onChange={handleChange} onFocus={handleFocus} onBlur={handleBlur} filterOption={(input, option) => option.props.children
+                      .toLowerCase()
+                      .indexOf(input.toLowerCase()) >= 0}>
                   <Option value="jack">Jack</Option>
                   <Option value="lucy">Lucy</Option>
                   <Option value="tom">Tom</Option>
@@ -87,13 +68,7 @@ class Users extends Component {
               </td>
               <td style={{ textAlign: "right" }}>所属部门：</td>
               <td>
-                <Select
-                  mode="multiple"
-                  placeholder="Inserted are removed"
-                  value={selectedItems}
-                  onChange={this.handleChange}
-                  style={{ width: "100%", zIndex: "1" }}
-                >
+                <Select mode="multiple" placeholder="Inserted are removed" value={selectedItems} onChange={this.handleChange} style={{ width: "100%", zIndex: "1" }}>
                   {filteredOptions.map(item => (
                     <Select.Option key={item} value={item}>
                       {item}
@@ -102,14 +77,9 @@ class Users extends Component {
                 </Select>
               </td>
               <td>
-                <Button
-                  type="primary"
-                  style={{ zIndex: "2" }}
-                  onClick={() => {
+                <Button type="primary" style={{ zIndex: "2" }} onClick={() => {
                     this.Search();
-                  }}
-                  icon="search"
-                >
+                  }} icon="search">
                   查询
                 </Button>
               </td>
@@ -117,8 +87,7 @@ class Users extends Component {
           </talbe>
         </div>
         <UserTable />
-      </div>
-    );
+      </div>;
   }
 }
 

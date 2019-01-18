@@ -48,7 +48,7 @@ export const ModalEdit = Form.create()(
                             })(
                                 <Select  onChange={this.handleChange}>
                                     {
-                                        Object.keys(optionsData).map(function (i) {
+                                        Object.keys(optionsData || []).map(function (i) {
                                             return <Select.Option value={optionsData[i].key}>{optionsData[i].title}</Select.Option>
                                         })
                                      }                                                                    

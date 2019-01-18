@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using AuthorityManagementCent.Dto.Common;
 using AuthorityManagementCent.Dto.Request;
@@ -22,6 +23,24 @@ namespace AuthorityManagementCent.Stores
             dbContext = _dbContext;
         }
 
+
+        /// <summary>
+        /// 获取用户信息（带条件）
+        /// </summary>
+        /// <typeparam name="TResult"></typeparam>
+        /// <param name="query"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        public Task<TResult> GetUserAsync<TResult>(Func<IQueryable<Users>, IQueryable<TResult>> query, CancellationToken cancellationToken = default(CancellationToken))
+        {
+
+            if (query == null)
+            {
+                throw new ArgumentNullException(nameof(query));
+            }
+
+            return query.Invoke(dbContext.Users).SingleOrDefaultAsync(cancellationToken);
+        }
 
         /// <summary>
         /// 添加用户
@@ -46,7 +65,36 @@ namespace AuthorityManagementCent.Stores
         /// <returns></returns>
         public IQueryable<Users> GetUserInformation()
         {
-            return dbContext.Users.AsNoTracking().Where(u=>!u.IsDeleted);
+            return dbContext.Users.AsNoTracking();
         }
+
+        /// <summary>
+        ///  判断该用户是否存在
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        public async Task<bool> isExist(string userId)
+        {
+            return await dbContext.Users.AsNoTracking().Where(p => p.Id.Equals(userId)).CountAsync() > 0?true: false;
+        }
+
+        /// <summary>
+        /// 编辑用户
+        /// </summary>
+        /// <param name="userInfo"></param>
+        /// <returns></returns>
+        public async Task<Users> EditUser(Users userInfo)
+        {
+            if (userInfo == null)
+            {
+                throw new Exception(nameof(userInfo));
+            }
+            dbContext.Attach(userInfo);
+            dbContext.Update(userInfo);
+            await dbContext.SaveChangesAsync();
+            return userInfo;
+        }
+
+
     }
 }

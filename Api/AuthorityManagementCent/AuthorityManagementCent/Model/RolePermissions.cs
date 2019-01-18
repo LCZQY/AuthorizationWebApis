@@ -11,6 +11,12 @@ namespace AuthorityManagementCent.Model
     /// </summary>
     public class RolePermissions
     {
+        /// <summary>
+        /// Key
+        /// </summary>
+        
+        [Key]
+        public string Id { get; set; }
 
         /// <summary>
         /// 角色ID

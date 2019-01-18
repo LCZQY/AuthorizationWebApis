@@ -66,6 +66,7 @@ export class Son extends Component {
 
 
 ====*************************************************************************************************************
+
 import React, {Component} from 'react';
 export default class Parent extends Component {
     render() {
@@ -85,6 +86,7 @@ export default class Parent extends Component {
 }
 
 class Child extends Component {
+
     componentDidMount(){
         this.props.onRef(this)
     }

@@ -17,7 +17,7 @@ namespace AuthorityManagementCent.Dto.Request
         public string RoledId { get; set; }
 
         /// <summary>
-        /// 权限对应的组织范围
+        /// 权限项集合
         /// </summary>
         public List<PermissionsScope> PermissionsScopes { get; set; }
 
@@ -29,10 +29,10 @@ namespace AuthorityManagementCent.Dto.Request
         /// <summary>
         /// 权限ID
         /// </summary>
-        public List<string> PermissionsId { get; set; }
+        public string PermissionsId { get; set; }
 
         /// <summary>
-        /// 组织范围
+        /// 该权限ID的组织范围集合
         /// </summary>
         public List<string> OrganizationScope { get; set; }
     }

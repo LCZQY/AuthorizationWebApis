@@ -19,3 +19,4 @@ D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagement
 D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\obj\Debug\netcoreapp2.1\AuthorityManagementCent.RazorTargetAssemblyInfo.cache
 D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\obj\Debug\netcoreapp2.1\AuthorityManagementCent.dll
 D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\obj\Debug\netcoreapp2.1\AuthorityManagementCent.pdb
+D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\obj\Debug\netcoreapp2.1\AuthorityManagementCent.csprojAssemblyReference.cache

@@ -15,6 +15,12 @@ namespace AuthorityManagementCent.Stores.Interface
         /// </summary>
         /// <param name="users"></param>
         /// <returns></returns>
-        Task<Users> IExiexistence(LoginRequest users); 
+        Task<Users> IExiexistence(LoginRequest users);
+
+        IQueryable<Users> GetUsers();
+
+
+
+       
     }
 }

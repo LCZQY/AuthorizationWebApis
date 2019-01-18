@@ -28,7 +28,7 @@ namespace AuthorityManagementCent.Controllers
 
 
         /// <summary>
-        /// 添加组织 【存储到扩展表中？？】
+        /// 添加组织 
         /// </summary>
         /// <param name="oranization"></param>
         /// <returns></returns>
@@ -58,6 +58,68 @@ namespace AuthorityManagementCent.Controllers
             return response;
         }
 
+        /// <summary>
+        /// 删除组织
+        /// </summary>
+        /// <param name="oranization"></param>
+        /// <returns></returns>
+        [HttpPost("delte/{oranizationId}")]
+        [JwtTokenAuthorize]
+        public async Task<ResponseMessage> DelOranizatin([FromRoute]string oranizationId)
+        {
+            var users = DataBaseUser.TokenModel;
+            _Logger.LogInformation($"用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 获取权限列表:\r\n" + (oranizationId != null ? JsonHelpers.ToJSON(oranizationId) : ""));
+            var response = new ResponseMessage();
+            if (oranizationId == null)
+            {
+                _Logger.LogInformation($"用户：{users.UserName}获取权限列表,请求的参数为空。");
+                response.Code = ResponseCodeDefines.NotAllow;
+                response.Message = "删除组织时，请求参数为空";
+            }
+            try
+            {
+                response = await _OranizationManager.RemoveOranization(oranizationId);
+            }
+            catch (Exception el)
+            {
+                _Logger.LogError($"用户{users?.UserName ?? ""}({users?.Id ?? ""})添加组织报错：\r\n{el.ToString()}");
+                response.Code = ResponseCodeDefines.ArgumentNullError;
+                response.Message = $"添加组织报错:{el.Message}";
+            }
+            return response;
+        }
+
+
+        /// <summary>
+        /// 查找组织信息
+        /// </summary>
+        /// <param name="oranizationId"></param>
+        /// <returns></returns>
+        [HttpGet("GetOranization/{oranizationId}")]
+        [JwtTokenAuthorize]
+        public async Task<ResponseMessage> GetOranization([FromRoute]string oranizationId)
+        {
+            var users = DataBaseUser.TokenModel;
+            _Logger.LogInformation($"用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 查找组织信息:\r\n" + (oranizationId != null ? JsonHelpers.ToJSON(oranizationId) : ""));
+            var response = new ResponseMessage();
+            if (oranizationId == null)
+            {
+                _Logger.LogInformation($"用户：{users.UserName}查找组织信息,请求的参数为空。");
+                response.Code = ResponseCodeDefines.NotAllow;
+                response.Message = "查找组织信息，请求参数为空";
+            }
+            try
+            {
+                response = await _OranizationManager.GetOrgnization(oranizationId);
+            }
+            catch (Exception el)
+            {
+                _Logger.LogError($"用户{users?.UserName ?? ""}({users?.Id ?? ""})查找组织信息报错：\r\n{el.ToString()}");
+                response.Code = ResponseCodeDefines.ArgumentNullError;
+                response.Message = $"查找组织信息报错:{el.Message}";
+            }
+            return response;
+        }
 
 
         /// <summary>

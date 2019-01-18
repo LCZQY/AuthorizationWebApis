@@ -29,6 +29,32 @@ namespace AuthorityManagementCent.Managers
         }
 
 
+
+
+        /// <summary>
+        /// 删除权限
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>       
+        public async Task<ResponseMessage> DeletePermissitem(List<string> id)
+        {
+            var response = new ResponseMessage();
+            if (id == null)
+            {
+                throw new Exception("被删除的ID不能为空！");
+            }
+            try
+            {
+                await _IJurisdictionStore.DeletePermissions(id);               
+            }
+            catch (Exception el)
+            {
+                throw new Exception(nameof(el.Message));
+            }
+            return response;
+
+        }
+
         /// <summary>
         /// 添加权限
         /// </summary>
@@ -44,6 +70,13 @@ namespace AuthorityManagementCent.Managers
             try
             {
                 var newPermissionitems = _Mapper.Map<Permissionitems>(permissionitems);
+                if (await _IJurisdictionStore.isExist(permissionitems.Id))
+                {
+                    newPermissionitems.Groups = newPermissionitems.Groups;
+                    newPermissionitems.Name = newPermissionitems.Name;
+                    await _IJurisdictionStore.UpdateJurisdiction(newPermissionitems);
+                    return response;
+                }
                 newPermissionitems.Id = newPermissionitems.Id;
                 newPermissionitems.Groups = newPermissionitems.Groups;
                 newPermissionitems.Name = newPermissionitems.Name;
@@ -83,5 +116,37 @@ namespace AuthorityManagementCent.Managers
                 throw new Exception(nameof(el.Message));
             }
         }
+
+
+
+        /// <summary>
+        /// 查询分组后得权限项
+        /// </summary>       
+        /// <returns></returns>
+        public async Task<ResponseMessage<List<GroupByPermissionResponse>>> ListGroupPermissions()
+        {
+            var Response = new ResponseMessage<List<GroupByPermissionResponse>>();
+            try
+            {
+                var query = _IJurisdictionStore.GettingPermissionitems().GroupBy(p => p.Groups).Select(p => new GroupByPermissionResponse
+                {
+                    Groups = p.Key,
+                    permissionResponses = p.Select(o => new PermissionResponse
+                    {
+                        Name = o.Name,
+                        Id = o.Id,
+                        Groups = o.Groups
+                    }).ToList()
+                });
+                Response.Extension =await query.ToListAsync();  
+            }
+            catch (Exception el)
+            {
+                throw new Exception(nameof(el.Message));
+            }
+            return Response;
+        }
+
+
     }
 }

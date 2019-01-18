@@ -26,22 +26,33 @@ export const messageWarn = (content) =>{
 export const $Url="http://192.168.100.120:5002";
 
 
+/**去除重复  */
+export function NoRepeat(array){
+    var temp = []; //一个新的临时数组
+    for(var i = 0; i < array.length; i++){
+
+        if(temp.indexOf(array[i]) == -1){
+            temp.push(array[i]);
+        }
+    }
+    return temp;
+}
+
+
 /**GET Fetch 请求*/
 export async function httpGet(uri, params) {
     let tokens = localStorage.getItem("id_token");
     uri = $Url + uri;
     let init = {
         method: 'GET',
-        credentials: 'include',
+        // credentials: 'include', 
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
             'Authorization': tokens
-        },
-        body: JSON.stringify(params)
+        },       
     };
-
-    return new Promise(function(resolve, reject) {
+    return new Promise(function (resolve, reject) {        
         try {
             fetch(uri, init)
                 .then(response => response.json())
@@ -51,7 +62,7 @@ export async function httpGet(uri, params) {
                 .catch(function (ex) {
                     reject(ex);
                     messageError("请求数据错误，请重试");
-                });                
+                });
         } catch (e) {
             messageError("请求数据错误，请重试");
             console.log(e, "请求：" + uri + "出现异常.")

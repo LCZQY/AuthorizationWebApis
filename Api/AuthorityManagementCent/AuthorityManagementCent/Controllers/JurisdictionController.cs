@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using AuthorityManagementCent.Dto.Request;
 using AuthorityManagementCent.Filters;
+using AuthorityManagementCent.Dto.Response;
 
 namespace AuthorityManagementCent.Controllers
 {
@@ -89,6 +90,57 @@ namespace AuthorityManagementCent.Controllers
                 response.Message = $"获取权限信息报错：{ el.Message}";
             }
             return response;
-        }      
+        }
+
+
+        /// <summary>
+        /// 获取分组后的权限列表
+        /// </summary>   
+        /// <returns></returns>
+        [HttpPost("getGroupPermissionList")]
+        [JwtTokenAuthorize]
+        public async Task<ResponseMessage> GetGroupPermission()
+        {
+            var users = DataBaseUser.TokenModel;
+            _Logger.LogInformation($"用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 获取分组后的权限列表.");
+            var response = new ResponseMessage();
+            try
+            {
+                return await _JurisdictionManager.ListGroupPermissions();
+            }
+            catch (Exception el)
+            {
+                _Logger.LogError($"用户：{users.UserName }获取分组后的权限列表报错{ el.Message }\t\n");
+                response.Code = ResponseCodeDefines.ModelStateInvalid;
+                response.Message = $"获取分组后的权限信息报错：{ el.Message }";
+            }
+            return response;
+        }
+
+        /// <summary>
+        /// 删除权限
+        /// </summary>   
+        /// <returns></returns>
+        [HttpPost("delete")]
+        [JwtTokenAuthorize]
+        public async Task<ResponseMessage> DeletePermission(DeteleResponse del)
+        {
+            var users = DataBaseUser.TokenModel;
+            _Logger.LogInformation($"用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 删除权限列表.");
+            var response = new ResponseMessage();
+            try
+            {
+                return await _JurisdictionManager.DeletePermissitem(del.id);
+            }
+            catch (Exception el)
+            {
+                _Logger.LogError($"用户：{users.UserName }删除权限报错{ el.Message }\t\n");
+                response.Code = ResponseCodeDefines.ModelStateInvalid;
+                response.Message = $"删除权限报错：{ el.Message }";
+            }
+            return response;
+        }
+
+
     }
 }

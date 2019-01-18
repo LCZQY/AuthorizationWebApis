@@ -9,12 +9,13 @@ using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using AuthorityManagementCent.Dto.Request;
 using AuthorityManagementCent.Filters;
+using AuthorityManagementCent.Dto.Response;
 
 namespace AuthorityManagementCent.Controllers
 {
     /// <summary>
     /// 用户管理
-    /// </summary>
+    /// </summary>    
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : Controller
@@ -35,11 +36,12 @@ namespace AuthorityManagementCent.Controllers
         /// <returns></returns>
         [HttpPost("getUsersMessages")]
         [JwtTokenAuthorize]
-        public async Task<ResponseMessage> GetUsersMessageAsync(OranizationUserRequest conditionSearch)
+        public async Task<PagingResponseMessage<UsersResponse>> GetUsersMessageAsync(OranizationUserRequest conditionSearch)
         {
             var users = DataBaseUser.TokenModel;
             _Logger.LogInformation($"\r\n 用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 获取所有用户信息:\r\n" + (conditionSearch != null ? JsonHelpers.ToJSON(conditionSearch) : ""));
-            var response = new ResponseMessage();
+
+            var response = new PagingResponseMessage<UsersResponse>();
             if (conditionSearch == null)
             {
                 _Logger.LogInformation($"{users.UserName}获取所有用户信息,请求的参数为空。");
@@ -89,7 +91,6 @@ namespace AuthorityManagementCent.Controllers
                 response.Message = $"添加用户信息失败，请联系管理员.";
             }
             return response;
-
         }
     }
 }

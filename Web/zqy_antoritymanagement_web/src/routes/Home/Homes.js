@@ -154,8 +154,8 @@ export default class Homes extends Component {
                     <h2> {this.state.title}</h2>                     
             </Header>
               <Content style={{ margin: "0 16px" }}>
-                {/* {this.state.content}                               */}
-                <Users />
+                {this.state.content}                              
+                
               </Content>
               <Footer style={{ textAlign: "center" }}>
                 &copy;郑强勇2018

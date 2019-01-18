@@ -10,7 +10,7 @@ import {ModalUserEdit} from './ModalUserEdit';
          super();
          this.state = {
              selectedItems: [],             
-             data:  [],
+             data: [],
              visible: false,
              Editvisible: false,
              EditData:[],
@@ -20,20 +20,21 @@ import {ModalUserEdit} from './ModalUserEdit';
          }
     }   
      //组件第一次渲染完成，此时dom节点已经生成，可以调用Ajax请求
-     componentDidMount() {  
-        this.props.onRef(this);       
-        this.Initialization(0);         
-         clearTimeout(this.myClear);     
+     componentDidMount() {
+         this.Initialization(0);         
+         clearTimeout(this.myClear);
      }
 
      //初始化用户列表
-     Initialization = (index, parameter={}) => {    
-        parameter.pageIndex =  index;
-        parameter.pageSize =10;
-        console.log(parameter,"传入");       
+     Initialization = (index) => {
+         var pages = {
+             "pageIndex": index,
+             "pageSize": 10
+         }
+         console.log(pages ,"分页请求·················");
          /**获取用户信息 */
          let url = "/api/User/getUsersMessages";
-         httpPost(url, parameter).then(data => {
+         httpPost(url, pages).then(data => {
              if (data.code != 0) {
                  message.error(data.message);
                  return;
@@ -43,6 +44,8 @@ import {ModalUserEdit} from './ModalUserEdit';
                  EditData: [],
                  totalCount: data.totalCount
              });
+             console.log(data,"用户信息时");
+             
         });
 
          /**获取组织列表 */
@@ -136,7 +139,7 @@ import {ModalUserEdit} from './ModalUserEdit';
                 { 
                     messageError(data.message);                    
                 }
-                this.Initialization(0)
+                this.Initialization()
                 this.setState({
                     Editvisible: false
                 });
@@ -151,7 +154,12 @@ import {ModalUserEdit} from './ModalUserEdit';
      }
 
     /**分页按钮 */
-    handlePageChange = (pagination, filters, sorter) => {               
+    handlePageChange = (pagination, filters, sorter) => {
+        console.log(pagination.current,"第几页？？？？");
+        let val = {
+            rows: 10,
+            page: pagination.current ? pagination.current : 1
+        }
         this.Initialization(pagination.current-1);       
     }
 

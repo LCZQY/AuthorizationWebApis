@@ -30,7 +30,5 @@ namespace AuthorityManagementCent.Dto.Response
         /// 组织Id
         /// </summary>
         public string value { get; set; }
-
-     
     }
 }

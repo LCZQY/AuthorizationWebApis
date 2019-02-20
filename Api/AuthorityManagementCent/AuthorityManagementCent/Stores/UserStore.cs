@@ -95,6 +95,15 @@ namespace AuthorityManagementCent.Stores
             return userInfo;
         }
 
-
+        /// <summary>
+        /// 删除用户
+        /// </summary>
+        /// <returns></returns>
+        public async Task<bool> DeleteUser(List<string> userId)
+        {
+            var quey = dbContext.Users.Where(i => userId.Contains(i.Id)).ToList();
+            quey.ForEach(i => i.IsDeleted = true);
+            return await dbContext.SaveChangesAsync() > 0;
+        }
     }
 }

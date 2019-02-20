@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Table, Button, Icon, Tooltip } from 'antd';
+import { Table, Button, Icon, Tooltip,Popconfirm, Alert } from 'antd';
 import { CollectionCreateForm } from './ModelFrom';
 import { httpPost, messageWarn, messageSuccess } from '../../utils/public';
 
@@ -50,6 +50,21 @@ class UserContent extends Component {
     reset = (texts) => {
         console.log(texts, "这个是个什么东东");
         alert("事件绑定成功！");
+    }
+
+    /**
+     * 删除用户
+     */
+    Delconfirm =(record)=>{      
+         let url="/api/User/delete";
+         httpPost(url,[record.id]).then(data=>{
+            if (data.code != "0") {
+                messageWarn(data["message"]);
+                return;
+            }                       
+            messageSuccess("员工添加成功");
+         });
+        console.log(record,"删除信息是");
     }
 
     // /**选择表格的复选框样式始终不管怎么修改样式他的列永远都不动！！！！！！！！！！！！！！！！！！ */
@@ -108,9 +123,11 @@ class UserContent extends Component {
                         <Tooltip placement="top" title="用户权限设置">
                             <Button type="primary" onClick={() => _this.reset(record)} size="small" shape="circle" icon="team" />
                         </Tooltip>
-                        <Tooltip placement="top" title="删除">
-                            <Button type="primary" onClick={() => _this.reset(record)} size="small" shape="circle" icon="delete" />
-                        </Tooltip>
+                        <Popconfirm title="确认要删除吗？" onConfirm={()=> _this.Delconfirm(record)} okText="确定" cancelText="取消">
+                            <Tooltip placement="top" title="删除">
+                                <Button type="primary"  size="small" shape="circle" icon="delete" />
+                            </Tooltip>
+                        </Popconfirm>
                     </span>
                 }
             }];

@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-import {Layout, Menu, Icon,Avatar, Dropdown,} from 'antd';
-
+import {Layout, Menu, Icon,Avatar, Button, Tooltip} from 'antd';
 import Users from '../Users/';
 import Oranizations from '../Oranizations/';
 import Permissionitems from '../Permissionitems/';
 import Roles from '../Roles';
-import { httpPost, httpGet } from '../../utils/public';
+import { httpGet } from '../../utils/public';
 import  "./index.css";
 
 const {
     Header, Content, Footer, Sider,
 } = Layout;
-
 
 export default class Homes extends Component {
 
@@ -31,8 +29,7 @@ export default class Homes extends Component {
     }   
         
     componentDidMount()
-    {        
-        
+    {                
         var  tokens = localStorage.getItem("id_token");        
         if(tokens == null)
         {
@@ -49,10 +46,10 @@ export default class Homes extends Component {
             this.setState({
                 userName: data.extension.userName
             });          
-            var Permiss = data.extension.permissionList;     
-
+            var Permiss = data.extension.permissionList;  
+            console.log(Permiss,"00");               
             for (var i in Permiss) {
-                Permiss[i]="Admin";
+              //  Permiss[i]="Admin";
                 if (Permiss[i] == "User_Query") {
                     this.setState({
                         Use_disabled: false
@@ -86,12 +83,23 @@ export default class Homes extends Component {
         });
     }
 
+    
     onCollapse = (collapsed) => {
         console.log(collapsed);
         this.setState({ collapsed });
     }
 
+
+    /**
+     * 退出登陆
+     */
+    logOut = () =>{
+        window.location.href = "/";
+        localStorage.removeItem("id_token");
+    }
+
     MenuClick = ({ item, key, keyPath }) => {
+      
         switch (key) {
             case "1":
                 this.setState({
@@ -124,9 +132,12 @@ export default class Homes extends Component {
 
     render() {    
         return <Layout style={{ minHeight: "100vh" }}>
-            <div className="headers" style={{ position: "fixed", width: "100%", lineHeight:"80px",  marginBottom: "50%", height: "80px" }}>                     
-                <div style={{ float: "right",marginRight:"5%"}}>            
-                <Avatar size="large" src="http://img3.imgtn.bdimg.com/it/u=969231715,1190537660&fm=26&gp=0.jpg" /> <label>{this.state.userName}</label>                       
+            <div className="headers" style={{ position: "fixed", width: "100%",  lineHeight:"80px",  marginBottom: "50%", height: "80px" }}>                     
+                <div style={{ textAlign:"right",paddingRight:"5%" , width:"100%"}}>            
+                <Avatar size="large" src="../../layouts/backgrounds.jpg" /> <label><strong>{this.state.userName}</strong></label>        
+                <Tooltip placement="right" title={"退出"}  >
+                    <Button type="primary" icon="logout" onClick={()=>this.logOut()} ></Button>
+                </Tooltip>
                 </div>
             </div>
             <Sider style={{marginTop:"4.5%"}} collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>          
@@ -153,8 +164,8 @@ export default class Homes extends Component {
             <Header  style={{  paddingLeft: "1%",  background:"#ececec", textAlign: "left" }}>
                     <h2> {this.state.title}</h2>                     
             </Header>
-              <Content style={{ margin: "0 16px" }}>
-                {this.state.content}                              
+              <Content style={{ margin: "0 16px" }}>                           
+                   {this.state.content}          
                 
               </Content>
               <Footer style={{ textAlign: "center" }}>

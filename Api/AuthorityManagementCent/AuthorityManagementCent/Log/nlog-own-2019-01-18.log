@@ -864,4 +864,3 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 2019-01-18 11:50:19.0070|0|INFO|AuthorityManagementCent.Controllers.UserController|
  用户admin,其ID:(1) 获取所有用户信息:
 {"OranizationId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
-2019-01-18 18:02:05.5524|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext

@@ -96,7 +96,7 @@ namespace AuthorityManagementCent.Stores
         /// <returns></returns>
         public IQueryable<Organizations> GettingOraniztions()
         {
-            return dbContext.Organizations.AsNoTracking().Where(u => !u.IsDeleted);
+            return dbContext.Organizations.AsNoTracking();
         }
 
         /// <summary>

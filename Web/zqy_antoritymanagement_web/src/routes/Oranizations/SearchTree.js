@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Tree } from 'antd';
-import { messageWarn, httpPost } from '../../utils/public';
+import { messageWarn, httpPost, messageError } from '../../utils/public';
 import  "./oranization.css";
 const TreeNode = Tree.TreeNode;
 
@@ -31,7 +31,7 @@ class SearchTree extends Component {
         //所有的方法都要以 =>{} 表示 ！
         httpPost(_url, null).then(data => {
             if (data.code != "0") {
-                messageWarn(data["message"]);
+                messageError(data["message"]);
                 return;
             }
             console.log(data.extension, "初始化树状结构是！");

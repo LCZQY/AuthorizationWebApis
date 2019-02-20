@@ -85,6 +85,24 @@
             角色管理
             </summary>
         </member>
+        <member name="M:AuthorityManagementCent.Controllers.RolesController.PermisionScopeList(System.String)">
+            <summary>
+            该权限的所有组织范围
+            </summary>       
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.RolesController.RolePermisionList(System.String)">
+            <summary>
+            角色的所有权限项
+            </summary>       
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.RolesController.UserRolesList(System.String)">
+            <summary>
+            用户的所有角色
+            </summary>       
+            <returns></returns>
+        </member>
         <member name="M:AuthorityManagementCent.Controllers.RolesController.GettingRoles">
             <summary>
             获取角色列表
@@ -94,6 +112,12 @@
         <member name="M:AuthorityManagementCent.Controllers.RolesController.PulshRole(AuthorityManagementCent.Dto.Request.RolesRequest)">
             <summary>
             添加角色
+            </summary>       
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.RolesController.DeleteRoles(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除角色
             </summary>       
             <returns></returns>
         </member>
@@ -107,6 +131,18 @@
             <summary>
             添加用户角色表
             </summary>       
+            <returns></returns>
+        </member>
+        <member name="T:AuthorityManagementCent.Controllers.SummernoteController">
+            <summary>
+            文件上传案例
+            </summary>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.SummernoteController.UploadFilesAjax(System.String)">
+            <summary>
+            Ajax的方式上传文件
+            </summary>
+            <param name="z"></param>
             <returns></returns>
         </member>
         <member name="T:AuthorityManagementCent.Controllers.TokenController">
@@ -144,6 +180,13 @@
             添加用户
             </summary>
             <param name="userRequest">基本信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Controllers.UserController.DeleteUsers(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除用户
+            </summary>
+            <param name="userId">用户ID</param>
             <returns></returns>
         </member>
         <member name="M:AuthorityManagementCent.Dto.Common.JsonHelpers.ToJSON(System.Object)">
@@ -458,6 +501,11 @@
             用户Id
             </summary>
         </member>
+        <member name="P:AuthorityManagementCent.Dto.Request.UserRolesRequest.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
         <member name="P:AuthorityManagementCent.Dto.Request.UserRolesRequest.RoleId">
             <summary>
             角色Id
@@ -734,6 +782,27 @@
             角色管理
              </summary>
         </member>
+        <member name="M:AuthorityManagementCent.Managers.RolesManager.GetPermisionScopeList(System.String)">
+            <summary>
+            权限项对应的组织范围
+            </summary>
+            <param name="permissionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.RolesManager.GetRolePermisionList(System.String)">
+            <summary>
+            角色的所有权限
+            </summary>
+            <param name="roleid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.RolesManager.GetUserRolesList(System.String)">
+            <summary>
+            获取用户所有的角色
+            </summary>
+            <param name="userid"></param>
+            <returns></returns>
+        </member>
         <member name="M:AuthorityManagementCent.Managers.RolesManager.InforResponseList">
             <summary>
             获取所有角色
@@ -759,6 +828,13 @@
             添加用户角色表
             </summary>
             <param name="userRolesRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.RolesManager.DeletRoleAsync(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除角色
+            </summary>
+            <param name="RoleId"></param>
             <returns></returns>
         </member>
         <member name="T:AuthorityManagementCent.Managers.TokenManager">
@@ -792,9 +868,16 @@
         </member>
         <member name="M:AuthorityManagementCent.Managers.UserManager.InsertUserInfo(AuthorityManagementCent.Dto.Request.UserRequest)">
             <summary>
-            添加员工
+            添加/编辑员工
             </summary>
             <param name="users"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Managers.UserManager.DeleteUser(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除用户
+            </summary>
+            <param name="usersId"></param>
             <returns></returns>
         </member>
         <member name="T:AuthorityManagementCent.Model.OrganizationExpansions">
@@ -936,7 +1019,7 @@
         <member name="P:AuthorityManagementCent.Model.RolePermissions.Id">
             <summary>
             Key
-            </summary>
+            </summary>       
         </member>
         <member name="P:AuthorityManagementCent.Model.RolePermissions.RoledId">
             <summary>
@@ -1136,6 +1219,41 @@
             <param name="roles"></param>
             <returns></returns>
         </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.DeleteUserRoles(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            删除用户角色表
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.DeletePermissionEx(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            删除权限扩展表
+            </summary>
+            <param name="permissionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.DeleteRolePermission(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除角色权限表
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.DeleteUserRole(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除用户角色表
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.DeletePermissionEx(System.Collections.Generic.List{AuthorityManagementCent.Model.PermissionExpansion})">
+            <summary>
+            实体删除权限扩展表
+            </summary>
+            <param name="PermissEx"></param>
+            <returns></returns>
+        </member>
         <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.InsertRolePermissions(System.Collections.Generic.List{AuthorityManagementCent.Model.RolePermissions})">
             <summary>
             添加角色-权限表       
@@ -1145,7 +1263,7 @@
         </member>
         <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.InsertRolePermissionEX(System.Collections.Generic.List{AuthorityManagementCent.Model.PermissionExpansion})">
             <summary>
-            添加角色-权限表       
+            添加权限扩展表       
             </summary>
             <param name="permissionsEX"></param>
             <returns></returns>
@@ -1177,6 +1295,27 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.BrowsingScope(System.String,System.String)">
+            <summary>
+            返回权限的组织范围
+            </summary>
+            <param name="UerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.listUserPermision(System.String)">
+            <summary>
+            返回角色对应的权限ID集合
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.ReturnAuthorityName(System.String,System.String)">
+            <summary>
+            用户所有权限
+            </summary>
+            <param name="UerId"></param>
+            <returns></returns>
+        </member>
         <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.GetUserRoleAsync``1(System.Func{System.Linq.IQueryable{AuthorityManagementCent.Model.UserRole},System.Linq.IQueryable{``0}},System.Threading.CancellationToken)">
              <summary>
             用户角色表
@@ -1186,18 +1325,11 @@
              <param name="cancellationToken"></param>
              <returns></returns>
         </member>
-        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.BrowsingScope(System.String,System.String)">
+        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.DeleteRole(System.Collections.Generic.List{System.String})">
             <summary>
-            返回权限的组织范围
+            删除角色
             </summary>
-            <param name="UerId"></param>
-            <returns></returns>
-        </member>
-        <member name="M:AuthorityManagementCent.Stores.Interface.IRolesStore.ReturnAuthorityName(System.String,System.String)">
-            <summary>
-            用户所有权限
-            </summary>
-            <param name="UerId"></param>
+            <param name="roleId"></param>
             <returns></returns>
         </member>
         <member name="M:AuthorityManagementCent.Stores.Interface.ITokenStore.IExiexistence(AuthorityManagementCent.Dto.Request.LoginRequest)">
@@ -1211,6 +1343,13 @@
             <summary>
             获取用户信息
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.Interface.IUserStore.DeleteUser(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除用户
+            </summary>
+            <param name="userId"></param>
             <returns></returns>
         </member>
         <member name="M:AuthorityManagementCent.Stores.Interface.IUserStore.InsertUser(AuthorityManagementCent.Model.Users)">
@@ -1330,6 +1469,13 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:AuthorityManagementCent.Stores.RolesStore.listUserPermision(System.String)">
+            <summary>
+            角色权限项
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
         <member name="M:AuthorityManagementCent.Stores.RolesStore.InsertRoles(AuthorityManagementCent.Model.Roles)">
             <summary>
             添加角色
@@ -1372,6 +1518,22 @@
             <typeparam name="TResult"></typeparam>
             <param name="query"></param>
             <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.RolesStore.DeleteUserRoles(System.String,System.Collections.Generic.List{System.String})">
+            <summary>        
+            删除用户角色
+            </summary>
+            <param name="userId"></param>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.RolesStore.DeletePermissionEx(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            删除权限扩展表
+            </summary>
+            <param name="userId"></param>
+            <param name="permissionId"></param>
             <returns></returns>
         </member>
         <member name="M:AuthorityManagementCent.Stores.RolesStore.GetRoleAsync``1(System.Func{System.Linq.IQueryable{AuthorityManagementCent.Model.Roles},System.Linq.IQueryable{``0}},System.Threading.CancellationToken)">
@@ -1429,6 +1591,34 @@
             <param name="UerId"></param>
             <returns></returns>
         </member>
+        <member name="M:AuthorityManagementCent.Stores.RolesStore.DeleteRole(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除角色表
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.RolesStore.DeleteUserRole(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除用户角色表
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.RolesStore.DeleteRolePermission(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除角色权限表
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.RolesStore.DeletePermissionEx(System.Collections.Generic.List{AuthorityManagementCent.Model.PermissionExpansion})">
+            <summary>
+            删除权限扩展表
+            </summary>
+            <param name="PermissEx"></param>
+            <returns></returns>
+        </member>
         <member name="T:AuthorityManagementCent.Stores.TokenStore">
             <summary>
             用户信息
@@ -1480,6 +1670,12 @@
             编辑用户
             </summary>
             <param name="userInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthorityManagementCent.Stores.UserStore.DeleteUser(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除用户
+            </summary>
             <returns></returns>
         </member>
     </members>

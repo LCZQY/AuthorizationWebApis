@@ -24,7 +24,7 @@ namespace AuthorityManagementCent.Managers
         private readonly IRolesStore _RolesStore;
         private readonly IMapper _Mapper;
 
-        public UserManager(IUserStore IUserStore, IMapper IMapper , IRolesStore RolesStore)
+        public UserManager(IUserStore IUserStore, IMapper IMapper, IRolesStore RolesStore)
         {
             this._IUserStore = IUserStore;
             this._Mapper = IMapper;
@@ -39,26 +39,24 @@ namespace AuthorityManagementCent.Managers
         {
             var users = DataBaseUser.TokenModel;
             var pagingResponse = new PagingResponseMessage<UsersResponse>();
-            ////判断该用户的权限，锁定该组织范围     
+
+            ////判断该用户的权限，锁定该组织范围                 
             //1.1.找到该用户的所有权限
-            if (!await _RolesStore.ReturnAuthorityName(users.Id, "User_Add_Edit"))
+            var scopeList = await _RolesStore.BrowsingScope(users.Id, "User_Add_Edit");
+            if (scopeList == null)
             {
                 pagingResponse.Message = "暂无权限，请联系管理";
                 pagingResponse.Code = ResponseCodeDefines.NotAllow;
                 return pagingResponse;
             }
 
-            //1.2.对应权限的所有的可以浏览的范围(默认包含可查看本组织的内容)
-            var scopeList = await _RolesStore.BrowsingScope(users.Id, "User_Add_Edit");
-            scopeList.OrganizationScope.Add(users.OrganizationId);
-            var query = _IUserStore.GetUserInformation().Where(p => scopeList.OrganizationScope.Contains(p.OrganizationId));
-
-            
+            //1.2.对应权限的所有的可以浏览的范围(默认包含可查看本组织的内容)          
+            scopeList.Add(users.OrganizationId);
+            var query = _IUserStore.GetUserInformation().Where(p => scopeList.Contains(p.OrganizationId));
             if (condition.OranizationId != null)
             {
-                query = _IUserStore.GetUserInformation().Where(u => u.OrganizationId == condition.OranizationId);
+                query = _IUserStore.GetUserInformation().Where(u => u.OrganizationId == condition.OranizationId && !u.IsDeleted);
             }
-
             //员工管理筛选条件【角色】
             if (condition.RoleId != null)
             {
@@ -70,10 +68,10 @@ namespace AuthorityManagementCent.Managers
                         select c;
             }
 
-            //员工管理筛选条件【姓名】//
+            //员工管理筛选条件【姓名】
             if (condition.TrueName != null)
             {
-                query = query.Where(p=>p.TrueName.Equals(condition.TrueName));
+                query = query.Where(p => p.TrueName.Contains(condition.TrueName));
             }
 
             //员工管理筛选条件【部门】
@@ -98,7 +96,7 @@ namespace AuthorityManagementCent.Managers
 
 
         /// <summary>
-        /// 添加员工
+        /// 添加/编辑员工
         /// </summary>
         /// <param name="users"></param>
         /// <returns></returns>
@@ -110,7 +108,8 @@ namespace AuthorityManagementCent.Managers
             {
                 throw new Exception(nameof(users));
             }
-            if (!await _RolesStore.ReturnAuthorityName(user.Id, "User_Add_Edit"))
+
+            if (await _RolesStore.BrowsingScope(user.Id, "User_Add_Edit") == null)
             {
                 response.Message = "暂无权限，请联系管理";
                 response.Code = ResponseCodeDefines.NotAllow;
@@ -137,8 +136,8 @@ namespace AuthorityManagementCent.Managers
                 newUsers.TrueName = newUsers.TrueName;
                 newUsers.UserName = newUsers.UserName;
                 newUsers.OrganizationId = newUsers.OrganizationId;
-                newUsers.Sex = newUsers.Sex;           
-                await _IUserStore.InsertUser(newUsers);              
+                newUsers.Sex = newUsers.Sex;
+                await _IUserStore.InsertUser(newUsers);
             }
             catch (Exception el)
             {
@@ -147,8 +146,34 @@ namespace AuthorityManagementCent.Managers
             return response;
         }
 
-
-
-
+        /// <summary>
+        /// 删除用户
+        /// </summary>
+        /// <param name="usersId"></param>
+        /// <returns></returns>
+        public virtual async Task<ResponseMessage> DeleteUser(List<string> usersId)
+        {
+            var user = DataBaseUser.TokenModel;
+            var response = new ResponseMessage();
+            if (usersId == null)
+            {
+                throw new Exception(nameof(usersId));
+            }
+            if (await _RolesStore.BrowsingScope(user.Id, "User_Delete") == null)
+            {
+                response.Message = "暂无权限，请联系管理";
+                response.Code = ResponseCodeDefines.NotAllow;
+                return response;
+            }
+            try
+            {
+                await _IUserStore.DeleteUser(usersId);
+            }
+            catch (Exception el)
+            {
+                throw new Exception(el.Message);
+            }
+            return response;
+        }
     }
 }

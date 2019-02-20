@@ -21,6 +21,8 @@ namespace AuthorityManagementCent.Stores
             dbContext = _dbContext;
         }
 
+
+
         /// <summary>
         /// 获取用户信息列表
         /// </summary>
@@ -30,7 +32,17 @@ namespace AuthorityManagementCent.Stores
             return await dbContext.Roles.Where(u => !u.IsDeleted).ToListAsync();
         }
 
-  
+
+        /// <summary>
+        /// 角色权限项
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        public async Task<List<string>> listUserPermision(string roleId)
+        {
+            return await dbContext.RolePermissions.Where(u=>u.RoledId.Equals(roleId)).Select(p=>p.PermissionsId).Distinct().ToListAsync();         
+        }
+
 
         /// <summary>
         /// 添加角色
@@ -86,9 +98,9 @@ namespace AuthorityManagementCent.Stores
             if (role == null)
             {
                 throw new Exception("请求体不能为空");
-            }            
+            }
             await dbContext.RolePermissions.AddRangeAsync(role);
-            return await dbContext.SaveChangesAsync() > 0;            
+            return await dbContext.SaveChangesAsync() > 0;
         }
 
 
@@ -125,6 +137,41 @@ namespace AuthorityManagementCent.Stores
             return query.Invoke(dbContext.UserRoles).SingleOrDefaultAsync(cancellationToken);
         }
 
+
+
+        /// <summary>        
+        /// 删除用户角色
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        public async Task<bool> DeleteUserRoles(string userId , List<string> roleId)
+        {
+
+            if (userId == null)
+            {
+                throw new ArgumentNullException(nameof(userId));
+            }
+            var query = dbContext.UserRoles.Where(u => u.UserId.Equals(userId) && roleId.Contains(u.RoleId)).ToList();
+            query.ForEach(o => o.IsDeleted = true);
+            return await dbContext.SaveChangesAsync() > 0;
+        }
+
+
+        /// <summary>
+        /// 删除权限扩展表
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="permissionId"></param>
+        /// <returns></returns>
+        public async Task<bool> DeletePermissionEx(string userId, List<string> permissionId)
+        {
+            var query = dbContext.PermissionExpansions.Where(o => o.UserId.Equals(userId) && permissionId.Contains(o.PermissionId));
+            dbContext.PermissionExpansions.RemoveRange(query);
+            return await dbContext.SaveChangesAsync() > 0;
+        }
+
+
         /// <summary>
         /// 查询角色信息
         /// </summary>
@@ -160,6 +207,7 @@ namespace AuthorityManagementCent.Stores
         {
             return dbContext.Roles.AsNoTracking();
         }
+
         /// <summary>
         /// 角色-权限表
         /// </summary>
@@ -199,30 +247,90 @@ namespace AuthorityManagementCent.Stores
         /// <param name="UerId"></param>
         /// <param name="PermissionId"></param>
         /// <returns></returns>
-        public async Task<PermissionsScope> BrowsingScope(string UerId, string PermissionId)
+        public async Task<List<string>> BrowsingScope(string UerId, string PermissionId)
         {
-            var query = await (dbContext.PermissionExpansions.Where(p => p.UserId.Equals(UerId) && p.PermissionId.Equals(PermissionId)).GroupBy(o => o.PermissionId).Select(
-                y => new PermissionsScope
-                {
-                    PermissionsId = y.Key,
-                    OrganizationScope = y.Select(i => i.OrganizationId).ToList()
-                })).SingleOrDefaultAsync();
-            //query.ForEach(o => o.OrganizationScope = o.OrganizationScope.Distinct().ToList());
-             query.OrganizationScope = query.OrganizationScope.Distinct().ToList();
-            return query;
+            var query = dbContext.PermissionExpansions.Where(p => p.UserId.Equals(UerId));
+            if (query.Where(p => p.PermissionId.Contains("Admin")).Count() > 0)
+            {
+                return await dbContext.Organizations.Select(p => p.Id).ToListAsync();
+            }
+            var querys = await (query.Where(p => p.PermissionId.Equals(PermissionId)).GroupBy(o => o.PermissionId).Select(
+               y => new PermissionsScope
+               {
+                   PermissionsId = y.Key,
+                   OrganizationScope = y.Select(i => i.OrganizationId).ToList()
+               })).SingleOrDefaultAsync();
+            ////没有找到该权限返回空
+            if (querys == null)
+            {
+                return null;
+            }
+            querys.OrganizationScope = querys.OrganizationScope.Distinct().ToList();
+            return querys.OrganizationScope;
         }
+
+
+
 
         /// <summary>
         /// 该用户的所有权限Id集合
         /// </summary>
         /// <param name="UerId"></param>
         /// <returns></returns>
-        public async  Task<bool> ReturnAuthorityName(string UerId, string PermissionId)
+        public async Task<bool> ReturnAuthorityName(string UerId, string PermissionId)
         {
             //用户角色
-            var UserRole =await dbContext.PermissionExpansions.Where(p => p.UserId.Equals(UerId) && p.PermissionId.Contains(PermissionId)).ToListAsync();
-            var df = UserRole.Count() == 0 ? false : true; 
+            var UserRole = await dbContext.PermissionExpansions.Where(p => p.UserId.Equals(UerId) && p.PermissionId.Contains(PermissionId)).ToListAsync();
             return UserRole.Count() == 0 ? false : true;
+        }
+
+        /// <summary>
+        /// 删除角色表
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        public async Task<bool> DeleteRole(List<string> roleId)
+        {   
+            var roles = await dbContext.Roles.Where(o => roleId.Contains(o.Id)).ToListAsync();
+            roles.ForEach(i => i.IsDeleted = true);
+            return await dbContext.SaveChangesAsync() > 0;
+        }
+
+        /// <summary>
+        /// 删除用户角色表
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        public async Task<bool> DeleteUserRole(List<string> roleId)
+        {           
+            var roles = await dbContext.UserRoles.Where(o => roleId.Contains(o.RoleId)).ToListAsync();
+            roles.ForEach(i => i.IsDeleted = true);
+            return await dbContext.SaveChangesAsync() > 0;
+        }
+
+
+        /// <summary>
+        /// 删除角色权限表
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        public async Task<bool> DeleteRolePermission(List<string> roleId)
+        {
+            var roles = await dbContext.RolePermissions.Where(o => roleId.Contains(o.RoledId)).ToListAsync();
+            dbContext.RolePermissions.RemoveRange(roles);
+            return await dbContext.SaveChangesAsync() > 0;
+        }
+
+
+        /// <summary>
+        /// 删除权限扩展表
+        /// </summary>
+        /// <param name="PermissEx"></param>
+        /// <returns></returns>
+        public async Task<bool> DeletePermissionEx(List<PermissionExpansion> PermissEx)
+        {            
+            dbContext.PermissionExpansions.RemoveRange(PermissEx);
+            return await dbContext.SaveChangesAsync() > 0;
         }
     }
 }

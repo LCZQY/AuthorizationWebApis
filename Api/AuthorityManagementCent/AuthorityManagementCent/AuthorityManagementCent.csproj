@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <Folder Include="Log\" />
-    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\upload\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +24,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.13" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="4.7.0" />

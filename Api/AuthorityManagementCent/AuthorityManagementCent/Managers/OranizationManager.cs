@@ -18,12 +18,14 @@ namespace AuthorityManagementCent.Managers
     public class OranizationManager
     {
         private readonly IOranizationStore _IOranizationStore;
+        private readonly IRolesStore _IRolesStore;
         private readonly IUserStore _IUserStore;
         private readonly IMapper _Mapper;
 
-        public OranizationManager(IOranizationStore IOranizationStore, IUserStore IUserStore, IMapper IMapper)
+        public OranizationManager(IOranizationStore IOranizationStore, IRolesStore RolesStore, IUserStore IUserStore, IMapper IMapper)
         {
             this._IOranizationStore = IOranizationStore;
+            this._IRolesStore = RolesStore;
             this._Mapper = IMapper;
             this._IUserStore = IUserStore;
         }
@@ -174,7 +176,6 @@ namespace AuthorityManagementCent.Managers
             return response;
         }
 
-
         /// <summary>
         /// 创建组织树状结构
         /// </summary>
@@ -182,18 +183,52 @@ namespace AuthorityManagementCent.Managers
         /// <returns></returns>
         public async Task<ResponseMessage<List<TreeResponse>>> CreatOranizationTree(string OranizationId)
         {
+            var users = DataBaseUser.TokenModel;
             var response = new ResponseMessage<List<TreeResponse>>();
             try
             {
-                response.Extension = await _IOranizationStore.GettingOraniztions().AsNoTracking().Where(u => u.ParentId == OranizationId).Select(p => new TreeResponse
+
+
+                //1.1.找到该用户的所有权限
+                var scopeList = await _IRolesStore.BrowsingScope(users.Id, "Organization_Add_Edit");
+                if (scopeList == null)
                 {
-                    title = p.OrganizationName,
-                    key = p.Id,
-                }).ToListAsync();
+                    response.Message = "暂无权限，请联系管理";
+                    response.Code = ResponseCodeDefines.NotAllow;
+                    return response;
+                }
+
+                //1.2.对应权限的所有的可以浏览的范围(默认包含可查看本组织的内容)               
+                scopeList.Add(users.OrganizationId);
+                //在扩展表中找到其父节点并展示
+                var IparentList = _IOranizationStore.GettingOrganizationExpansions().Where(p => p.IsImmediate == true && scopeList.Contains(p.SonId));
+
+                //默认展示顶部【如果没有其操作权限提示即可】
+                var query = _IOranizationStore.GettingOraniztions().Where(u => !u.IsDeleted);
+                if (OranizationId == "0")
+                {
+                    var oraniztionList = query.Where(u => u.ParentId == OranizationId).Select(p => new TreeResponse
+                    {
+                        title = p.OrganizationName,//组织名称
+                        key = p.Id, //组织ID
+
+                    }).ToListAsync();
+                    response.Extension = await oraniztionList;
+                }
+                else
+                {                    
+                    var oraniztionList = IparentList.Where(o => o.OrganizationId == OranizationId).Select(p => new TreeResponse
+                    {
+                        title = p.SonName,//组织名称
+                        key = p.SonId, //组织ID
+
+                    }).ToListAsync();
+                    response.Extension = await oraniztionList;
+                }
             }
             catch (Exception el)
             {
-                throw new Exception(nameof(el));
+                throw new Exception(el.Message);
             }
             return response;
         }

@@ -92,5 +92,37 @@ namespace AuthorityManagementCent.Controllers
             }
             return response;
         }
+
+
+        /// <summary>
+        /// 删除用户
+        /// </summary>
+        /// <param name="userId">用户ID</param>
+        /// <returns></returns>
+        [HttpPost("delete")]
+        [JwtTokenAuthorize]
+        public async Task<ResponseMessage> DeleteUsers([FromBody]List<string> userId)
+        {
+            var users = DataBaseUser.TokenModel;
+            _Logger.LogInformation($"\r\n 用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 删除其用户:\r\n" + (userId != null ? JsonHelpers.ToJSON(userId) : "\r\n"));
+            var response = new ResponseMessage();
+            if (userId == null)
+            {
+                _Logger.LogInformation($"{users.UserName}添加用户,请求的参数为空。");
+                response.Code = ResponseCodeDefines.NotAllow;
+                response.Message = "请求参数为空";
+            }
+            try
+            {
+                return await _UserManager.DeleteUser(userId);
+            }
+            catch (Exception el)
+            {
+                _Logger.LogError($"用户{users?.UserName ?? ""}({users?.Id ?? ""}),删除用户报错：\r\n{el.ToString()}");
+                response.Code = ResponseCodeDefines.NotAllow;
+                response.Message = $"删除用户失败，请联系管理员.";
+            }
+            return response;
+        }
     }
 }

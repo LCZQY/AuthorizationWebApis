@@ -30,11 +30,11 @@ export const ModalUpdate = Form.create()(
           onOk={onCreate}
         >
           <Form layout="vertical">
-            <Form.Item label="权限编号：">
+            <Form.Item label="权限编号："  > 
                 {getFieldDecorator("id", {
                   initialValue: data.id,
                   rules: [{ required: true, message: "请输入权限编号！" }]
-                })(<Input />)}
+                })(<Input disabled />)}
             </Form.Item>
             <Form.Item label="权限名称">
                 {getFieldDecorator("Name", {

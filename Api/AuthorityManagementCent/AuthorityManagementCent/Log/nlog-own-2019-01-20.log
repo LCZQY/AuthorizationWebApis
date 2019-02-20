@@ -1,0 +1,1107 @@
+2019-01-20 19:29:57.9386|0|INFO|AuthorityManagementCent.Controllers.TokenController|admin获取Token中。 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<Tokens>d__3.MoveNext
+2019-01-20 19:29:59.9339|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:29:59.9486|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 19:29:59.9685|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:30:00.0105|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:30:00.0634|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:30:00.1236|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:30:09.8829|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:30:09.9100|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":false,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:30:25.9637|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:30:25.9764|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":"106a1f98-741f-4cf1-9b2d-44603229df8b","IsDelete":false,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:30:29.1342|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":"069d0865-02b4-488b-8446-acb1fe956751","IsDelete":false,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:30:29.1342|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:30:33.0020|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":"f8e52937f7e846eaa95884e66adccd2e","IsDelete":false,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:30:33.0020|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:31:23.8629|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:31:25.9012|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:31:27.8244|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:31:27.8636|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:31:27.9218|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:31:28.0346|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 19:31:28.0732|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:31:29.1601|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:31:29.2228|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:31:29.2294|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 19:31:29.2682|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:31:36.2599|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:32:19.4011|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:32:21.0824|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:32:24.1244|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:32:25.6286|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:32:28.2870|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:32:29.4452|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:32:29.8495|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:32:29.9392|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 19:32:29.9457|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:32:30.0101|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:32:31.2619|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:32:32.6431|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:32:32.8302|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:32:37.6889|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:32:38.4627|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:32:52.2981|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":1,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:32:53.3323|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:32:54.4989|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:32:54.5293|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 19:32:54.5738|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:32:54.6503|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:32:55.8934|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:32:55.9565|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:32:56.0079|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:32:56.0765|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 19:32:56.1205|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:33:04.5943|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 19:33:04.6200|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:33:04.6623|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:33:04.7534|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:33:11.9307|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:33:13.2932|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:33:14.7888|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:33:14.8679|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:33:14.8939|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 19:33:14.9778|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:33:15.0503|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:33:17.5887|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:33:19.5656|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:43:42.7585|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:43:42.7585|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:44:05.4911|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:44:05.4911|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:47:35.1594|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:47:35.1379|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:48:04.4533|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:48:04.4897|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:48:22.8360|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:48:22.8360|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:48:24.3925|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:48:24.4298|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:48:26.3039|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:48:26.3294|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:48:39.8778|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:48:39.9011|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:48:50.7646|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:48:50.7646|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:48:52.4297|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:48:52.4570|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:49:18.6229|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:49:18.6503|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:49:23.3656|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:49:23.3656|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:49:38.4843|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:49:38.5146|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:49:39.4007|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:49:40.9272|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:49:41.0335|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 19:49:41.0563|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:49:41.0796|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:49:41.1895|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:49:45.3033|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:49:45.3817|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:49:45.3992|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:49:45.3992|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 19:49:52.2206|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:49:52.2471|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:49:52.2729|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:49:52.4082|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:49:52.4367|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 19:50:04.3992|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:50:04.4781|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:50:18.5664|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 19:50:18.5961|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:50:35.3704|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:50:40.6539|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 19:50:40.6810|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:51:07.7155|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:51:07.7155|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:51:07.7155|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:51:07.7155|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 19:51:09.7781|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:51:11.1430|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:51:13.6000|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:51:16.0120|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:51:16.0706|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:51:16.0954|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 19:51:16.1026|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:51:16.2461|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:51:17.8916|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:51:17.9112|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:51:17.9707|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:51:18.0375|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 19:51:18.8503|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:51:19.9996|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:51:23.1865|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:51:26.4913|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:51:26.5286|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:51:26.5394|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:51:26.6037|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:51:26.6596|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 19:51:31.3317|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:51:32.5023|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:51:32.5391|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:51:32.5695|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 19:51:32.6754|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:54:06.4315|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:54:08.0852|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:54:08.1239|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:54:08.1717|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 19:54:08.2155|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:08.2763|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:54:09.4927|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:09.5090|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:54:09.5530|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:09.6220|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 19:54:10.2080|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:54:10.2337|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 19:54:10.2701|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:10.3692|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:54:10.4032|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:54:13.9129|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:54:14.5469|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:15.2309|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:54:16.0960|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:54:16.1295|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 19:54:16.1693|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:54:16.2426|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:54:16.2732|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:16.6993|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 19:54:18.5483|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:18.5863|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:18.6100|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 19:54:18.7522|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:54:28.4563|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:34.7244|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"2ebe44db-7590-4c6c-a5ba-22cecb0c665b" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:37.6497|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"604b94bf-3124-4bd2-a0f1-9cd3608908e6" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:39.5908|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"642fc38d-7152-4a21-a658-a58c2fb2aaa2" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:41.7207|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"652e3285-d76f-4941-89a1-8a1a6a049106" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:52.3673|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"233174e1-2e41-41c2-99e7-777b51dd55b0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:55.3535|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"7bcac08f-9412-411b-a34b-76e8afdb5d98" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:54:57.4279|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"05383c28-45e9-4d19-aa0d-c12046e02057" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:55:02.2958|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 添加角色组织权限表:
+{"RoledId":"f8e52937f7e846eaa95884e66adccd2e","PermissionsScopes":[{"PermissionsId":"Organization_Add_Edit","OrganizationScope":["642fc38d-7152-4a21-a658-a58c2fb2aaa2","604b94bf-3124-4bd2-a0f1-9cd3608908e6","233174e1-2e41-41c2-99e7-777b51dd55b0","652e3285-d76f-4941-89a1-8a1a6a049106"]}]} |url: |action: |AuthorityManagementCent.Controllers.RolesController+<PulshRolePermissions>d__5.MoveNext
+2019-01-20 19:55:03.4178|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:55:46.4443|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 19:55:46.4316|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:55:46.4316|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:55:46.4316|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 19:56:27.3071|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 19:56:27.3698|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:56:37.9611|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:56:38.9724|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:56:39.9881|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:57:39.0098|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:57:40.6977|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:59:20.8846|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 19:59:20.8795|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 19:59:41.0275|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:00:01.6119|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:00:01.7452|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 20:00:03.5011|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:00:08.9520|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"233174e1-2e41-41c2-99e7-777b51dd55b0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:06:07.4145|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:06:07.4110|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 20:27:22.7438|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 20:27:22.7438|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:27:54.6010|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:28:22.8572|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 20:32:28.3739|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:32:30.7572|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 20:35:02.6231|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:35:02.6231|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 20:35:09.4587|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:46:09.3380|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:46:09.3321|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 20:46:11.9947|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:49:08.5528|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:49:08.5480|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 20:52:00.1326|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:52:13.0339|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:52:13.0404|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 20:52:16.7575|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:54:11.6948|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 20:54:11.6948|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:54:20.1477|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:56:13.1968|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:56:13.1794|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 20:56:17.6849|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:56:41.5380|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:56:41.6031|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 20:56:42.8921|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:56:51.1743|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"233174e1-2e41-41c2-99e7-777b51dd55b0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 20:57:02.7803|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"642fc38d-7152-4a21-a658-a58c2fb2aaa2" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:04:46.0220|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:04:46.0051|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:04:51.1988|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:04:56.2431|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":"233174e1-2e41-41c2-99e7-777b51dd55b0","TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:04:56.8193|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":"642fc38d-7152-4a21-a658-a58c2fb2aaa2","TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:04:57.6203|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"233174e1-2e41-41c2-99e7-777b51dd55b0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:05:22.6904|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:05:22.6988|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:06:37.4820|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:07:29.1674|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:07:29.1674|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:07:37.5556|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:11:02.6816|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:11:02.6816|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:11:09.5696|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:11:42.0270|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:11:42.0676|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:11:43.4828|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:12:12.1604|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:12:12.3568|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:12:14.2115|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:12:37.4138|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:12:37.4138|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:14:04.3592|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:14:04.3592|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:14:06.5101|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:15:57.7037|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:15:57.7037|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:17:25.6332|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:17:43.8923|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:17:43.9087|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:17:44.9709|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:17:47.6030|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"604b94bf-3124-4bd2-a0f1-9cd3608908e6" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:17:49.9791|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"652e3285-d76f-4941-89a1-8a1a6a049106" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:17:52.1149|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"642fc38d-7152-4a21-a658-a58c2fb2aaa2" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:17:53.9915|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"233174e1-2e41-41c2-99e7-777b51dd55b0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:19:59.6420|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:19:59.6222|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:20:04.2258|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:20:05.8441|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":"1","TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:21:47.6975|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:31:14.5516|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:31:14.5944|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:31:14.6788|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:31:14.7242|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:31:14.7805|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:31:22.2084|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:31:22.2421|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 21:31:22.3271|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:31:22.5000|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:31:24.7057|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:31:27.0414|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"604b94bf-3124-4bd2-a0f1-9cd3608908e6" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:31:29.0622|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"652e3285-d76f-4941-89a1-8a1a6a049106" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:31:42.2072|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:31:44.0409|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 21:31:57.7131|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:31:57.7131|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:31:57.8012|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:31:57.9117|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:31:57.9573|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:32:00.3405|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:32:00.3844|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 21:32:00.5135|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:32:00.6032|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:34:10.5400|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:34:10.5400|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:34:10.5400|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:34:10.5400|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 21:34:11.2354|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:34:11.2680|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:34:12.7832|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:34:12.8166|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:34:12.9362|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:36:28.6115|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:36:28.6712|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 21:36:28.6937|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:36:28.7772|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:36:45.5559|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:38:39.2378|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:38:40.3507|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:38:40.3863|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 21:38:40.4178|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:38:40.4620|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:38:49.0684|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:38:49.1181|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:38:49.1499|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:38:49.2650|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:38:49.3166|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:39:05.6867|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 添加用户角色表:
+{"UserId":"96d815d6-c1c9-40f1-9f2b-e9160b13e648","RoleId":null} |url: |action: |AuthorityManagementCent.Controllers.RolesController+<PulshUserRole>d__6.MoveNext
+2019-01-20 21:39:06.2323|0|ERROR|AuthorityManagementCent.Controllers.RolesController|用户admin(1)添加用户角色表报错：
+System.Exception: Object reference not set to an instance of an object.
+   at AuthorityManagementCent.Managers.RolesManager.AddUserRoles(UserRolesRequest userRolesRequest) in D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\Managers\RolesManager.cs:line 172
+   at AuthorityManagementCent.Controllers.RolesController.PulshUserRole(UserRolesRequest rolesRequest) in D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\Controllers\RolesController.cs:line 120 |url: |action: |AuthorityManagementCent.Controllers.RolesController+<PulshUserRole>d__6.MoveNext
+2019-01-20 21:39:27.6149|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 添加用户角色表:
+{"UserId":"96d815d6-c1c9-40f1-9f2b-e9160b13e648","RoleId":null} |url: |action: |AuthorityManagementCent.Controllers.RolesController+<PulshUserRole>d__6.MoveNext
+2019-01-20 21:39:27.7624|0|ERROR|AuthorityManagementCent.Controllers.RolesController|用户admin(1)添加用户角色表报错：
+System.Exception: Object reference not set to an instance of an object.
+   at AuthorityManagementCent.Managers.RolesManager.AddUserRoles(UserRolesRequest userRolesRequest) in D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\Managers\RolesManager.cs:line 172
+   at AuthorityManagementCent.Controllers.RolesController.PulshUserRole(UserRolesRequest rolesRequest) in D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\Controllers\RolesController.cs:line 120 |url: |action: |AuthorityManagementCent.Controllers.RolesController+<PulshUserRole>d__6.MoveNext
+2019-01-20 21:39:55.7375|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 添加用户角色表:
+{"UserId":"96d815d6-c1c9-40f1-9f2b-e9160b13e648","RoleId":null} |url: |action: |AuthorityManagementCent.Controllers.RolesController+<PulshUserRole>d__6.MoveNext
+2019-01-20 21:40:18.3784|0|ERROR|AuthorityManagementCent.Controllers.RolesController|用户admin(1)添加用户角色表报错：
+System.Exception: Object reference not set to an instance of an object.
+   at AuthorityManagementCent.Managers.RolesManager.AddUserRoles(UserRolesRequest userRolesRequest) in D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\Managers\RolesManager.cs:line 172
+   at AuthorityManagementCent.Controllers.RolesController.PulshUserRole(UserRolesRequest rolesRequest) in D:\MyProject\AuthorityManagement\ZQY_AuthorityManagement\Api\AuthorityManagementCent\AuthorityManagementCent\Controllers\RolesController.cs:line 120 |url: |action: |AuthorityManagementCent.Controllers.RolesController+<PulshUserRole>d__6.MoveNext
+2019-01-20 21:40:18.4079|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:40:22.5927|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:40:22.6792|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:40:22.6961|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:40:22.7703|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:40:22.7963|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:40:55.8848|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:41:10.9439|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:41:10.9439|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:41:10.9439|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:41:10.9439|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:41:11.0526|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:41:35.3134|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:42:43.2329|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:42:43.2329|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:42:43.2329|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:42:43.3259|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:42:43.4273|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:43:27.0018|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:43:37.6193|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:43:42.9429|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:43:44.5252|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:43:44.5488|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:43:44.5707|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:43:44.7233|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:43:44.7497|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:43:54.1903|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:44:08.8626|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:44:08.9333|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:44:09.0324|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:44:09.1103|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:44:09.1758|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:44:55.4738|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:44:57.5121|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:44:57.5411|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:44:57.5799|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:44:57.6780|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:44:57.7477|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:45:21.2409|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:45:36.2632|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:45:38.1587|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:45:40.5616|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:45:40.6326|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:45:40.6863|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:45:40.7731|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:45:40.7731|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:46:23.8171|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:46:25.5920|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:46:25.6344|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:46:25.6756|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:46:25.7028|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:46:25.8447|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:47:44.9529|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:47:45.9386|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:47:49.9586|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:47:49.9924|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:47:50.0374|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:47:50.0374|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:47:50.1709|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:48:18.1414|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:48:20.7794|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:48:20.8297|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:48:20.8723|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:48:20.9289|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:48:21.0029|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:49:36.0091|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:49:49.8789|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:49:51.7052|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:49:51.7530|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:49:51.8295|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:49:51.8874|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:49:51.9212|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:51:28.8623|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:52:51.2297|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:52:53.0746|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:52:58.2364|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:53:01.3501|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:53:03.9985|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:53:06.5786|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:53:22.8732|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:53:22.9458|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:53:22.9724|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:53:23.0647|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:53:23.1140|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:54:53.6175|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:54:58.5972|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:55:05.4094|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:55:31.1976|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:55:42.2352|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:55:42.2596|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:55:42.4047|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:55:42.4293|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:55:42.4293|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:55:42.5242|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:56:32.9280|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:56:32.9505|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:56:33.0594|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:56:33.1125|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:56:33.1349|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:56:33.1968|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:57:36.4138|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:57:36.4366|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:57:36.6320|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:57:36.8446|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:57:36.8979|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:57:36.9807|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:57:38.3949|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:57:38.4475|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:57:38.5117|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:57:38.6905|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:57:38.8084|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:57:38.8829|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:57:46.4713|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:57:46.4713|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:57:46.6381|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:57:46.6774|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:57:46.7420|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:57:46.7891|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:58:04.7225|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:58:04.7555|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:58:05.0701|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:58:05.0870|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:58:05.1767|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:58:05.5138|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:58:06.6809|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:58:06.7649|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:58:06.7869|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:58:06.9300|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:58:07.1009|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:58:07.2050|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:58:12.1674|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:58:12.1674|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:58:12.2969|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:58:12.3599|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:58:12.4000|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:58:12.4966|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:58:18.9751|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:58:18.9751|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:58:19.0934|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:58:19.1246|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:58:19.2483|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:58:19.2755|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:58:21.5425|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:58:21.6148|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:58:21.6148|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:58:21.7130|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:58:21.7879|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:58:21.8230|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:59:24.6902|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:59:24.7350|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:59:24.8852|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:59:24.9790|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:59:25.0176|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:59:25.0958|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:59:37.0737|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:59:37.0933|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:59:37.2249|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:59:37.2579|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:59:37.3471|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:59:37.4009|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:59:41.4540|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:59:41.4930|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:59:41.5863|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:59:41.6513|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:59:41.6897|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 21:59:41.7747|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:59:44.2402|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 21:59:44.2402|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:59:44.3989|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 21:59:44.4276|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 21:59:44.4774|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 21:59:44.5573|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:00:03.7958|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 22:00:03.8481|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:00:04.1535|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:00:04.2336|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 22:00:04.3868|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 22:00:04.4615|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:00:09.1781|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:00:09.3227|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 22:00:09.6290|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 22:00:09.6373|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:00:09.8880|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:00:09.9719|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 22:00:15.3823|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 添加用户角色表:
+{"UserId":"1","RoleId":["66cf4026-3b5f-44cf-9e3a-f726dcff19ec"]} |url: |action: |AuthorityManagementCent.Controllers.RolesController+<PulshUserRole>d__6.MoveNext
+2019-01-20 22:02:03.1552|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 22:02:03.1552|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 22:02:03.1552|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:03.1552|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:02:03.1552|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:03.2629|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 22:02:28.2267|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 22:02:28.2267|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:28.4553|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 22:02:28.5009|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:28.7191|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 22:02:28.7958|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:02:33.8967|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 22:02:34.0476|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:02:34.1186|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 22:02:34.1981|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:34.5076|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 22:02:34.5542|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:36.1218|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:36.2269|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 22:02:36.2269|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 22:02:36.2639|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 22:02:36.4340|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:36.6166|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:02:42.0921|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:42.3381|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 22:02:42.3381|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:43.2062|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 22:02:43.2451|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 22:02:43.3306|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:02:44.5263|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:44.6255|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 22:02:44.6522|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 22:02:44.7708|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:02:44.9648|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:45.0947|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 22:02:46.9751|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:47.0782|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 22:02:47.1142|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 22:02:47.1314|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 22:02:47.4588|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:47.5080|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:02:50.3955|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 22:02:50.3955|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 22:02:50.4372|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:02:50.7778|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 22:02:51.0833|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:51.2194|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:52.3273|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:52.4115|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:02:52.4115|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 22:02:52.5646|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:02:52.5754|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 22:02:52.7525|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 22:02:57.3194|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 添加用户角色表:
+{"UserId":"96d815d6-c1c9-40f1-9f2b-e9160b13e648","RoleId":["f15287a5-f05c-4f8e-9769-94f30d61f3fe"]} |url: |action: |AuthorityManagementCent.Controllers.RolesController+<PulshUserRole>d__6.MoveNext
+2019-01-20 22:03:15.9415|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:03:15.9622|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:03:15.9901|0|INFO|AuthorityManagementCent.Controllers.UserController|
+ 用户admin,其ID:(1) 获取所有用户信息:
+{"OranizationId":null,"TrueName":null,"RoleId":null,"IsDelete":null,"EpartmentId":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.UserController+<GetUsersMessageAsync>d__3.MoveNext
+2019-01-20 22:03:16.3194|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<TreeSelect>d__7.MoveNext
+2019-01-20 22:03:16.3440|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:03:16.4209|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 22:03:19.1366|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:03:19.1366|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:03:19.2267|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 22:03:19.2267|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:03:50.4476|0|INFO|AuthorityManagementCent.Controllers.TokenController|用户：admin，其ID:1,验证所属所有权限列表 |url: |action: |AuthorityManagementCent.Controllers.TokenController+<PermissionCheck>d__4.MoveNext
+2019-01-20 22:03:52.1204|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取权限列表:
+{"Groups":null,"PageIndex":0,"PageSize":10} |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetJurisdictionAsync>d__4.MoveNext
+2019-01-20 22:03:54.7951|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:03:54.8422|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"0" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:03:54.8670|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 获取分组后的权限列表. |url: |action: |AuthorityManagementCent.Controllers.JurisdictionController+<GetGroupPermission>d__5.MoveNext
+2019-01-20 22:03:54.8954|0|INFO|AuthorityManagementCent.Controllers.RolesController|用户admin,其ID:(1) 获取角色列表:
+ |url: |action: |AuthorityManagementCent.Controllers.RolesController+<GettingRoles>d__3.MoveNext
+2019-01-20 22:04:02.1289|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"1" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext
+2019-01-20 22:04:04.2908|0|INFO|AuthorityManagementCent.Controllers.UserController|用户admin,其ID:(1) 创建组织树状结构:
+"604b94bf-3124-4bd2-a0f1-9cd3608908e6" |url: |action: |AuthorityManagementCent.Controllers.OranizationsController+<OranizationsTreeStructure>d__6.MoveNext

@@ -24,6 +24,7 @@ export const ModalUserRole = Form.create()(
         Object.keys(data.extension).map(i => {
           option.push({ label: data.extension[i].name, value: data.extension[i].id })
         });
+        console.log(option,"选择项有...........")
         this.setState({
           optionsData: option
         })
@@ -34,11 +35,18 @@ export const ModalUserRole = Form.create()(
       console.log(checkedValue, "选择的是！！");
 
     }
-    
+
     render() {
-      const { visible, onCancel, onCreate, form, userName } = this.props;
-      const { getFieldDecorator } = form;
-      return <Modal visible={visible} title="员工权限" okText="确定" cancelText="取消" onCancel={onCancel} onOk={onCreate}>
+      const { visible, onCancel, onCreate, form, userName ,defaultOption} = this.props;
+      const { getFieldDecorator } = form;    
+      console.log(userName, "用户姓名》》》》》》》");
+      return <Modal 
+                    visible={visible} 
+                    title="员工权限"
+                    okText="确定"
+                    cancelText="取消" 
+                    onCancel={onCancel} 
+                    onOk={onCreate}>
         <Form layout="vertical">
           <Form.Item style={{ display: "none" }} label="id:">
             {
@@ -61,13 +69,14 @@ export const ModalUserRole = Form.create()(
           <Form.Item label="所属角色">
             {
               getFieldDecorator("rolesID", {
-                rules: [
-                  {
-                    required: true,
-                    message: "请勾选所属角色！"
-                  }
-                ]
-              })(<Checkbox.Group options={this.state.optionsData} onChange={checkedValue => this.checkbox(checkedValue)} />)}
+                initialValue:defaultOption,
+                // rules: [
+                //   {
+                //     required: true,
+                //     message: "请勾选所属角色！"
+                //   }
+                // ]
+              })(<Checkbox.Group   options={this.state.optionsData} onChange={checkedValue => this.checkbox(checkedValue)} />)}
           </Form.Item>
         </Form>
       </Modal>;

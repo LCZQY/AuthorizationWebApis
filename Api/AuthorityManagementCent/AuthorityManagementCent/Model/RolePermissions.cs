@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AuthorityManagementCent.Model
 {
+
     /// <summary>
     /// 角色-权限-范围表
     /// </summary>
@@ -13,8 +14,7 @@ namespace AuthorityManagementCent.Model
     {
         /// <summary>
         /// Key
-        /// </summary>
-        
+        /// </summary>       
         [Key]
         public string Id { get; set; }
 

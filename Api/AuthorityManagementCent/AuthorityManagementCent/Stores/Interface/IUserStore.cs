@@ -17,6 +17,12 @@ namespace AuthorityManagementCent.Stores.Interface
         /// <returns></returns>
         IQueryable<Users> GetUserInformation();
 
+        /// <summary>
+        /// 删除用户
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        Task<bool> DeleteUser(List<string> userId);
 
         /// <summary>
         /// 添加用户       

@@ -43,12 +43,11 @@ namespace AuthorityManagementCent.Model
 
             builder.Entity<UserRole>(b =>
             {
-                b.HasKey(k => new { k.RoleId });
+                b.HasKey(k => new { k.RoleId,k.UserId });
                 b.Property<bool>("IsDeleted").HasColumnType("bit");
                 b.ToTable("userrole");
             });
-
-
+            
             builder.Entity<RolePermissions>(b =>
             {
                 //b.HasKey(k => new { k.OrganizationScope, k.PermissionsId, k.RoledId });

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Layout, Menu, Button, Tooltip, Collapse, Checkbox } from 'antd';
-import { httpPost, messageError, messageSuccess, messageWarn } from '../../utils/public';
+import { Layout, Menu, Button, Tooltip, Collapse, Checkbox,Popconfirm } from 'antd';
+import { httpPost, messageError, messageSuccess, messageWarn, httpGet } from '../../utils/public';
 import "./roles.css";
 import { ModalEdit } from './ModalEdit';
 import SelectTree from "./SelectTree";
@@ -30,7 +30,9 @@ class Roles extends Component {
             _saveDisable: true,//工具权限保存按钮
             optionDisable: true, //多选框禁止
             _ResetKeys: [],//存放集合的key
-            _OranizationScoed: []
+            _OranizationScoed: [],
+            defaultvaluePermiss:[], //角色的所有权限
+            allOwn:true //选择全部或本组织
         }
         Object.assign(this.state, this.props);
     }
@@ -84,18 +86,35 @@ class Roles extends Component {
 
     /**角色列表 */
     MenuClick = ({ item, key, keyPath }) => {
-        // let data = Object.assign({}, _RolePermission, { rolesId: "key" });         ???? 页面加载后第一次
+        
+        ///点击该角色请问该角色的权限???   
+        /**
+         *  多选框默认选中后再次刷新后不能被赋值？？
+         */
+        var url ="/api/Roles/getRolePermisionList/"+key;
+        httpGet(url,null).then(data =>{
+            if (data.code != "0") {
+                messageWarn(data["message"]);
+            }            
+            console.log("该角色id是"+key," ，拥有的权限是："+ data.extension);
+           this.setState({
+                defaultvaluePermiss: data.extension
+           });
+        });
+
         //选择角色后就启用保存按钮        
         this.setState({
             _saveDisable: false,
-            optionDisable: false
+            optionDisable: false,
+            allOwn:false
         });
         this.RolesId = key;
     }
 
     /**组织范围权限选择 */
-    checkbox = (checkedValue) => {
-                 
+    checkbox = (checkedValue,e) => {
+      
+        /// 如何展示该权限的组织范围？？？？？？？？【无法确定该权限是否处于选中状态】
         if (checkedValue[0] != null) {
 
              this.permissionsId = checkedValue[0];                                   
@@ -120,27 +139,19 @@ class Roles extends Component {
         })
     }
 
-    /**全部或者本组织 */
-    optionOranScope = (checkedValue) => {
-        if (checkedValue[0] != null) {
-            this.OranizationId = checkedValue;
-            console.log(this.OranizationId, "全部或者本组织------------------");
-        }
-    }
 
     /**组织权限保存 */
     save = () => {
         // 一个角色对应多个权限 该权限又有组织范围 ，保存该数据时只保留该组织的最高部门即可！ 判断该角色时只需要，在数据库中查询该组织Id有无子集组织既是权限范围..                        
         /** 优化方案： 这里的数组是记录的一个权限项对应的多个组织id，没有办法一次性提交多个，只能一次提交一个权限         **/                     
         endArray.push({
-            permissionsId: this.permissionsId,//PermissionId.length == 0 ? PermissionId[0] : PermissionId[PermissionId.length - 1],
+            permissionsId: this.permissionsId,
             organizationScope: this.OranizationId,        
         });      
         var body = {
             roledId: this.RolesId,
             permissionsScopes: endArray
-        }
-        console.log(body, "上传到后台的数据是======================");           
+        }      
         let url = "/api/Roles/add/RolePermissions";
         httpPost(url, body).then(data => {
             if (data.code != "0") {
@@ -204,14 +215,51 @@ class Roles extends Component {
         });
     }
 
+    /**删除角色 */
+    Delconfirm = (obj) =>{
+        console.log(obj,"删除角色的ID是");
+        var  url="/api/Roles/delete";      
+        httpPost(url,[obj.id]).then(data =>{
+            if (data.code != "0") {
+                messageError(data["message"]);
+                return;
+            }            
+            messageSuccess("角色删除成功");          
+            this.Initialization();    
+        });
+    }
+    
+    /**全部或者本组织 */
+    optionOranScope = (checkedValue) => {
+        if (checkedValue[0] != null) {
+
+            this.OranizationId = checkedValue;
+       
+            if (checkedValue == "all") {
+                console.log(checkedValue, "全部或者本组织------------------");
+                this.setState({
+                    allOwn:false
+                });
+            }
+            if (checkedValue == "own") {
+                console.log(checkedValue, "全部或者本组织------------------");
+            }
+        }                
+    }
+
     render() {
+
         var obj = this.state.RoleList
         var panel = this.state.CollapseData || [];
         var _this = this;
+        console.log(_this.state.defaultvaluePermiss,"我默认选中的是》》》》》")
+        let defaultValues= _this.state.defaultvaluePermiss || [];
+
         const options = [
-            { label: '全部', value: 'all', disabled: _this.state.optionDisable },
-            { label: '本组织', value: 'own', disabled: _this.state.optionDisable },
+            { label: '全部', value: 'all', disabled: _this.state.optionDisable},
+            { label: '本组织', value: 'own', disabled: _this.state.allOwn },
         ];
+
         return (
             <div>
                 <Content>
@@ -237,7 +285,6 @@ class Roles extends Component {
                             </tr>
                         </tbody>
                     </table>
-
                     {/* 左侧角色列表 */}
                     <Layout>
                         <Sider
@@ -245,7 +292,7 @@ class Roles extends Component {
                         // collapsed={this.state.collapsed}
                         // onCollapse={this.onCollapse}
                         >
-                            <Menu onClick={this.MenuClick} border="1" style={{ height: "660px", overflow: "scroll" }} theme="light " mode="vertical">
+                            <Menu onClick={this.MenuClick} border="1" style={{maxHeight:"800px", overflow: "scroll" }} theme="light " mode="vertical">
                                 {
                                     Object.keys(obj).map(function (i) {
                                         return <Menu.Item key={obj[i].id}>
@@ -254,9 +301,11 @@ class Roles extends Component {
                                                 <Tooltip placement="top" title="编辑角色">
                                                     <Button type="primary" onClick={() => _this.showModal(obj[i])} size="small" shape="circle" icon="edit" />
                                                 </Tooltip>
-                                                <Tooltip placement="top" title="删除角色">
-                                                    <Button type="primary" size="small" shape="circle" icon="delete" />
-                                                </Tooltip>
+                                                <Popconfirm title="确认要删除吗？" onConfirm={()=> _this.Delconfirm(obj[i])} okText="确定" cancelText="取消">
+                                                    <Tooltip placement="top" title="删除角色">
+                                                        <Button type="primary" size="small" shape="circle" icon="delete" />
+                                                    </Tooltip>
+                                                </Popconfirm>
                                             </span>
                                         </Menu.Item>
                                     })
@@ -274,17 +323,18 @@ class Roles extends Component {
                         </Sider>
                         {/* 中间工具权限 */}
                         <div style={{ width: "100%", float: "left" }}>                
-                            <Collapse bordered={false}>                                                                                    
-                            {                                    
+                            <Collapse bordered={false} defaultActiveKey={['0']}>                   
+                            {                                                                     
                                     Object.keys(panel).map(function (i) {                                        
                                         var checkboxs = panel[i].permissionResponses
+                                        
                                         return <Collapse.Panel header={panel[i].groups}>
                                             {
                                                 Object.keys(checkboxs).map(function (j) {
                                                     let options = [
                                                         { label: checkboxs[j].name, value: checkboxs[j].id, disabled: _this.state.optionDisable }
-                                                    ];
-                                                    return <CheckboxGroup options={options} onChange={checkedValue => _this.checkbox(checkedValue)} />;
+                                                    ];            
+                                                    return <CheckboxGroup defaultValue={defaultValues} options={options} onChange={checkedValue => _this.checkbox(checkedValue)} />;
                                                 })
                                             }
                                         </Collapse.Panel>                                     

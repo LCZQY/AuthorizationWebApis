@@ -62,7 +62,9 @@ export class Son extends Component {
 />
 >>页面生命周期： https://www.jianshu.com/p/c9bc994933d5
 >> 打包：npm run build
->>
+>>>>React.JS ： https://blog.csdn.net/fox_wei_hlz/article/details/70384184
+
+
 
 
 ====*************************************************************************************************************

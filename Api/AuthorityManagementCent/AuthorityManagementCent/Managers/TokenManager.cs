@@ -72,7 +72,7 @@ namespace AuthorityManagementCent.Managers
             var response = new ResponseMessage<List<string>>();
             try
             {          
-                var UserRole = from b in _IRolesStore.GetUserRoleAsync().Where(p => p.UserId == useId)
+                var UserRole = from b in _IRolesStore.GetUserRoleAsync().Where(p => p.UserId == useId && !p.IsDeleted)
                                join c in _IRolesStore.GetRolePermissionsAsync()
                                on b.RoleId equals c.RoledId into b1
                                from c1 in b1.DefaultIfEmpty()

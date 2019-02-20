@@ -101,17 +101,7 @@ namespace AuthorityManagementCent
                 });
 
                 //给Swagger界面新增添加权限界面
-                var security = new Dictionary<string, IEnumerable<string>> { { "Bearer", new string[] { } }, };
-                options.AddSecurityRequirement(security);
-                options.AddSecurityDefinition("Bearer", new ApiKeyScheme
-                {
-                    Description = "Authorization format : Bearer { token }",
-                    //JWt默认的参数名称
-                    Name="Authorzation",
-                    //jwt默认存放Authorization信息的位置（携带在请求头中）
-                    In="header",
-                    Type="apiKey"
-                });
+                options.OperationFilter<HttpHeaderOperation>(); // 添加httpHeader               
                 options.DocInclusionPredicate((docName, description) => true);
                 options.IgnoreObsoleteActions();      
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";

@@ -26,5 +26,7 @@ namespace AuthorityManagementCent.Dto.Response
         /// 角色名称
         /// </summary>
         public string Name { get; set; }
+
+
     }
 }

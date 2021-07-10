@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AuthorityManagementCent.Dto.Request;
+﻿using AuthorityManagementCent.Dto.Request;
 using AuthorityManagementCent.Model;
 using AuthorityManagementCent.Stores.Interface;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace AuthorityManagementCent.Stores
 {
@@ -21,7 +19,7 @@ namespace AuthorityManagementCent.Stores
             dbContext = _dbContext;
         }
 
-        public  IQueryable<Users> GetUsers()
+        public IQueryable<Users> GetUsers()
         {
             return dbContext.Users.AsNoTracking();
         }
@@ -32,7 +30,7 @@ namespace AuthorityManagementCent.Stores
         /// <param name="users"></param>
         /// <returns></returns>
         public async Task<Users> IExiexistence(LoginRequest users)
-        {  
+        {
             return await dbContext.Users.Where(u => u.UserName == users.userName && !u.IsDeleted).FirstOrDefaultAsync();
         }
     }

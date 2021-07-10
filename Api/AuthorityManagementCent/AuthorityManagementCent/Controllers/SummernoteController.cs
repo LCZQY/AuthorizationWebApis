@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using System.IO;
-using System.Linq;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using AuthorityManagementCent.Dto.Common;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 
 namespace AuthorityManagementCent.Controllers
 {
@@ -17,11 +12,11 @@ namespace AuthorityManagementCent.Controllers
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    public class SummernoteController :  Controller
+    public class SummernoteController : Controller
     {
 
         public IHostingEnvironment hostingEnvironment { get; }
-        public SummernoteController(IHostingEnvironment  env)
+        public SummernoteController(IHostingEnvironment env)
         {
             this.hostingEnvironment = env;
         }
@@ -58,7 +53,7 @@ namespace AuthorityManagementCent.Controllers
                     await file.CopyToAsync(stream);
                 }
             }
-            
+
             return Json(filename);
         }
 

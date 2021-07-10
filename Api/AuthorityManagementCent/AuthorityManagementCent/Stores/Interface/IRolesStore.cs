@@ -1,11 +1,9 @@
-﻿using System;
+﻿using AuthorityManagementCent.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using AuthorityManagementCent.Dto.Common;
-using AuthorityManagementCent.Dto.Request;
-using AuthorityManagementCent.Model;
 
 namespace AuthorityManagementCent.Stores.Interface
 {
@@ -141,7 +139,7 @@ namespace AuthorityManagementCent.Stores.Interface
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
         Task<TResult> GetUserRoleAsync<TResult>(Func<IQueryable<UserRole>, IQueryable<TResult>> query, CancellationToken cancellationToken = default(CancellationToken));
-        
+
         /// <summary>
         /// 删除角色
         /// </summary>

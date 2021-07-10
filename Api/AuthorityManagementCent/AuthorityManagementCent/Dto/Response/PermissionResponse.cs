@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace AuthorityManagementCent.Dto.Response
 {
@@ -27,12 +24,12 @@ namespace AuthorityManagementCent.Dto.Response
     }
 
     public class GroupByPermissionResponse
-    {    
+    {
         /// <summary>
         /// 权限分组
         /// </summary>
         public string Groups { get; set; }
-        
+
         public List<PermissionResponse> permissionResponses { get; set; }
     }
 

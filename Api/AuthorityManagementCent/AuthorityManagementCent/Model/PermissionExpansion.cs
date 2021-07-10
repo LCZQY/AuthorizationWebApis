@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace AuthorityManagementCent.Model
 {
     /// <summary>
     /// 权限扩展表    
     /// </summary>
-    public class PermissionExpansion 
+    public class PermissionExpansion
     {
         /// <summary>
         /// Key

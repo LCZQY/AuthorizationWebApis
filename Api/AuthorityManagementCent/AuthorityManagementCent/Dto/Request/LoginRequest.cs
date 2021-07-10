@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace AuthorityManagementCent.Dto.Request
 {
@@ -11,7 +7,7 @@ namespace AuthorityManagementCent.Dto.Request
         /// <summary>
         /// 用户名
         /// </summary>
-        [StringLength(6,ErrorMessage ="最多输入6位数")]
+        [StringLength(6, ErrorMessage = "最多输入6位数")]
         public string userName { get; set; }
 
         /// <summary>

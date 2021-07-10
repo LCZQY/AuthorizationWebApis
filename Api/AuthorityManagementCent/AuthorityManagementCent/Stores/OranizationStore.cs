@@ -1,12 +1,10 @@
-﻿using System;
+﻿using AuthorityManagementCent.Model;
+using AuthorityManagementCent.Stores.Interface;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AuthorityManagementCent.Dto.Common;
-using AuthorityManagementCent.Dto.Request;
-using AuthorityManagementCent.Model;
-using AuthorityManagementCent.Stores.Interface;
-using Microsoft.EntityFrameworkCore;
 
 namespace AuthorityManagementCent.Stores
 {

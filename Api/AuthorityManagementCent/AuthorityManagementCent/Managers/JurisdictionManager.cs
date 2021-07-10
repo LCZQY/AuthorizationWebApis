@@ -1,14 +1,14 @@
-﻿using System;
+﻿using AuthorityManagementCent.Dto.Common;
+using AuthorityManagementCent.Dto.Request;
+using AuthorityManagementCent.Dto.Response;
+using AuthorityManagementCent.Model;
+using AuthorityManagementCent.Stores.Interface;
+using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using AutoMapper;
 using System.Threading.Tasks;
-using AuthorityManagementCent.Dto.Response;
-using AuthorityManagementCent.Stores.Interface;
-using AuthorityManagementCent.Dto.Common;
-using Microsoft.EntityFrameworkCore;
-using AuthorityManagementCent.Dto.Request;
-using AuthorityManagementCent.Model;
 
 
 namespace AuthorityManagementCent.Managers
@@ -45,7 +45,7 @@ namespace AuthorityManagementCent.Managers
             }
             try
             {
-                await _IJurisdictionStore.DeletePermissions(id);               
+                await _IJurisdictionStore.DeletePermissions(id);
             }
             catch (Exception el)
             {
@@ -138,7 +138,7 @@ namespace AuthorityManagementCent.Managers
                         Groups = o.Groups
                     }).ToList()
                 });
-                Response.Extension =await query.ToListAsync();  
+                Response.Extension = await query.ToListAsync();
             }
             catch (Exception el)
             {

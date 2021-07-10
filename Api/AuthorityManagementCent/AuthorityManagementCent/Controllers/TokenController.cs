@@ -1,16 +1,13 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using AuthorityManagementCent.Dto.Common;
 using AuthorityManagementCent.Dto.Request;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using AuthorityManagementCent.Dto.Common;
+using AuthorityManagementCent.Dto.Response;
+using AuthorityManagementCent.Filters;
 using AuthorityManagementCent.Managers;
 using Microsoft.AspNetCore.Authorization;
-using System.Security.Claims;
-using System.Linq;
-using AuthorityManagementCent.Filters;
-using System.Collections.Generic;
-using AuthorityManagementCent.Dto.Response;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Threading.Tasks;
 
 namespace AuthorityManagementCent.Controllers
 {
@@ -40,7 +37,7 @@ namespace AuthorityManagementCent.Controllers
         /// <returns></returns>
         [HttpPost("token")]
         [AllowAnonymous]
-        public async Task<ResponseMessage<string>> Tokens([FromBody]LoginRequest users)
+        public async Task<ResponseMessage<string>> Tokens([FromBody] LoginRequest users)
         {
             _Logger.LogInformation($"{users.userName}获取Token中。");
             var response = new ResponseMessage<string>();
@@ -78,9 +75,10 @@ namespace AuthorityManagementCent.Controllers
             try
             {
                 var list = await _UserInfoManager.JurisdictionList(users.Id);
-                var  perUser = new PerUserResponse() {
-                     PermissionList =  list.Extension,
-                     UserName = users.TrueName
+                var perUser = new PerUserResponse()
+                {
+                    PermissionList = list.Extension,
+                    UserName = users.TrueName
                 };
                 response.Extension = perUser;
             }

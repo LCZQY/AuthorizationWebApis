@@ -1,14 +1,11 @@
-﻿using System;
+﻿using AuthorityManagementCent.Dto.Common;
+using AuthorityManagementCent.Dto.Request;
+using AuthorityManagementCent.Stores.Interface;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using AutoMapper;
 using System.Threading.Tasks;
-using AuthorityManagementCent.Dto.Response;
-using AuthorityManagementCent.Stores.Interface;
-using AuthorityManagementCent.Dto.Common;
-using Microsoft.EntityFrameworkCore;
-using AuthorityManagementCent.Dto.Request;
-using AuthorityManagementCent.Model;
 
 namespace AuthorityManagementCent.Managers
 {
@@ -21,7 +18,7 @@ namespace AuthorityManagementCent.Managers
         private readonly ITokenStore _IUserInfo;
         private readonly IRolesStore _IRolesStore;
         public TokenManager(ITokenStore IUserInfo, IRolesStore IRolesStore)
-        {            
+        {
             this._IUserInfo = IUserInfo;
             this._IRolesStore = IRolesStore;
         }
@@ -48,16 +45,16 @@ namespace AuthorityManagementCent.Managers
                 return response;
             }
             else
-            {                
+            {
                 TokenModel jwt = new TokenModel
                 {
                     Id = returnUsers.Id,
-                    RoleName="",
-                    UserName = users.userName,                  
+                    RoleName = "",
+                    UserName = users.userName,
                     TrueName = returnUsers.TrueName,
                     OrganizationId = returnUsers.OrganizationId,
                 };
-                response.Extension= JwtHelpers.IssueJWT(jwt);               
+                response.Extension = JwtHelpers.IssueJWT(jwt);
             }
             return response;
         }
@@ -71,7 +68,7 @@ namespace AuthorityManagementCent.Managers
         {
             var response = new ResponseMessage<List<string>>();
             try
-            {          
+            {
                 var UserRole = from b in _IRolesStore.GetUserRoleAsync().Where(p => p.UserId == useId && !p.IsDeleted)
                                join c in _IRolesStore.GetRolePermissionsAsync()
                                on b.RoleId equals c.RoledId into b1

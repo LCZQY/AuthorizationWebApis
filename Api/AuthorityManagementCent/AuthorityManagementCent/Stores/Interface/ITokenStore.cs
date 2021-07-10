@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using AuthorityManagementCent.Dto.Request;
+using AuthorityManagementCent.Model;
 using System.Linq;
 using System.Threading.Tasks;
-using AuthorityManagementCent.Dto.Request;
-using AuthorityManagementCent.Model;
 
 namespace AuthorityManagementCent.Stores.Interface
 {
@@ -21,6 +19,6 @@ namespace AuthorityManagementCent.Stores.Interface
 
 
 
-       
+
     }
 }

@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
 
 namespace AuthorityManagementCent.Dto.Common
 {
     /// <summary>
     /// 返回实体
     /// </summary>
-    public  class ResponseMessage
+    public class ResponseMessage
     {
         public string Code
         {

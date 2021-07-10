@@ -1,15 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AuthorityManagementCent.Dto.Common;
-using AuthorityManagementCent.Managers;
-using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
+﻿using AuthorityManagementCent.Dto.Common;
 using AuthorityManagementCent.Dto.Request;
-using AuthorityManagementCent.Filters;
 using AuthorityManagementCent.Dto.Response;
+using AuthorityManagementCent.Filters;
+using AuthorityManagementCent.Managers;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Threading.Tasks;
 
 namespace AuthorityManagementCent.Controllers
 {

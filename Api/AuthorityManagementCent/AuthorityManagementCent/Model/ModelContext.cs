@@ -1,9 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AuthorityManagementCent.Model;
 
 namespace AuthorityManagementCent.Model
 {
@@ -43,11 +38,11 @@ namespace AuthorityManagementCent.Model
 
             builder.Entity<UserRole>(b =>
             {
-                b.HasKey(k => new { k.RoleId,k.UserId });
+                b.HasKey(k => new { k.RoleId, k.UserId });
                 b.Property<bool>("IsDeleted").HasColumnType("bit");
                 b.ToTable("userrole");
             });
-            
+
             builder.Entity<RolePermissions>(b =>
             {
                 //b.HasKey(k => new { k.OrganizationScope, k.PermissionsId, k.RoledId });
@@ -68,9 +63,9 @@ namespace AuthorityManagementCent.Model
             });
 
             builder.Entity<OrganizationExpansions>(b =>
-            {              
+            {
                 b.Property<bool>("IsImmediate").HasColumnType("bit");
-                b.HasKey(k => new { k.OrganizationId ,k.SonId });
+                b.HasKey(k => new { k.OrganizationId, k.SonId });
                 b.ToTable("organizationexpansions");
             });
 

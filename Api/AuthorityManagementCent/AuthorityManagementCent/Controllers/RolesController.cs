@@ -1,13 +1,11 @@
 ﻿using AuthorityManagementCent.Dto.Common;
 using AuthorityManagementCent.Dto.Request;
-using AuthorityManagementCent.Dto.Response;
 using AuthorityManagementCent.Filters;
 using AuthorityManagementCent.Managers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace AuthorityManagementCent.Controllers
@@ -157,7 +155,7 @@ namespace AuthorityManagementCent.Controllers
         /// <returns></returns>
         [HttpPost("delete")]
         [JwtTokenAuthorize]
-        public async Task<ResponseMessage> DeleteRoles([FromBody]List<string> rolesRequest)
+        public async Task<ResponseMessage> DeleteRoles([FromBody] List<string> rolesRequest)
         {
             var users = DataBaseUser.TokenModel;
             _Logger.LogInformation($"用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 删除角色:\r\n" + (rolesRequest != null ? JsonHelpers.ToJSON(rolesRequest) : ""));

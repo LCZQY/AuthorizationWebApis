@@ -1,11 +1,7 @@
-﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AuthorityManagementCent.Model;
+﻿using AuthorityManagementCent.Dto.Request;
 using AuthorityManagementCent.Dto.Response;
-using AuthorityManagementCent.Dto.Request;
+using AuthorityManagementCent.Model;
+using AutoMapper;
 
 namespace AuthorityManagementCent
 {
@@ -17,10 +13,10 @@ namespace AuthorityManagementCent
         public AutoMapperProfileConfiguration()
         {
             //用户
-            CreateMap<UsersResponse,Users>();
+            CreateMap<UsersResponse, Users>();
             CreateMap<Users, UsersResponse>();
             CreateMap<UserRequest, Users>();
-            CreateMap<Users,UserRequest>();
+            CreateMap<Users, UserRequest>();
 
             //组织
             CreateMap<OranizationRequest, Organizations>();
@@ -28,7 +24,7 @@ namespace AuthorityManagementCent
 
             //权限
             CreateMap<PermissionitemRequest, Permissionitems>();
-            CreateMap<Permissionitems, PermissionitemRequest >();
+            CreateMap<Permissionitems, PermissionitemRequest>();
 
             //角色
             CreateMap<RolesRequest, Roles>();
@@ -43,6 +39,6 @@ namespace AuthorityManagementCent
             CreateMap<UserRolesRequest, UserRole>();
             CreateMap<UserRole, UserRolesRequest>();
 
-        }       
+        }
     }
 }

@@ -1,13 +1,12 @@
-﻿using System;
+﻿using AuthorityManagementCent.Dto.Request;
+using AuthorityManagementCent.Model;
+using AuthorityManagementCent.Stores.Interface;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using AuthorityManagementCent.Dto.Common;
-using AuthorityManagementCent.Dto.Request;
-using AuthorityManagementCent.Model;
-using AuthorityManagementCent.Stores.Interface;
-using Microsoft.EntityFrameworkCore;
 
 namespace AuthorityManagementCent.Stores
 {
@@ -40,7 +39,7 @@ namespace AuthorityManagementCent.Stores
         /// <returns></returns>
         public async Task<List<string>> listUserPermision(string roleId)
         {
-            return await dbContext.RolePermissions.Where(u=>u.RoledId.Equals(roleId)).Select(p=>p.PermissionsId).Distinct().ToListAsync();         
+            return await dbContext.RolePermissions.Where(u => u.RoledId.Equals(roleId)).Select(p => p.PermissionsId).Distinct().ToListAsync();
         }
 
 
@@ -145,7 +144,7 @@ namespace AuthorityManagementCent.Stores
         /// <param name="userId"></param>
         /// <param name="roleId"></param>
         /// <returns></returns>
-        public async Task<bool> DeleteUserRoles(string userId , List<string> roleId)
+        public async Task<bool> DeleteUserRoles(string userId, List<string> roleId)
         {
 
             if (userId == null)
@@ -290,7 +289,7 @@ namespace AuthorityManagementCent.Stores
         /// <param name="roleId"></param>
         /// <returns></returns>
         public async Task<bool> DeleteRole(List<string> roleId)
-        {   
+        {
             var roles = await dbContext.Roles.Where(o => roleId.Contains(o.Id)).ToListAsync();
             roles.ForEach(i => i.IsDeleted = true);
             return await dbContext.SaveChangesAsync() > 0;
@@ -302,7 +301,7 @@ namespace AuthorityManagementCent.Stores
         /// <param name="roleId"></param>
         /// <returns></returns>
         public async Task<bool> DeleteUserRole(List<string> roleId)
-        {           
+        {
             var roles = await dbContext.UserRoles.Where(o => roleId.Contains(o.RoleId)).ToListAsync();
             roles.ForEach(i => i.IsDeleted = true);
             return await dbContext.SaveChangesAsync() > 0;
@@ -328,7 +327,7 @@ namespace AuthorityManagementCent.Stores
         /// <param name="PermissEx"></param>
         /// <returns></returns>
         public async Task<bool> DeletePermissionEx(List<PermissionExpansion> PermissEx)
-        {            
+        {
             dbContext.PermissionExpansions.RemoveRange(PermissEx);
             return await dbContext.SaveChangesAsync() > 0;
         }

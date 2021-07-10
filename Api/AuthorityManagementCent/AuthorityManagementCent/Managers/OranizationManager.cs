@@ -1,14 +1,14 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
+﻿using AuthorityManagementCent.Dto.Common;
 using AuthorityManagementCent.Dto.Request;
-using AuthorityManagementCent.Stores.Interface;
-using AuthorityManagementCent.Dto.Common;
-using AutoMapper;
-using AuthorityManagementCent.Model;
-using System;
 using AuthorityManagementCent.Dto.Response;
-using System.Collections.Generic;
+using AuthorityManagementCent.Model;
+using AuthorityManagementCent.Stores.Interface;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace AuthorityManagementCent.Managers
 {
@@ -38,7 +38,7 @@ namespace AuthorityManagementCent.Managers
         public async Task<ResponseMessage> PlusOranization(OranizationRequest oranizationRequest)
         {
             var response = new ResponseMessage();
-          
+
             var newOranization = _Mapper.Map<Organizations>(oranizationRequest);
             try
             {
@@ -64,7 +64,7 @@ namespace AuthorityManagementCent.Managers
 
 
                 //递归找到所有的父级节点信息
-                var parentList = await ListPrantOranization(new List<Organizations>(), oranizationRequest.ParentId, oranizationRequest.OrganizationName);             
+                var parentList = await ListPrantOranization(new List<Organizations>(), oranizationRequest.ParentId, oranizationRequest.OrganizationName);
                 foreach (var item in parentList)
                 {
                     organizationExpansions.Add(new OrganizationExpansions
@@ -75,7 +75,7 @@ namespace AuthorityManagementCent.Managers
                         FullName = item.FullName,
                         SonName = oranizationRequest.OrganizationName,
                         //对比父级ID是否相同，相同则是直属关系
-                        IsImmediate = item.Id == oranizationRequest.ParentId 
+                        IsImmediate = item.Id == oranizationRequest.ParentId
                     });
                 }
                 await _IOranizationStore.AddOrganizationExpansions(organizationExpansions);
@@ -131,7 +131,7 @@ namespace AuthorityManagementCent.Managers
             var response = new ResponseMessage();
             try
             {
-                var uses=await _IUserStore.GetUserInformation().Where(p=>p.OrganizationId.Contains(oraId)).ToListAsync();
+                var uses = await _IUserStore.GetUserInformation().Where(p => p.OrganizationId.Contains(oraId)).ToListAsync();
                 if (uses.Count() > 0)
                 {
                     response.Code = ResponseCodeDefines.ObjectAlreadyExists;
@@ -216,7 +216,7 @@ namespace AuthorityManagementCent.Managers
                     response.Extension = await oraniztionList;
                 }
                 else
-                {                    
+                {
                     var oraniztionList = IparentList.Where(o => o.OrganizationId == OranizationId).Select(p => new TreeResponse
                     {
                         title = p.SonName,//组织名称

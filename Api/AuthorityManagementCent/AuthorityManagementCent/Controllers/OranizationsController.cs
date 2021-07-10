@@ -1,13 +1,13 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using AuthorityManagementCent.Dto.Common;
 using AuthorityManagementCent.Dto.Request;
+using AuthorityManagementCent.Dto.Response;
+using AuthorityManagementCent.Filters;
+using AuthorityManagementCent.Managers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using AuthorityManagementCent.Dto.Common;
-using AuthorityManagementCent.Managers;
-using AuthorityManagementCent.Dto.Response;
+using System;
 using System.Collections.Generic;
-using AuthorityManagementCent.Filters;
+using System.Threading.Tasks;
 
 namespace AuthorityManagementCent.Controllers
 {
@@ -36,7 +36,7 @@ namespace AuthorityManagementCent.Controllers
         /// <returns></returns>
         [HttpPost("add")]
         [JwtTokenAuthorize]
-        public async Task<ResponseMessage> PlusOranizatin([FromBody]OranizationRequest oranization)
+        public async Task<ResponseMessage> PlusOranizatin([FromBody] OranizationRequest oranization)
         {
             var users = DataBaseUser.TokenModel;
             _Logger.LogInformation($"用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 获取权限列表:\r\n" + (oranization != null ? JsonHelpers.ToJSON(oranization) : ""));
@@ -67,7 +67,7 @@ namespace AuthorityManagementCent.Controllers
         /// <returns></returns>
         [HttpPost("delte/{oranizationId}")]
         [JwtTokenAuthorize]
-        public async Task<ResponseMessage> DelOranizatin([FromRoute]string oranizationId)
+        public async Task<ResponseMessage> DelOranizatin([FromRoute] string oranizationId)
         {
             var users = DataBaseUser.TokenModel;
             _Logger.LogInformation($"用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 获取权限列表:\r\n" + (oranizationId != null ? JsonHelpers.ToJSON(oranizationId) : ""));
@@ -99,7 +99,7 @@ namespace AuthorityManagementCent.Controllers
         /// <returns></returns>
         [HttpGet("GetOranization/{oranizationId}")]
         [JwtTokenAuthorize]
-        public async Task<ResponseMessage> GetOranization([FromRoute]string oranizationId)
+        public async Task<ResponseMessage> GetOranization([FromRoute] string oranizationId)
         {
             var users = DataBaseUser.TokenModel;
             _Logger.LogInformation($"用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 查找组织信息:\r\n" + (oranizationId != null ? JsonHelpers.ToJSON(oranizationId) : ""));
@@ -131,7 +131,7 @@ namespace AuthorityManagementCent.Controllers
         /// <returns></returns>
         [HttpPost("createTreeStructure/{id}")]
         [JwtTokenAuthorize]
-        public async Task<ResponseMessage<List<TreeResponse>>> OranizationsTreeStructure([FromRoute]string id)
+        public async Task<ResponseMessage<List<TreeResponse>>> OranizationsTreeStructure([FromRoute] string id)
         {
 
             var users = DataBaseUser.TokenModel;
@@ -164,7 +164,7 @@ namespace AuthorityManagementCent.Controllers
         /// <returns></returns>
         [HttpPost("TreeSelect/{id}")]
         [JwtTokenAuthorize]
-        public async Task<ResponseMessage<List<TreeSelectResponse>>> TreeSelect([FromRoute]string id)
+        public async Task<ResponseMessage<List<TreeSelectResponse>>> TreeSelect([FromRoute] string id)
         {
             var users = DataBaseUser.TokenModel;
             _Logger.LogInformation($"用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 创建组织树状结构:\r\n" + (id != null ? JsonHelpers.ToJSON(id) : ""));

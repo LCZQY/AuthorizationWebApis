@@ -1,14 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AuthorityManagementCent.Dto.Common;
+using AuthorityManagementCent.Stores.Interface;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
-using AuthorityManagementCent.Dto.Common;
-using AuthorityManagementCent.Stores.Interface;
-using Microsoft.EntityFrameworkCore;
 namespace AuthorityManagementCent.Filters
 {
     /// <summary>
@@ -16,7 +15,7 @@ namespace AuthorityManagementCent.Filters
     /// </summary>
     public class JwtTokenAuthorize : TypeFilterAttribute
     {
-        
+
         public JwtTokenAuthorize() : base(typeof(LeavCheckPermissionImpl))
         {
 
@@ -37,11 +36,11 @@ namespace AuthorityManagementCent.Filters
                 //获取到当前用户名
                 string uses = identity.Identity.Name;
                 if (uses == null)
-                {                       
+                {
 
                     var result = new ResponseMessage()
                     {
-                        Code =  ResponseCodeDefines.ArgumentError,
+                        Code = ResponseCodeDefines.ArgumentError,
                         Message = "请登陆，或重新登陆."
                     };
                     context.Result = new ObjectResult(result);
@@ -55,7 +54,7 @@ namespace AuthorityManagementCent.Filters
                         // 找到该用户对应的角色 >>> 判断该角色拥有的权限 >> 根据权限项判断菜单项的显示和隐藏或是否可用 >> 如果没有则立即返回 
 
                         ///未完成的需求：2
-                            ///用户组织角色权限的取消 ？？                         
+                        ///用户组织角色权限的取消 ？？                         
                         DataBaseUser.TokenModel = new TokenModel
                         {
                             Id = identity.FindFirstValue(ClaimTypes.Sid),
@@ -81,10 +80,10 @@ namespace AuthorityManagementCent.Filters
     /// 是否用户管理员
     /// </summary>
     public class UserAuthorize : TypeFilterAttribute
-    {       
+    {
         public UserAuthorize() : base(typeof(UserCheckPermissionImpl))
         {
-           
+
         }
 
         private class UserCheckPermissionImpl : IAsyncActionFilter
@@ -127,12 +126,12 @@ namespace AuthorityManagementCent.Filters
                         //用户角色
                         var UserRole = from b in _IRolesStore.GetUserRoleAsync().Where(p => p.UserId == useId)
                                        join c in _IRolesStore.GetRolePermissionsAsync()
-                                       on b.RoleId equals c.RoledId into b1                                   
+                                       on b.RoleId equals c.RoledId into b1
                                        from c1 in b1.DefaultIfEmpty()
                                        select c1;
-                        var permisitem = await UserRole.Select(p=>p.PermissionsId).Distinct().ToListAsync();
+                        var permisitem = await UserRole.Select(p => p.PermissionsId).Distinct().ToListAsync();
 
-                        if(!permisitem.Contains("User_Query"))
+                        if (!permisitem.Contains("User_Query"))
                         {
                             var result = new ResponseMessage()
                             {
@@ -153,7 +152,7 @@ namespace AuthorityManagementCent.Filters
                             context.Result = new ObjectResult(result);
                             return;
                         }
-                        
+
                         if (!permisitem.Contains("Permissionitem_Query"))
                         {
                             var result = new ResponseMessage()

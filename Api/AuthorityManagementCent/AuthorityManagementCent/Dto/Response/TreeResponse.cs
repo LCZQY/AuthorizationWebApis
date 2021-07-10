@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace AuthorityManagementCent.Dto.Response
+﻿namespace AuthorityManagementCent.Dto.Response
 {
     /// <summary>
     /// 组合组织树状结构
@@ -18,7 +13,7 @@ namespace AuthorityManagementCent.Dto.Response
         /// <summary>
         /// 组织Id
         /// </summary>
-        public string key { get; set; }  
+        public string key { get; set; }
     }
 
     /// <summary>

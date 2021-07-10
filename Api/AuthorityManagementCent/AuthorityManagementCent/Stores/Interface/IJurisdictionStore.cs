@@ -1,10 +1,7 @@
-﻿using System;
+﻿using AuthorityManagementCent.Model;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AuthorityManagementCent.Dto.Common;
-using AuthorityManagementCent.Dto.Request;
-using AuthorityManagementCent.Model;
 
 namespace AuthorityManagementCent.Stores.Interface
 {
@@ -24,15 +21,15 @@ namespace AuthorityManagementCent.Stores.Interface
         /// <returns></returns>
         Task<bool> UpdateJurisdiction(Permissionitems permissionitems);
 
-        
+
         /// <summary>
         /// 是否存在该组织
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
         Task<bool> isExist(string id);
-        
-        
+
+
         /// <summary>
         /// 查询
         /// </summary>
@@ -46,9 +43,9 @@ namespace AuthorityManagementCent.Stores.Interface
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        Task<bool> DeletePermissions(List<string> id);  
-        
+        Task<bool> DeletePermissions(List<string> id);
 
-        
+
+
     }
 }

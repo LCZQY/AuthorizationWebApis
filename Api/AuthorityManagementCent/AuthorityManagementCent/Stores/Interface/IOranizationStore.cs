@@ -1,9 +1,7 @@
-﻿using System;
+﻿using AuthorityManagementCent.Model;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AuthorityManagementCent.Dto.Request;
-using AuthorityManagementCent.Model;
 
 namespace AuthorityManagementCent.Stores.Interface
 {

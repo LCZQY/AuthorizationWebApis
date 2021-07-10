@@ -885,7 +885,7 @@
               组织权限扩展表
             </summary>
         </member>
-        <!-- 对于成员“P:AuthorityManagementCent.Model.OrganizationExpansions.OrganizationId”忽略有格式错误的 XML 注释 -->
+        <!-- Badly formed XML comment ignored for member "P:AuthorityManagementCent.Model.OrganizationExpansions.OrganizationId" -->
         <member name="P:AuthorityManagementCent.Model.OrganizationExpansions.SonId">
             <summary>
             子组织ID

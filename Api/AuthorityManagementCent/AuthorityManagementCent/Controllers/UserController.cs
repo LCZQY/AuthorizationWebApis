@@ -1,15 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AuthorityManagementCent.Dto.Common;
+using AuthorityManagementCent.Dto.Request;
+using AuthorityManagementCent.Dto.Response;
+using AuthorityManagementCent.Filters;
+using AuthorityManagementCent.Managers;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using AuthorityManagementCent.Dto.Common;
-using AuthorityManagementCent.Managers;
-using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
-using AuthorityManagementCent.Dto.Request;
-using AuthorityManagementCent.Filters;
-using AuthorityManagementCent.Dto.Response;
 
 namespace AuthorityManagementCent.Controllers
 {
@@ -28,7 +26,7 @@ namespace AuthorityManagementCent.Controllers
             this._UserManager = UserController;
             this._Logger = Logger;
         }
-        
+
         /// <summary>
         /// 获取所有用户信息
         /// </summary>
@@ -70,7 +68,7 @@ namespace AuthorityManagementCent.Controllers
         [HttpPost("addUser")]
         [JwtTokenAuthorize]
         public async Task<ResponseMessage> InsertUsers(UserRequest userRequest)
-        {      
+        {
             var users = DataBaseUser.TokenModel;
             _Logger.LogInformation($"\r\n 用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 获取所有用户信息:\r\n" + (userRequest != null ? JsonHelpers.ToJSON(userRequest) : "\r\n"));
             var response = new ResponseMessage();
@@ -101,7 +99,7 @@ namespace AuthorityManagementCent.Controllers
         /// <returns></returns>
         [HttpPost("delete")]
         [JwtTokenAuthorize]
-        public async Task<ResponseMessage> DeleteUsers([FromBody]List<string> userId)
+        public async Task<ResponseMessage> DeleteUsers([FromBody] List<string> userId)
         {
             var users = DataBaseUser.TokenModel;
             _Logger.LogInformation($"\r\n 用户{users?.UserName ?? ""},其ID:({users?.Id ?? ""}) 删除其用户:\r\n" + (userId != null ? JsonHelpers.ToJSON(userId) : "\r\n"));

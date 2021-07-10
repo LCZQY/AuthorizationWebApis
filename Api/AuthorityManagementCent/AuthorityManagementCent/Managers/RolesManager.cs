@@ -1,14 +1,14 @@
-﻿using System;
+﻿using AuthorityManagementCent.Dto.Common;
+using AuthorityManagementCent.Dto.Request;
+using AuthorityManagementCent.Dto.Response;
+using AuthorityManagementCent.Model;
+using AuthorityManagementCent.Stores.Interface;
+using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using AutoMapper;
 using System.Threading.Tasks;
-using AuthorityManagementCent.Dto.Response;
-using AuthorityManagementCent.Stores.Interface;
-using AuthorityManagementCent.Dto.Common;
-using Microsoft.EntityFrameworkCore;
-using AuthorityManagementCent.Dto.Request;
-using AuthorityManagementCent.Model;
 
 
 namespace AuthorityManagementCent.Managers
@@ -186,7 +186,7 @@ namespace AuthorityManagementCent.Managers
                     }
                 }
                 var quers = newModel.ToList();
-                await _IRolesStore.InsertRolePermissions(newModel);             
+                await _IRolesStore.InsertRolePermissions(newModel);
             }
             catch (Exception el)
             {
@@ -221,7 +221,7 @@ namespace AuthorityManagementCent.Managers
                 }
 
                 ////1.1： 找到所有的角色ID              
-                var oldRols = await _IRolesStore.GetUserRoleAsync().Where(u => u.UserId.Equals(userRolesRequest.UserId)).Select(p => p.RoleId).ToListAsync();                         
+                var oldRols = await _IRolesStore.GetUserRoleAsync().Where(u => u.UserId.Equals(userRolesRequest.UserId)).Select(p => p.RoleId).ToListAsync();
                 //请求的权限个数大于原来的原有权限个数就是新增权限,小于的话就是要删除，
                 if (oldRols.Count() > userRolesRequest.RoleId.Count())
                 {
@@ -230,13 +230,13 @@ namespace AuthorityManagementCent.Managers
                     await _IRolesStore.DeleteUserRoles(userRolesRequest.UserId, deleteRoleId);
 
                     //1.2.删除权限扩展表
-                    var permissionList =await _IRolesStore.GetRolePermissionsAsync().Where(p => deleteRoleId.Contains(p.RoledId)).Select(u=>u.PermissionsId).ToListAsync();                   
+                    var permissionList = await _IRolesStore.GetRolePermissionsAsync().Where(p => deleteRoleId.Contains(p.RoledId)).Select(u => u.PermissionsId).ToListAsync();
                     await _IRolesStore.DeletePermissionEx(userRolesRequest.UserId, permissionList);
                 }
                 //新增
                 else
                 {
-                    var  addRoleId = userRolesRequest.RoleId.Except(oldRols); //差集                    
+                    var addRoleId = userRolesRequest.RoleId.Except(oldRols); //差集                    
                     var model = new List<UserRole>();
                     foreach (var roleId in addRoleId)
                     {
@@ -244,15 +244,15 @@ namespace AuthorityManagementCent.Managers
                     }
 
                     ////1.2： 找到所有的角色的权限
-                    var permissionList =await _IRolesStore.GetRolePermissionsAsync().Where(p => addRoleId.Contains(p.RoledId)).ToListAsync();
+                    var permissionList = await _IRolesStore.GetRolePermissionsAsync().Where(p => addRoleId.Contains(p.RoledId)).ToListAsync();
                     if (permissionList.Count() == 0)
                     {
                         response.Message = "该角色的权限项未指定.请先完善";
                         response.Code = ResponseCodeDefines.ArgumentNullError;
-                        return response;                        
+                        return response;
                     }
                     ////1.3： 构建权限扩展表
-                    List<PermissionExpansion> PermissionEx = new List<PermissionExpansion>();                    
+                    List<PermissionExpansion> PermissionEx = new List<PermissionExpansion>();
                     foreach (var item in permissionList)
                     {
                         PermissionEx.Add(new PermissionExpansion
@@ -269,7 +269,7 @@ namespace AuthorityManagementCent.Managers
                     await _IRolesStore.InsertUserRole(model);
                     await _IRolesStore.InsertRolePermissionEX(PermissionEx);
 
-                }               
+                }
             }
             catch (Exception el)
             {

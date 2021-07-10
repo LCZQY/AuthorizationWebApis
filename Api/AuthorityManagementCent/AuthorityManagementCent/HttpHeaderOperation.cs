@@ -40,7 +40,7 @@ namespace AuthorityManagementCent
                     In = "header",
                     Type = "Token",
                     Required = false,
-                    Default= "Bearer "
+                    Default = "Bearer "
                 });
             }
         }

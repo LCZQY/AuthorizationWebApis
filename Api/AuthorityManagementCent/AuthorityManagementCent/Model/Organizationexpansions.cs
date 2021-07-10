@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace AuthorityManagementCent.Model
+﻿namespace AuthorityManagementCent.Model
 {
     /// <summary>
     ///   组织权限扩展表
     /// </summary>
-    public class OrganizationExpansions 
+    public class OrganizationExpansions
     {
         /// <summary>
         /// 组织Id

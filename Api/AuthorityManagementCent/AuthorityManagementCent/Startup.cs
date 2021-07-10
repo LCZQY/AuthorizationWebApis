@@ -1,32 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
+﻿using AuthorityManagementCent.Filters;
+using AuthorityManagementCent.Model;
+using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Swashbuckle.AspNetCore.Swagger;
-
-using AuthorityManagementCent.Model;
-using Microsoft.EntityFrameworkCore;
-using AuthorityManagementCent.Managers;
-using AuthorityManagementCent.Stores;
-using AuthorityManagementCent.Stores.Interface;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using System.Text;
-using AutoMapper;
-using AuthorityManagementCent.Dto.Common;
-using AuthorityManagementCent.Filters;
 using NLog.Extensions.Logging;
 using NLog.Web;
+using Swashbuckle.AspNetCore.Swagger;
+using System;
+using System.IO;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace AuthorityManagementCent
 {
@@ -72,7 +63,7 @@ namespace AuthorityManagementCent
                     ValidIssuer = "ZQY", //发放者
                     ValidAudience = "PC", // 来源(那个端)
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ABCDEFGHIJKLMNOPQRSTUVWXYZ1456789513"))
-                }; 
+                };
             });
 
 
@@ -80,7 +71,7 @@ namespace AuthorityManagementCent
 
 
             //AutoMapper
-            services.AddSingleton<IMapper>(mp=> _mapperConfiguration.CreateMapper());
+            services.AddSingleton<IMapper>(mp => _mapperConfiguration.CreateMapper());
 
             //数据库连接,注意：一定要加 sslmode=none 
             var connection = Configuration.GetConnectionString("MysqlConnection");
@@ -97,19 +88,20 @@ namespace AuthorityManagementCent
                     Version = "v1",
                     Title = "权限管理系统",
                     Description = "用户登陆请求Token/用户管理/组织管理/权限管理/角色管理",
-                    TermsOfService = "None",                    
+                    TermsOfService = "None",
                 });
 
                 //给Swagger界面新增添加权限界面
                 options.OperationFilter<HttpHeaderOperation>(); // 添加httpHeader               
                 options.DocInclusionPredicate((docName, description) => true);
-                options.IgnoreObsoleteActions();      
+                options.IgnoreObsoleteActions();
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                options.IncludeXmlComments(xmlPath);                
+                options.IncludeXmlComments(xmlPath);
             });
 
-            services.AddMvc(options => {
+            services.AddMvc(options =>
+            {
                 options.Filters.Add<JwtTokenAuthorize>();
             }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -125,11 +117,11 @@ namespace AuthorityManagementCent
             {
                 app.UseHsts();
             }
-            
-            
+
+
             //启动权限验证
             app.UseAuthentication();
-            
+
             //启用自定义权限验证
             //app.UseMiddleware<JwtTokenAuth>();
 
@@ -148,7 +140,7 @@ namespace AuthorityManagementCent
             app.UseHttpsRedirection();
 
             //日志配置，为了防止中文乱码
-            ConfigureNLog(app,env,loggerFactory);
+            ConfigureNLog(app, env, loggerFactory);
             app.UseMvc();
         }
 
